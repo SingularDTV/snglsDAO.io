@@ -1,3 +1,8 @@
+# index.html for ENG site homepage, place at root
+# tcindex.html for zh-TW site homepage, place at root
+# scindex.html for zh-CN site homepage, place at root
+
+
 # SNGLS DAO Website
 
 Requirements:
