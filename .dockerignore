@@ -1,0 +1,10 @@
+.DS_Store
+.dockerignore
+doc/
+.editorconfig
+.git*
+.npmignore
+LICENSE.txt
+README.md
+Charts
+.circleci
