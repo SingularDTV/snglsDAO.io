@@ -10,7 +10,7 @@ aliases:
       IMAGE_NAME: singulardtv.azurecr.io/snglsdao/website
   - &deploy_config
     docker:
-      - image: lachlanevenson/k8s-helm:v2.12.0
+      - image: lachlanevenson/k8s-helm:v2.11.0
     environment:
       APP: snglsdao
   - &step_setup_remote_docker
