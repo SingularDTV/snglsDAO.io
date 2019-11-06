@@ -10,8 +10,9 @@ metadata:
     kubernetes.io/ingress.class: {{ .Values.ingress.class }}
     kubernetes.io/tls-acme: "true"
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
-    external-dns.alpha.kubernetes.io/hostname: {{ .Values.app.domain }}
+    external-dns.alpha.kubernetes.io/hostname: {{ .Values.app.domain }},www.{{ .Values.app.domain }}
     certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
     nginx.ingress.kubernetes.io/configuration-snippet: |
       more_set_headers "X-Content-Type-Options: nosniff";
       more_set_headers "X-Download-Options: noopen";
@@ -22,6 +23,7 @@ spec:
   tls:
     - hosts:
       - {{ .Values.app.domain }}
+      - www.{{ .Values.app.domain }}
       secretName: {{ .Values.app.domain }}
   rules:
     - host: {{ .Values.app.domain }}
