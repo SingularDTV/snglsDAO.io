@@ -85,7 +85,7 @@ aliases:
           --wait --timeout 300 \
           --set-string image.tag=${VERSION} \
           -f Charts/${ENV}-values.yaml \
-          Charts/${CIRCLE_PROJECT_REPONAME}
+          Charts/snglsdao.io
   - &step_deploy_cleanup
     run:
       name: Cleanup
