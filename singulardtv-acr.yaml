@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: Secret
-data:
-  .dockerconfigjson: eyJhdXRocyI6eyJzaW5ndWxhcmR0di5henVyZWNyLmlvIjp7InVzZXJuYW1lIjoic2luZ3VsYXJkdHYiLCJwYXNzd29yZCI6ImVUYXVSNmtBZS9NR09zcklIS3drTXVVSEpsVHBTcjFKIiwiZW1haWwiOiJsaXZpdS5kYW1pYW4rc25nbHNAY29uc2Vuc3lzLm5ldCIsImF1dGgiOiJjMmx1WjNWc1lYSmtkSFk2WlZSaGRWSTJhMEZsTDAxSFQzTnlTVWhMZDJ0TmRWVklTbXhVY0ZOeU1Vbz0ifX19
-metadata:
-  name: singulardtv-acr
-  namespace: stage-snglsdao
-type: kubernetes.io/dockerconfigjson

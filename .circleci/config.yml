@@ -1,0 +1,172 @@
+version: 2
+
+aliases:
+  - &build_config
+    docker:
+      - image: alpine:3.8
+    environment:
+      APP: snglsdao
+      SDTV_ACR: singulardtv.azurecr.io
+      IMAGE_NAME: singulardtv.azurecr.io/snglsdao/website
+  - &deploy_config
+    docker:
+      - image: lachlanevenson/k8s-helm:v2.12.0
+    environment:
+      APP: snglsdao
+  - &step_setup_remote_docker
+    setup_remote_docker:
+      version: 17.11.0-ce
+  - &step_install_deps
+    run:
+      name: Install dependencies
+      command: |
+        apk add --update bash docker git gnupg
+  - &step_set_version
+    run:
+      name: Set version
+      shell: /bin/bash -eo pipefail
+      command: |
+        echo "export VERSION=$(git rev-parse --short HEAD)" >> $BASH_ENV 
+  - &step_set_environment
+    run:
+      name: Set environment
+      shell: /bin/bash -eo pipefail
+      command: |
+        if [ "${CIRCLE_BRANCH}" == "master" ]; then
+          export ENV=stage
+          echo 'export ENV=stage' >> $BASH_ENV
+        elif [ "${CIRCLE_BRANCH}" == "production" ]; then
+          export ENV=prod
+          echo 'export ENV=prod' >> $BASH_ENV
+        else
+          echo 'Unknown branch' &>2
+          exit 1
+        fi
+        echo "export NS=${ENV}-${APP}" >> $BASH_ENV
+        echo 'export KUBECONFIG=/root/project/.circleci/kubeconfig' >> $BASH_ENV
+        echo "export KUBECONFIG_GPG=/root/project/.circleci/kubeconfig_${ENV}_snglsdao.gpg" >> $BASH_ENV
+        echo "export GPG_KEY=\"$(eval echo \$${ENV^^}_SNGLSDAO_GPG_KEY)\"" >> $BASH_ENV
+  - &step_build_image 
+    run:
+      name: Build image
+      shell: /bin/bash -eo pipefail
+      command: |
+        docker build -t ${IMAGE_NAME}:${VERSION} .
+  - &step_push_image
+    run:
+      name: Push image
+      shell: /bin/bash -eo pipefail
+      command: |
+        echo "${SDTV_ACR_PASS}" | docker login ${SDTV_ACR} -u ${SDTV_ACR_USER} --password-stdin
+        docker push ${IMAGE_NAME}:${VERSION}
+  - &step_build_cleanup
+    run:
+      name: Cleanup
+      shell: /bin/bash -eo pipefail
+      command: |
+        docker image rm ${IMAGE_NAME}:${VERSION}
+        docker logout ${SDTV_ACR}
+        rm -f $BASH_ENV
+      when: always 
+  - &step_configure_kubeconfig
+    run:
+      name: Configure KUBECONFIG
+      shell: /bin/bash -eo pipefail
+      command: |
+        echo "${GPG_KEY}" | gpg -d --passphrase-fd 0 --batch --yes ${KUBECONFIG_GPG} > ${KUBECONFIG}  
+  - &step_deploy
+    run:
+      name: Deploy
+      shell: /bin/bash -eo pipefail
+      command: |
+        helm upgrade \
+          --install ${ENV}-snglsdao-website \
+          --namespace ${NS} \
+          --wait --timeout 300 \
+          --set-string image.tag=${VERSION} \
+          -f Charts/${ENV}-values.yaml \
+          Charts/${CIRCLE_PROJECT_REPONAME}
+  - &step_deploy_cleanup
+    run:
+      name: Cleanup
+      shell: /bin/bash -eo pipefail
+      command: |
+        rm -f $KUBECONFIG $BASH_ENV
+      when: always    
+
+workflows:
+  version: 2
+
+  build_and_deploy:
+    jobs:
+      - build_image:
+          filters:
+            branches:
+              only: 
+                - master
+      - deploy:
+          requires:
+            - build_image
+          filters:
+            branches:
+              only: 
+                - master
+      - build_prod_image:
+          filters:
+            branches:
+              only:
+                - production
+      - prod_deploy:
+          requires:
+            - build_prod_image
+          filters:
+            branches:
+              only:
+                - production
+
+jobs:
+  build_image:
+    <<: *build_config
+    steps:
+      - checkout
+      - *step_setup_remote_docker
+      - *step_install_deps
+      - *step_set_version
+      - *step_build_image
+      - *step_push_image
+      - *step_build_cleanup
+
+  deploy:
+    <<: *deploy_config
+    steps:
+      - checkout
+      - *step_setup_remote_docker
+      - *step_install_deps
+      - *step_set_version
+      - *step_set_environment
+      - *step_configure_kubeconfig
+      - *step_deploy
+      - *step_deploy_cleanup
+
+  build_prod_image:
+    <<: *build_config
+    steps:
+      - checkout
+      - *step_setup_remote_docker
+      - *step_install_deps
+      - *step_set_version
+      - *step_build_image
+      - *step_push_image
+      - *step_build_cleanup
+
+  prod_deploy:
+    <<: *deploy_config
+    steps:
+      - checkout
+      - *step_setup_remote_docker
+      - *step_install_deps
+      - *step_set_version
+      - *step_set_environment
+      - *step_configure_kubeconfig
+      - *step_deploy
+      - *step_deploy_cleanup
