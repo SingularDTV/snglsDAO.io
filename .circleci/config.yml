@@ -83,8 +83,8 @@ aliases:
           --install ${ENV}-snglsdao-website \
           --namespace ${NS} \
           --wait --timeout 300 \
-          --set-string image.tag=${VERSION} \
           -f Charts/${ENV}-values.yaml \
+          --set-string image.tag=${VERSION} \
           Charts/snglsdao.io
   - &step_deploy_cleanup
     run:

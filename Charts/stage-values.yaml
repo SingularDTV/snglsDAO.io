@@ -3,7 +3,7 @@ environment: stage-snglsdao
 app:
   domain: stage.snglsdao.io
 
-image:
+# image:
   # tag: Specify at install/upgrade time
 
 rbac:
