@@ -749,8 +749,8 @@ body {
   .milestones .milestones__goal-wrap {
     text-align: center;
     width: 30%;
-    float: left;
-    margin-left: 35%; }
+    float: right;
+    margin-right: 35%; }
     .milestones .milestones__goal-wrap .milestones__goal {
       width: 110px;
       height: 110px;
