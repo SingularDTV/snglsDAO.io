@@ -27,7 +27,9 @@ body {
 .accent-color {
   color: $accent-color;
 }
-
+.hidden {
+  display: none;
+}
 
 .header {
   padding: 10px 0;
@@ -484,29 +486,9 @@ body {
         position: relative;
         margin-bottom: 38px;
 
-        &::before {
-          content: '';
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 74px;
-          height: 74px;
-          margin-left: -37px;
-          margin-top: -37px;
-          border-radius: 50%;
-          background-color: $accent-color;
-          box-shadow: 0 0 20px $accent-color;
-        }
-        &::after {
-          content: '';
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin-left: -6px;
-          margin-top: -11px;
-          border-left: 16px solid #fff;
-          border-top: 10px solid transparent;
-          border-bottom: 10px solid transparent;
+        .videos__iframe {
+          width: 100%;
+          height: 235px;
         }
       }
       .videos__header {
@@ -718,7 +700,7 @@ body {
   background-position: bottom right;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 163px 0 0;
+  padding: 163px 0 20px;
 
   .milestones__title {
     font-size: 50px;
@@ -732,9 +714,8 @@ body {
   }
   .milestones__timeline {
     position: relative;
-    padding: 1px 0;
+    padding: 1px 0 30px;
     @extend %clearfix;
-    margin-bottom: 10px;
 
     &::before {
       content: '';
@@ -742,14 +723,13 @@ body {
       position: absolute;
       width: 6px;
       top: 0;
-      bottom: 80px;
+      bottom: 0;
       left: 50%;
       margin-left: -3px;
       background-color: $accent-color;
 
       @media (max-width: 767px) {
         top: 20px;
-        bottom: 100px;
         width: 4px;
         margin-left: -2px;
       }
@@ -858,7 +838,9 @@ body {
       &.milestones__item--top-margin {
         margin-top: 200px;
       }
-
+      &:last-child {
+        margin-bottom: 0;
+      }
       @media (max-width: 767px) {
         width: 100%;
         float: none !important;
@@ -869,19 +851,25 @@ body {
     }
   }
 
-  .milestones__button-wrap {
+  .milestones__goal-wrap {
     text-align: center;
     width: 30%;
     float: left;
     margin-left: 35%;
     @extend %column__padding;
 
-    .milestones__button {
-      @extend %btn;
-
-      @media (max-width: 767px) {
-        width: 100%;
-      }
+    .milestones__goal {
+      width: 110px;
+      height: 110px;
+      background-color: $accent-color;
+      box-shadow: 0 0 20px $accent-color;
+      border-radius: 50%;
+      font-weight: bold;
+      padding: 38px 20px;
+      line-height: 1.2em;
+      font-size: 18px;
+      text-align: center;
+      margin: 0 auto;
     }
 
     @media (max-width: 767px) {
@@ -962,7 +950,7 @@ body {
     max-width: 100%;
   }
   @media (max-width: 767px) {
-    padding: 100px 0;
+    padding: 140px 0 100px;
   }
 }
 
@@ -1156,3 +1144,128 @@ body {
     font-size: 14px;
     }
   }
+
+
+  /**
+   * Modals ($modals)
+   */
+
+  /* 1. Ensure this sits above everything when visible */
+  .modal {
+    position: absolute;
+    z-index: 10000; /* 1 */
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+
+    .modal__overlay {
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: hsla(0, 0%, 0%, 0.5);
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s linear 0.3s, opacity 0.3s;
+    }
+    .modal__wrapper {
+      position: fixed;
+      z-index: 9999;
+      top: 6em;
+      left: 50%;
+      width: 40vw;
+      margin-left: -20vw;
+      background-color: #fff;
+      border-radius: 14px;
+      padding: 40px;
+      box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.35);
+
+      .modal__heading {
+        font-size: 35px;
+        line-height: 1em;
+        margin-bottom: 20px;
+        color: #251F31;
+      }
+    }
+    .modal__transition {
+      transition: all 0.3s 0.12s;
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    .modal__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 15px;
+      font-size: 18px;
+      line-height: 1em;
+      color: #16131d;
+      background: none;
+      border: 0;
+      cursor: pointer;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+    &.is-visible {
+      visibility: visible;
+
+      .modal__overlay {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0s;
+      }
+      .modal__transition {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+
+.subs-form {
+  font-size: 16px;
+  line-height: 1.4em;
+  color: #7f7f7f;
+
+  p {
+    margin-bottom: 10px;
+  }
+  a {
+    color: $accent-color;
+  }
+  .subs-form__fieldset {
+    border: none;
+  }
+  .subs-form__input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    border-radius: 30px;
+    border: 1px solid #c6c4d2;
+    font-size: 18px;
+    padding: 5px 24px;
+    margin-bottom: 15px;
+  }
+  .subs-form__checkbox-wrap {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  .subs-form__checkbox {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: bottom;
+  }
+  .subs-form__button {
+    @extend %btn;
+    margin-top: 10px;
+  }
+
+}

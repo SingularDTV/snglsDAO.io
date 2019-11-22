@@ -18,7 +18,7 @@ img {
   width: 100%;
   clear: both; }
 
-.hero .hero__text .hero__buttons .btn, .whitepaper .whitepaper__text .whitepaper__buttons .btn, .milestones .milestones__button-wrap .milestones__button, .contacts .form__field .form__btn {
+.hero .hero__text .hero__buttons .btn, .whitepaper .whitepaper__text .whitepaper__buttons .btn, .contacts .form__field .form__btn, .subs-form .subs-form__button {
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -36,7 +36,7 @@ img {
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   transition: 0.2s; }
-  .hero .hero__text .hero__buttons .btn:hover, .whitepaper .whitepaper__text .whitepaper__buttons .btn:hover, .milestones .milestones__button-wrap .milestones__button:hover, .contacts .form__field .form__btn:hover {
+  .hero .hero__text .hero__buttons .btn:hover, .whitepaper .whitepaper__text .whitepaper__buttons .btn:hover, .contacts .form__field .form__btn:hover, .subs-form .subs-form__button:hover {
     box-shadow: 0 0 20px #e4112aff; }
 
 .hero .hero__text .hero__buttons .btn-inverse {
@@ -80,11 +80,11 @@ img {
   .whitepaper .whitepaper__text .whitepaper__buttons .btn-white:hover, .floating-box .floating-box__link:hover {
     box-shadow: 0 0 12px #fff8; }
 
-.container, .hero .hero__text, .hero .hero__image, .whitepaper .whitepaper__image, .whitepaper .whitepaper__text, .milestones .milestones__button-wrap, .footer .footer__left, .footer .footer__right {
+.container, .hero .hero__text, .hero .hero__image, .whitepaper .whitepaper__image, .whitepaper .whitepaper__text, .milestones .milestones__goal-wrap, .footer .footer__left, .footer .footer__right {
   padding-left: 15px;
   padding-right: 15px; }
   @media (max-width: 767px) {
-    .container, .hero .hero__text, .hero .hero__image, .whitepaper .whitepaper__image, .whitepaper .whitepaper__text, .milestones .milestones__button-wrap, .footer .footer__left, .footer .footer__right {
+    .container, .hero .hero__text, .hero .hero__image, .whitepaper .whitepaper__image, .whitepaper .whitepaper__text, .milestones .milestones__goal-wrap, .footer .footer__left, .footer .footer__right {
       padding-left: 20px;
       padding-right: 20px; } }
 
@@ -110,6 +110,9 @@ body {
 
 .accent-color {
   color: #D40D26; }
+
+.hidden {
+  display: none; }
 
 .header {
   padding: 10px 0;
@@ -454,28 +457,9 @@ body {
       display: block;
       position: relative;
       margin-bottom: 38px; }
-      .videos .videos__carousel .videos__item .videos__image::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 74px;
-        height: 74px;
-        margin-left: -37px;
-        margin-top: -37px;
-        border-radius: 50%;
-        background-color: #D40D26;
-        box-shadow: 0 0 20px #D40D26; }
-      .videos .videos__carousel .videos__item .videos__image::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-left: -6px;
-        margin-top: -11px;
-        border-left: 16px solid #fff;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent; }
+      .videos .videos__carousel .videos__item .videos__image .videos__iframe {
+        width: 100%;
+        height: 235px; }
     .videos .videos__carousel .videos__item .videos__header {
       font-size: 22px;
       font-weight: bold;
@@ -641,7 +625,7 @@ body {
   background-position: bottom right;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 163px 0 0; }
+  padding: 163px 0 20px; }
   .milestones .milestones__title {
     font-size: 50px;
     text-align: center;
@@ -652,22 +636,20 @@ body {
         font-size: 35px; } }
   .milestones .milestones__timeline {
     position: relative;
-    padding: 1px 0;
-    margin-bottom: 10px; }
+    padding: 1px 0 30px; }
     .milestones .milestones__timeline::before {
       content: '';
       display: block;
       position: absolute;
       width: 6px;
       top: 0;
-      bottom: 80px;
+      bottom: 0;
       left: 50%;
       margin-left: -3px;
       background-color: #D40D26; }
       @media (max-width: 767px) {
         .milestones .milestones__timeline::before {
           top: 20px;
-          bottom: 100px;
           width: 4px;
           margin-left: -2px; } }
     .milestones .milestones__timeline .milestones__item {
@@ -755,6 +737,8 @@ body {
               display: none; } }
       .milestones .milestones__timeline .milestones__item.milestones__item--top-margin {
         margin-top: 200px; }
+      .milestones .milestones__timeline .milestones__item:last-child {
+        margin-bottom: 0; }
       @media (max-width: 767px) {
         .milestones .milestones__timeline .milestones__item {
           width: 100%;
@@ -762,16 +746,25 @@ body {
           margin-top: 0 !important;
           padding: 35px;
           margin-bottom: 30px; } }
-  .milestones .milestones__button-wrap {
+  .milestones .milestones__goal-wrap {
     text-align: center;
     width: 30%;
     float: left;
     margin-left: 35%; }
+    .milestones .milestones__goal-wrap .milestones__goal {
+      width: 110px;
+      height: 110px;
+      background-color: #D40D26;
+      box-shadow: 0 0 20px #D40D26;
+      border-radius: 50%;
+      font-weight: bold;
+      padding: 38px 20px;
+      line-height: 1.2em;
+      font-size: 18px;
+      text-align: center;
+      margin: 0 auto; }
     @media (max-width: 767px) {
-      .milestones .milestones__button-wrap .milestones__button {
-        width: 100%; } }
-    @media (max-width: 767px) {
-      .milestones .milestones__button-wrap {
+      .milestones .milestones__goal-wrap {
         width: 100%;
         float: none;
         margin: 0 0 30px; } }
@@ -833,7 +826,7 @@ body {
     max-width: 100%; }
   @media (max-width: 767px) {
     .partners {
-      padding: 100px 0; } }
+      padding: 140px 0 100px; } }
 
 /* contacts */
 .contacts {
@@ -985,3 +978,102 @@ body {
     margin-bottom: 8px;
     padding: 6px 15px;
     font-size: 14px; }
+
+/**
+   * Modals ($modals)
+   */
+/* 1. Ensure this sits above everything when visible */
+.modal {
+  position: absolute;
+  z-index: 10000;
+  /* 1 */
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%; }
+  .modal .modal__overlay {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.3s, opacity 0.3s; }
+  .modal .modal__wrapper {
+    position: fixed;
+    z-index: 9999;
+    top: 6em;
+    left: 50%;
+    width: 40vw;
+    margin-left: -20vw;
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 40px;
+    box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.35); }
+    .modal .modal__wrapper .modal__heading {
+      font-size: 35px;
+      line-height: 1em;
+      margin-bottom: 20px;
+      color: #251F31; }
+  .modal .modal__transition {
+    transition: all 0.3s 0.12s;
+    transform: translateY(-10%);
+    opacity: 0; }
+  .modal .modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 1em;
+    color: #16131d;
+    background: none;
+    border: 0;
+    cursor: pointer; }
+    .modal .modal__close:hover {
+      color: #D40D26; }
+  .modal.is-visible {
+    visibility: visible; }
+    .modal.is-visible .modal__overlay {
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0s; }
+    .modal.is-visible .modal__transition {
+      transform: translateY(0);
+      opacity: 1; }
+
+.subs-form {
+  font-size: 16px;
+  line-height: 1.4em;
+  color: #7f7f7f; }
+  .subs-form p {
+    margin-bottom: 10px; }
+  .subs-form a {
+    color: #D40D26; }
+  .subs-form .subs-form__fieldset {
+    border: none; }
+  .subs-form .subs-form__input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    border-radius: 30px;
+    border: 1px solid #c6c4d2;
+    font-size: 18px;
+    padding: 5px 24px;
+    margin-bottom: 15px; }
+  .subs-form .subs-form__checkbox-wrap {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px; }
+  .subs-form .subs-form__checkbox {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: bottom; }
+  .subs-form .subs-form__button {
+    margin-top: 10px; }
