@@ -854,8 +854,8 @@ body {
   .milestones__goal-wrap {
     text-align: center;
     width: 30%;
-    float: left;
-    margin-left: 35%;
+    float: right;
+    margin-right: 35%;
     @extend %column__padding;
 
     .milestones__goal {
