@@ -78,7 +78,7 @@
             The year 2020 represents an exciting new phase in achieving this goal-the launch of the SNGLS Media Distribution Protocol.
           </p>
           <div class="hero__buttons">
-            <a class="btn" href="#">Watch video</a>
+            <a class="btn video-popup-btn" href="#" data-type="youtube" data-id="abD3T3bQmDY" data-autoplay='true'>Watch video</a>
             <a class="btn-inverse modal-form-toggle" href="#">Join our Mailing list</a>
           </div>
         </div>
@@ -442,7 +442,19 @@
     </div>
   </div>
 </div>
-<!--End mc_embed_signup-->
+<!--END mc_embed_signup-->
+
+<!-- POPUP video -->
+<div id="video-popup-overlay"></div>
+<div id="video-popup-container">
+  <div id="video-popup-close" class="fade">&#10006;</div>
+  <div id="video-popup-iframe-container">
+    <iframe id="video-popup-iframe" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+<!-- END POPUP video -->
+
+
 
 <div class="floating-box" id="floating_box">
   <button class="floating-box__close" id="floating_box_close">&#10005;</button>
