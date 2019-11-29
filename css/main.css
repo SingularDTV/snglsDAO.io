@@ -297,11 +297,11 @@ body {
   background-repeat: no-repeat;
   background-position: right top;
   background-size: auto 100%;
-  padding: 64px 0 169px;
+  padding: 64px 0;
   color: #fff; }
   .hero .hero__text {
     width: 50%;
-    padding-top: 80px;
+    padding-top: 50px;
     float: left; }
     .hero .hero__text .hero__title {
       font-size: 60px;
@@ -351,7 +351,7 @@ body {
 /* mission */
 .mission {
   text-align: center;
-  padding: 178px 0 197px;
+  padding: 120px 0;
   font-size: 18px; }
   .mission .mission__titile {
     font-size: 50px;
@@ -377,7 +377,7 @@ body {
 .whitepaper {
   background-color: #251F31;
   color: #fff;
-  padding: 150px 0;
+  padding: 120px 0 110px;
   font-size: 18px;
   font-weight: 300;
   background-image: url(../images/hero-image.png);
@@ -431,7 +431,7 @@ body {
 .distribution {
   background-color: #2d273b;
   color: #fff;
-  padding: 150px 0;
+  padding: 90px 0;
   font-size: 18px;
   font-weight: 300; }
   .distribution .distribution__title {
@@ -474,7 +474,7 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% auto;
-  padding: 166px 0 132px; }
+  padding: 120px 0 100px; }
   .videos .videos__title {
     font-size: 50px;
     margin-bottom: 88px;
@@ -549,7 +549,7 @@ body {
 /* dao info */
 .dao-info {
   background-color: #251F31;
-  padding: 160px 0 0;
+  padding: 120px 0 0;
   text-align: center;
   color: #fff;
   font-weight: 300;
@@ -562,7 +562,7 @@ body {
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 0.04em;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     line-height: 1em; }
     @media (max-width: 767px) {
       .dao-info .dao-info__title {
@@ -582,14 +582,14 @@ body {
 /* dao statistics*/
 .dao {
   background-color: #251F31;
-  padding: 160px 0 98px;
+  padding: 140px 0 80px;
   text-align: center;
   color: #fff; }
   .dao .dao__title {
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 0.04em;
-    margin-bottom: 102px; }
+    margin-bottom: 70px; }
     @media (max-width: 767px) {
       .dao .dao__title {
         font-size: 35px;
@@ -604,7 +604,7 @@ body {
       width: 136px;
       height: 136px;
       line-height: 136px;
-      margin: 0 auto 54px;
+      margin: 0 auto 45px;
       background-color: #D40D26;
       box-shadow: 0 0 0 13px #D40D2633, 0 0 0 26px #D40D2633;
       border-radius: 50%;
@@ -648,7 +648,7 @@ body {
       text-align: center; } }
 
 .calls {
-  padding: 160px 0 143px;
+  padding: 120px 0 100px;
   text-align: center; }
   .calls .calls__title {
     font-size: 50px;
@@ -686,7 +686,7 @@ body {
 
 /* entervision */
 .entervision {
-  padding: 70px 0 170px;
+  padding: 70px 0 140px;
   background-image: url("../images/bg-entervision.svg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -743,7 +743,7 @@ body {
   background-position: bottom right;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 163px 0 20px; }
+  padding: 120px 0 20px; }
   .milestones .milestones__title {
     font-size: 50px;
     text-align: center;
@@ -889,7 +889,7 @@ body {
   .milestones .milestones__image-wrap {
     width: 35%;
     float: left;
-    margin-top: -114px;
+    margin-top: -190px;
     margin-bottom: -100px; }
     .milestones .milestones__image-wrap .milestones__image {
       max-width: 100%; }
@@ -908,7 +908,7 @@ body {
 
 /* partners */
 .partners {
-  padding: 197px 0 242px;
+  padding: 120px 0;
   text-align: center; }
   .partners .partners__title {
     font-size: 50px;
@@ -955,7 +955,7 @@ body {
   text-align: center;
   color: #fff;
   background-color: #2D273B;
-  padding: 161px 0;
+  padding: 120px 0;
   font-size: 18px; }
   .contacts .form__header {
     font-size: 50px;
@@ -1014,7 +1014,7 @@ body {
 .footer {
   color: #b3b0bb;
   background-color: #251F31;
-  padding: 94px 0;
+  padding: 94px 0 50px;
   border-top: 1px solid #979797; }
   .footer .footer__left {
     width: 37%;
