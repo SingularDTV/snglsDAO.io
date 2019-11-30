@@ -6,9 +6,6 @@ body {
   line-height: 1.9em;
   color: $primary-color;
 
-  /*&.opened-menu {
-    overflow: hidden;
-  }*/
   @media (max-width: 767px) {
     font-size: 14px;
   }
@@ -32,6 +29,9 @@ body {
 }
 .hidden {
   display: none;
+}
+.lowercase {
+  text-transform: lowercase;
 }
 
 .header {

@@ -96,10 +96,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.9em;
-  color: #251F31;
-  /*&.opened-menu {
-    overflow: hidden;
-  }*/ }
+  color: #251F31; }
   @media (max-width: 767px) {
     body {
       font-size: 14px; } }
@@ -113,6 +110,9 @@ body {
 
 .hidden {
   display: none; }
+
+.lowercase {
+  text-transform: lowercase; }
 
 .header {
   padding: 10px 0;
