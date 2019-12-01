@@ -1,0 +1,16 @@
+/* mixins */
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  transition: $property;
+}
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  transform: $property;
+}
+@mixin transform-origin($property) {
+  -webkit-transform-origin: $property;
+  -moz-transform-origin: $property;
+  transform-origin: $property;
+}

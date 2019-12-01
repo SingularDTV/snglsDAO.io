@@ -1,447 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="SingularDTV SNGLS DAO" />
-    <meta name="description" content="Learn more about the SingularDTV - Blockchain Decentralized Entertainment Marketplace, Breaker.io, SNGLS token, SNGLS DAO and SNGLS Media Distribution Protocol.">
-    <meta name="keywords" content="SNGLS,SingularDTV,SNGLSDAO,DAO,Ethereum, Blockchain,Media Distribution Protocol,lightwallet,token,content mining,content listing,breaker,breaker.io,zach lebeau,ICO,ETH">
-    <!-- Document title -->
-    <title>SNGLS DAO - Blockchain Decentralized Entertainment Marketplace</title>
-    <!-- Stylesheets & Fonts -->
+  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="snglsDAO" />
+  <meta name="description" content="Learn more about the SingularDTV - Blockchain Decentralized Entertainment Marketplace, Breaker.io, SNGLS token, SNGLS DAO and SNGLS Media Distribution Protocol.">
+  <meta name="keywords" content="SNGLS,SingularDTV,SNGLSDAO,DAO,Ethereum, Blockchain,Media Distribution Protocol,lightwallet,token,content mining,content listing,breaker,breaker.io,zach lebeau,troy murray,danny_desert,ICO,ETH">
+  <!-- FOLLOW THE WHITE RABBIT.....are you interested in DAOs?  Wanna contribute?  Stay on the look out for our bounties on Gitcoin.io in the meantime if you want to reach us contact us at info @ snglsDAO.io, let us know what you can do or are interested in.  -->
+  <!-- Document title -->
+  <title>snglsDAO</title>
+  <!-- Stylesheets & Fonts -->
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
-    <link href="css/plugins.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-
-<!-- Matomo -->
-<script type="text/javascript">
-  var _paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-  _paq.push(["setCookieDomain", "*.snglsdao.io"]);
-  _paq.push(["setDomains", ["*.snglsdao.io"]]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://snglsdao.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/snglsdao.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="https://snglsdao.matomo.cloud/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
-	
- </head>
-<link href="css/timeline.css" rel="stylesheet">
-<link href="css/custom.css" rel="stylesheet">
+</head>
 <body>
+  <section class="hero">
+    <header class="header">
+      <div class="container">
+        <a class="header__logo" href="https://snglsdao.io/">
+          <img class="header__logo-image" src="./images/logo.svg" alt="snglsDAO Logo">
+        </a>
 
+        <!-- mobile navbar toggle -->
+        <div class="menu-btn">
+           <div class="menu-btn__line menu-btn__line--1"></div>
+           <div class="menu-btn__line menu-btn__line--2"></div>
+           <div class="menu-btn__line menu-btn__line--3"></div>
+        </div>
 
-    <!-- Wrapper -->
-    <div id="wrapper" data-icon-color="#aa1b30">
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="https://snglsdao.io/">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="https://forum.snglsdao.io/" target="_blank">Forum</a></li>
+          <li class="menu__item menu__dropdown">
+            <span class="menu__link">News</span>
+            <ul class="menu__dropdown-menu">
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="https://twitter.com/SNGLSDAO" target="_blank">Twitter</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="https://medium.com/singulardtv" target="_blank">Medium</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="https://weibo.com/snglsdao" target="_blank">WeiBo</a>
+              </li>
 
-        <!-- Header -->
-        <header id="header" class="dark">
-            <div id="header-wrap">
-                <div class="container">
-                    <!--Logo-->
-                    <div id="logo">
-                        <a href="index.html" class="logo" data-dark-logo="images/SNGLSDAO-logo.png">
-                            <img src="images/SNGLSDAO-logo.png" alt="SNGLS DAO Logo">
-                        </a>
-                    </div>
-                    <!--End: Logo-->
+            </ul>
+          </li>
+          <li class="menu__item"><a class="menu__link modal-form-toggle" href="#">Subscribe</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="https://github.com/SingularDTV/snglsdao-pm" target="_blank">
+              <svg class="menu__link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5.156 12.438c0-.063-.062-.126-.156-.126s-.156.063-.156.126c0 .062.062.124.156.093.094 0 .156-.031.156-.094zm-.968-.157c0 .063.062.156.156.156a.15.15 0 00.187-.062c0-.063-.031-.125-.125-.156-.093-.031-.187 0-.218.062zm1.406-.031c-.094 0-.157.063-.157.156 0 .063.094.094.188.063s.156-.063.125-.125c0-.063-.094-.125-.156-.094zm2.031-12C3.312.25 0 3.563 0 7.875c0 3.469 2.156 6.438 5.281 7.5.407.063.532-.188.532-.375v-1.938s-2.188.47-2.657-.937c0 0-.344-.906-.844-1.125 0 0-.718-.5.032-.5 0 0 .781.063 1.219.813.687 1.218 1.812.874 2.28.656.063-.5.25-.844.5-1.063-1.75-.187-3.53-.437-3.53-3.437 0-.875.25-1.282.75-1.844-.094-.219-.344-1.031.093-2.125.625-.188 2.156.844 2.156.844.625-.188 1.282-.25 1.938-.25.688 0 1.344.062 1.969.25 0 0 1.5-1.063 2.156-.844.438 1.094.156 1.906.094 2.125.5.563.812.969.812 1.844 0 3-1.844 3.25-3.594 3.437.282.25.532.719.532 1.469 0 1.031-.031 2.344-.031 2.594 0 .219.156.469.562.375 3.125-1.031 5.25-4 5.25-7.469C15.5 3.562 11.969.25 7.625.25zM3.031 11.031c-.062.031-.031.125 0 .188.063.031.125.062.188.031.031-.031.031-.125-.031-.188-.063-.03-.126-.062-.157-.03zm-.344-.25c-.03.063 0 .094.063.125s.125.031.156-.031c0-.031-.031-.063-.094-.094-.062-.031-.093-.031-.124 0zm1 1.125c-.03.031-.03.125.063.188.063.062.156.094.188.031.03-.031.03-.125-.032-.188-.062-.062-.156-.093-.219-.03zm-.343-.469c-.063.032-.063.126 0 .188.062.063.125.094.187.063.031-.032.031-.126 0-.188-.062-.063-.125-.094-.187-.063z"/>
+              </svg>
+              Github
+            </a>
+          </li>
+          <li class="menu__item menu__dropdown menu__language">
+            <span class="menu__link">ENG</span>
+            <ul class="menu__dropdown-menu">
+    					<li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="https://snglsdao.io/tcindex.html">繁體中文</a>
+              </li>
+    					<li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="https://snglsdao.io/scindex.html">简体中文</a>
+              </li>
+    				</ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="hero__text">
+          <h1 class="hero__title">DECENTRALIZED ENTERTAINMENT MARKETPLACE</h1>
+          <p class="hero__description">
+            The year 2020 represents an exciting new phase in achieving the goal of creating a decentralized entertainment industry, powered by blockchain technology-the launch of the SNGLS Media Distribution Protocol and snglsDAO.
+          </p>
+          <div class="hero__buttons">
+            <a class="btn video-popup-btn" href="#" data-type="youtube" data-id="abD3T3bQmDY" data-autoplay='true'>Watch video</a>
+            <a class="btn-inverse modal-form-toggle" href="#">Join our Mailing list</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img class="hero__image-img" src="./images/hero-image.png" alt="illustration">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mission">
+    <div class="container">
+      <h1 class="mission__titile">MISSION</h1>
+      <p class="mission__description"> The snglsDAO will be the non-profit governance layer of the SNGLS Protocol.
+        It will be established by SingularDTV as an independent and objective organization
+        to guide the development of the SNGLS Protocol. It’s number one objective will be
+        to uphold the tenets of decentralization and instill them into the programming of the protocol.
+      </p>
+      <img class="mission__image" src="./images/image-mission.png" alt="Decentralized entertainment industry">
+    </div>
+  </section>
 
-                    <!--Navigation Resposnive Trigger-->
-                    <div id="mainMenu-trigger">
-                        <button class="lines-button x"> <span class="lines"></span> </button>
-                    </div>
-                    <!--end: Navigation Resposnive Trigger-->
+  <section class="whitepaper">
+    <div class="container">
+      <div class="row">
+        <div class="whitepaper__text">
+          <h1 class="whitepaper__title">WHITEPAPER</h1>
+          <p class="whitepaper__description">
+            Read our whitepaper to learn more about the SNGLS Protocol, tokenomics around the adaptive protocol, architecture of the Content Mining mechanism, and the snglsDAO.
+          </p>
+          <div class="whitepaper__buttons">
+            <a class="btn" href="https://snglsdao.io/files/SNGLSDAO-wp-eng.pdf" target="_blank">English</a>
+            <a class="btn-white" href="https://snglsdao.io/files/SNGLSDAO-wp-tc.pdf" target="_blank">Chinese</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                    <!--Navigation-->
-                    <div id="mainMenu" class="light">
-                        <div class="container">
-                            <nav>
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="https://forum.snglsdao.io/">Forum</a></li>
-                                    <li><a href="https://github.com/SingularDTV/snglsdao-pm">Github</a></li>
-                                    <li class="dropdown"> <a href="#">News <i class="fa fa-angle-down"></i></a>
-                                        <ul class="dropdown-menu">
-                                            <li> <a href="https://twitter.com/SNGLSDAO">Twitter</a> </li>
-                                            <li> <a href="https://medium.com/singulardtv">Medium</a> </li>
-<li> <a href="https://weibo.com/snglsdao">WeiBo</a> </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#footer">Subscribe</a></li>
-									<li id="language-switch" class="dropdown">
-										<a href="#">ENG <i class="fa fa-chevron-down"></i></a>
-										<ul class="dropdown-menu">
-											<li> <a href="tcindex.html">繁體中文</a> </li>
-											<li> <a href="scindex.html">简体中文</a> </li>
-										</ul>
-									</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <!--end: Navigation-->
-                </div>
+  <section class="distribution">
+    <div class="container">
+      <div class="row">
+        <div class="distribution__left">
+          <img class="distribution__image" src="./images/dao-info-image.png" alt="process">
+        </div>
+        <div class="distribution__right">
+          <h1 class="distribution__title">SNGLS Media Distribution Protocol</h1>
+          <p>The protocol is a P2P torrent network. The system takes media files and creates torrents out of them.
+            Those torrents are then hashed to the content creator's Ethereum wallet address.
+            Allowing for a decentralized distribution protocol that has trustless
+            payment rails built in with no need for a trusted third party.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="videos">
+    <div class="container">
+      <h1 class="videos__title">VIDEOS</h1>
+      <div class="videos__carousel owl-carousel">
+        <div class="videos__item">
+          <a class="videos__image" href="#">
+            <iframe class="videos__iframe" src="https://www.youtube.com/embed/abD3T3bQmDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </a>
+          <h3 class="videos__header">01 snglsDAO Podcast: SingularDTV and the snglsDAO</h3>
+          <p class="videos__description">
+            Zach LeBeau, founder of SingularDTV and Breaker, and Troy Murray of SingularDTV
+            and the snglsDAO, mix equal parts cynicism and optimism talking the future...
+          </p>
+        </div>
+        <div class="videos__item">
+          <a class="videos__image" href="#">
+            <iframe class="videos__iframe" src="https://www.youtube.com/embed/NOXjkughSOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </a>
+          <h3 class="videos__header">02 snglsDAO Podcast: Hal Finney is Satoshi Nakamoto, Crypto the Antichrist, SingularDTV & SNGLS DAO</h3>
+          <p class="videos__description">
+            Troy Murray of SingularDTV and the snglsDAO sits down with Tyler Ward of Proof
+            Systems...
+          </p>
+        </div>
+        <div class="videos__item">
+          <a class="videos__image" href="#">
+            <iframe class="videos__iframe" src="https://www.youtube.com/embed/4KQ4VS_BirA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </a>
+          <h3 class="videos__header">The SingularDTV Lightwallet</h3>
+          <p class="videos__description">
+            An instructional video on how to generate, use and restore your SingularDTV Lightwallet.
+            The SingularDTV Lightwallet is designed to store and transact ETH and SNGLS...
+          </p>
+        </div>
+        <div class="videos__item">
+          <a class="videos__image" href="#">
+            <iframe class="videos__iframe" src="https://www.youtube.com/embed/VmWGnvlBBGg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </a>
+          <h3 class="videos__header">SingularDTV at Ethereal Summit NY 2018</h3>
+          <p class="videos__description">
+            SingularDTV CEO Zach LeBeau and Director of Business Development G. Thomas Esmay
+            bring major updates, partnerships, and the roadmap toward the launch of Breaker...
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dao-info">
+    <div class="container">
+      <div class="dao-info__text">
+        <h1 class="dao-info__title">WHAT IS snglsDAO?</h1>
+        <h2 class="dao-info__subtitle">DAO: Decentralized Autonomous Organization</h2>
+        The snglsDAO is a governance layer that wraps the protocol in a censorship resistant
+        mechanism we call
+        <a href="https://github.com/SingularDTV/snglsdao-whitepaper#v-content-mining-1">
+          content mining</a>.
+        The DAO is run and governed by the community, who
+        <a href="https://github.com/SingularDTV/snglsdao-whitepaper#3-original-dao-controls">
+          controls the parameters</a>
+        of the protocol.
+      </div>
+    </div>
+  </section>
+
+  <section class="dao">
+    <div class="container">
+      <h1 class="dao__title">DAO INFORMATION</h1>
+      <div class="dao__items">
+        <div class="row">
+          <div class="dao__item">
+            <div class="dao__icon-wrap">
+              <img class="dao__icon" src="./images/dao-icon-1.svg" alt="Treasury: ETH icon">
             </div>
-        </header>
-        <!-- end: Header -->		
-        
-		<!-- SECTION IMAGE FULLSCREEN -->
-		<section class="page-top" data-parallax-image="images/snglsdao-bg.png">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6" style="padding-right: 30px;">
-						<div class="heading heading text-left">
-							<h3>DECENTRALIZED<br>
-								ENTERTAINMENT MARKETPLACE</h3>
-							<span class="lead">SingularDTV is laying the foundation for a decentralized entertainment industry. The SNGLS DAO will provide the non-profit governance layer for the SNGLS Media Distribution Protocol.  Established by SingularDTV as an independent and objective organization to guide the development of the protocol, the prime directive of the SNGLS DAO is to uphold the tenets of decentralization and build a truly decentralized protocol.</span>
-						</div>
-					</div>
-					<div class="col-md-6" style="overflow-x:auto">
-
-<img width="100%" src="images/SNGLSDAO_2-01.jpg">
-
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end: SECTION IMAGE FULLSCREEN -->
-		
-		<!-- COMPANY -->
-		<section id="white-paper">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-9 our-mission">
-						<div class="heading heading text-left">
-							<h3>OUR MISSION</h3>
-							<span class="lead">SingularDTV’s SNGLS DAO is the next step in the development of a decentralized entertainment industry powered by blockchain. 2020 represents an exciting new phase in achieving this goal — the launch of the SNGLS Media Distribution Protocol.</span>
-						</div>
-						<div class="heading heading text-left">
-							<div class="row">
-								<div class="col-sm-7">
-									<h3>WHITEPAPER</h3>
-									<p class="lead">Read our whitepaper to learn more about the SNGLS Media Distribution Protocol and SNGLS DAO.</p>
-									<a href="files/SNGLSDAO-wp-eng.pdf"
-									   class="btn btn-red btn-sm" style="margin-right: 15px;">ENGLISH</a>
-									<a href="files/SNGLSDAO-wp-tc.pdf"
-									   class="btn btn-red btn-sm">CHINESE</a>
-								</div>
-								<div class="col-sm-5">
-									<img src="images/whitepaper.png" style="width: 100%; max-width: 195px;"/>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="news-feed">
-							<h5 style="color: #ffffff;">M Medium</h5>
-
-							<a href="https://medium.com/singulardtv/singulardtv-the-sngls-dao-sngls-2-0-and-breaker-6f23f473911c">
-								<img src="images/blog-post-img1.PNG" />
-							</a>
-							<a href="https://medium.com/singulardtv/confessions-of-an-ico-ceo-part-1-79115e237c46">
-								<img src="images/blog-post-img2.PNG" />
-							</a>
-							<p style="margin-top: 10px;margin-bottom: 16px;">Latest Project Call Videos</p>
-							<a href="https://content.breaker.io/?type=series&id=2603&season=2604">
-								<img src="images/SNGLS-DAO-Call-008.PNG" />
-							</a>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-
-			<div id="red-sep"></div>
-		</section>
-		<!-- end: COMPANY -->
-
-
-
-
-		<!-- SERVICES -->
-		<section id="videos" style="padding-top: 0px;">
-			<div class="container">
-				<div class="row">
-					<p style="margin-top: 30px;margin-bottom: 15px;">
-						<i style="margin-right: 15px;" class="fa fa-ellipsis-v"></i> All Videos
-					</p>
-					<div class="carousel" data-items="3" data-margin="0">
-						<div class="video-item">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/abD3T3bQmDY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							<p>01 SNGLS DAO Podcast: SingularDTV and the SNGLS DAO</p>
-						</div>
-						<div class="video-item">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/NOXjkughSOY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							<p>02 SNGLS DAO Podcast: Hal Finney is Satoshi Nakamoto, Crypto the Antichrist, SingularDTV & SNGLS DAO</p>
-						</div>
-						<div class="video-item">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/4KQ4VS_BirA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							<p>The SingularDTV Lightwallet</p>
-						</div>
-						<div class="video-item">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/VmWGnvlBBGg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							<p>SingularDTV at Ethereal Summit NY 2018</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<h3 class="stat-h3" style="margin-top: 25px;">DAO STATISTICS</h3>
-				<div class="statistics-row">
-					<div class="stat-item">
-						<img src="images/icon1.PNG" />
-						<p>Treasury : ETH</p>
-						<div class="counter small"> <span data-speed="3400" data-refresh-interval="50" data-to="0" data-from="6000" data-seperator="true"></span> </div>
-					</div>
-					<div class="stat-item">
-						<img src="images/icon1.PNG" />
-						<p>Treasury : SNGLS</p>
-						<div class="counter small"> <span data-speed="3200" data-refresh-interval="50" data-to="0" data-from="6000" data-seperator="true"></span> </div>
-					</div>
-					<div class="stat-item">
-						<img src="images/icon2.PNG" />
-						<p>Listing Fee : SNGLS</p>
-						<div class="counter small"> <span data-speed="3500" data-refresh-interval="50" data-to="0" data-from="6000" data-seperator="true"></span> </div>
-					</div>
-					<div class="stat-item">
-						<img src="images/icon3.PNG" />
-						<p>Transaction Fee : SNGLS</p>
-						<div class="counter small"> <span data-speed="3400" data-refresh-interval="50" data-to="0" data-from="6000" data-seperator="true"></span> </div>
-					</div>
-					<div class="stat-item">
-						<img src="images/icon4.PNG" />
-						<p>Validation Fee : SNGLS</p>
-						<div class="counter small"> <span data-speed="3500" data-refresh-interval="50" data-to="0" data-from="6000" data-seperator="true"></span> </div>
-					</div>
-				</div>
-				</div>
-			</div>
-
-		</section>
-
-<section id="projectcall-row">
-			<div class="container">
-					<h3 class="stat-h3" style="margin-top: 25px;">PROJECT CALL STATISTICS</h3>
-					<p class="lead">Following data is provided by Breaker.io<br></p>
-
-
-<div style="overflow-x:auto;">
-<iframe  width="800" height="350" src="https://app.powerbi.com/view?r=eyJrIjoiMGJlNTAzYzYtMDIxMC00MDI5LWFlMDYtOTg2Y2YyMTAzZDViIiwidCI6IjcyNGQ3ZTE4LTY4ZmUtNDlhMi1iZWMyLWYyZTNkZjViODU4OCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe></div>
-
-			</div>
-		</section>
-
-
-		<!-- end: SERVICES -->
-
-
-
-
-
-
-
-
-
-
-
-		<!-- COUNTERS -->
-		<section class="timeline-row">
-			<div class="container">
-				<h3 class="text-center">MILESTONES</h3>
-				<div class="row">
-					<div class="col-md-12">
-						<h5 class="timeline-start">START</h5>
-						<div class="main-timeline4">
-							<div class="timeline">
-								<a href="#" class="timeline-content">
-									<div class="inner-content">
-										<img src="images/SingularDTV-logo.png" />
-										<h6 class="title">2 OCT 2016<br>SingularDTV founded</h6>
-										<p class="description">
-											In October 2016, $7.5m in ETH was raised for the original scope of the MVP and devised the blue-print for the ignition of a decentralized entertainment industry.
-										</p>
-									</div>
-								</a>
-							</div>
-							<div class="timeline">
-								<a href="#" class="timeline-content">
-									<div class="inner-content">
-										<img src="images/breaker-white.png" />
-										<h6 class="title">31 JAN 2019<br>Breaker.io Launched</h6>
-										<p class="description">
-											The launch of Breaker.io proves that rights mangement of entertainment IP on the blockchain was possible and more efficient than the legacy system and that this IP and/or its usage rights could be distributed to audiences around the world via a distribution portal.
-										</p>
-									</div>
-								</a>
-							</div>
-							<div class="timeline">
-								<a href="#white-paper" class="timeline-content">
-									<div class="inner-content">
-										<h6 class="title">3 SEP 2019<br>SNGLS DAO Whitepaper Released</h6>
-										<p class="description">
-											The whitepaper elaborates the important concepts of SNGLS DAO, Content Minming, SNGLS Media Distribution Protocol and more.
-										</p>
-									</div>
-								</a>
-							</div>
-							<div class="timeline">
-								<a href="#" class="timeline-content">
-									<div class="inner-content">
-										<h6 class="title">1 NOV 2019<br>Website Launched</h6>
-										<p class="description">
-											Official SNGLS DAO website has been launched
-										</p>
-									</div>
-								</a>
-							</div>
-							<div class="timeline">
-								<a href="#" class="timeline-content">
-									<div class="inner-content">
-										<h6 class="title">31 DEC 2019<br>Plan for SNGLS Token<br>Swap&Upgrade</h6>
-										<p class="description">
-											It is intended for a 1:1 swap from SNGLS to SNGLS 2.0 to occur in 2020. The roll-out schedule will be determined by various legal, regulatory and compliance timelines.
-										</p>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div id="timeline-end">
-							TOWARDS GOAL
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end: COUNTERS -->
-
-		<section id="partners-row">
-			<div class="container">
-					<h3>PARTNERS</h3>
-					<p class="lead">The birth of a new industry is complex and includes many moving parts.<br>
-						SNGLS DAO is set to achieve the goal of a decentralized entertainment industry together with our collaborative partners.</p>
-
-				<div class="row brands-row">
-					<div class="col-md-4">
-						<a id="partner-1" href="https://consensys.net/">
-
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a id="partner-2" href="https://singulardtv.com">
-
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a id="partner-3" href="https://breaker.io">
-
-						</a>
-					</div>
-					
-				</div>
-
-			</div>
-		</section>
-		<!-- CLIENTS -->
-
-		<!-- Footer -->
-        <footer id="footer" class="footer-light">
-            <div class="footer-content">
-                <div class="container">
-					<div class="row email-row">
-						<!-- Begin Mailchimp Signup Form -->
-						<div id="mc_embed_signup">
-							<form action="https://BREAKER.us5.list-manage.com/subscribe/post?u=bb01b5ea96169c46165526ad1&id=59312728a2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-								<div id="mc_embed_signup_scroll">
-									<h3 class="text-center" style="margin-bottom: 15px !important;">CONNECT WITH US</h3>
-									<div class="indicates-required">Enter your email address to signup our newsletter.</div>
-									<div id="email-wrapper">
-										<div class="mc-field-group">
-											<input placeholder="Enter your email here*"
-												   type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-										</div>
-										<div id="mce-responses" class="clear">
-											<div class="response" id="mce-error-response" style="display:none"></div>
-											<div class="response" id="mce-success-response" style="display:none"></div>
-										</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-										<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4a88656557f099b2d61cfd116_7b32313894" tabindex="-1" value=""></div>
-										<div id="subscribe-btn"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-									</div>
-								</div>
-							</form>
-						</div>
-
-						<!--End mc_embed_signup-->
-					</div>
-                    <div class="row footer-row">
-                        <div class="col-md-4 disclaimer">
-							<h5>DISCLAIMER</h5>
-							<p>This information is given in summary form and does not purport to be completed. Before acting on any information you should consider the appropriateness of the information having regard to these matters, any relevant offer document and in particular, you should seek independent (e.g. legal, regulatory, tax) advice.</p>
-						</div>
-						<div class="col-md-8 social-col">
-							<a id="scrollTop"><img style="margin-right: -12px;margin-bottom: 12px;width: 159px;height: 36px;" src="images/SNGLSDAO-logo.png" /></a>
-							<div>
-								<a href="https://github.com/SingularDTV/snglsdao-pm">
-									<img src="images/github.png" />
-								</a>
-
-								<a href="https://weibo.com/snglsdao">
-									<img src="images/weibo.png" />
-								</a>
-
-
-								<a href="https://twitter.com/snglsdao">
-									<img src="images/twitter.png" />
-								</a>
-								<a style="margin-right: 0;" href="https://medium.com/singulardtv/">
-									<img src="images/medium.png" />
-								</a>
-							</div>
-						</div>
-                    </div>
-                </div>
+            <h3 class="dao__item-header">Treasury: ETH</h3>
+            <div class="dao__counter" data-to="0" data-from="769"></div>
+          </div>
+          <div class="dao__item">
+            <div class="dao__icon-wrap">
+              <img class="dao__icon" src="./images/dao-icon-2.svg" alt="Treasury: ETH icon">
             </div>
+            <h3 class="dao__item-header">Treasury: SNGLS</h3>
+            <div class="dao__counter" data-to="0" data-from="1259"></div>
+          </div>
+          <div class="dao__item">
+            <div class="dao__icon-wrap">
+              <img class="dao__icon" src="./images/dao-icon-3.svg" alt="Treasury: ETH icon">
+            </div>
+            <h3 class="dao__item-header">Listing Fee: SNGLS</h3>
+            <div class="dao__counter" data-to="0" data-from="987"></div>
+          </div>
+          <div class="dao__item">
+            <div class="dao__icon-wrap">
+              <img class="dao__icon" src="./images/dao-icon-4.svg" alt="Treasury: ETH icon">
+            </div>
+            <h3 class="dao__item-header">Transaction Fee: SNGLS</h3>
+            <div class="dao__counter" data-to="0" data-from="1100"></div>
+          </div>
+          <div class="dao__item">
+            <div class="dao__icon-wrap">
+              <img class="dao__icon" src="./images/dao-icon-5.svg" alt="Treasury: ETH icon">
+            </div>
+            <h3 class="dao__item-header">Validation Fee: SNGLS</h3>
+            <div class="dao__counter" data-to="0" data-from="1000"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        </footer>
-        <!-- end: Footer -->
+  <section class="calls">
+    <div class="container">
+      <h1 class="calls__title">PROJECT CALL STATISTICS</h1>
+      <p class="calls__description">Following data is provided by
+        <a href="https://pro.breaker.io">
+        Breaker Pro</p>
+      <div class="calls__table">
+        <iframe  class="calls__table-frame" src="https://app.powerbi.com/view?r=eyJrIjoiMGJlNTAzYzYtMDIxMC00MDI5LWFlMDYtOTg2Y2YyMTAzZDViIiwidCI6IjcyNGQ3ZTE4LTY4ZmUtNDlhMi1iZWMyLWYyZTNkZjViODU4OCIsImMiOjl9" frameborder="0" allowFullScreen="true">
+        </iframe>
+      </div>
+      <a class="calls__btn" href="https://www.breaker.io/">
+        <img class="calls__btn-img" src="./images/button-breaker.svg" alt="Download the DApp on Breaker.io">
+      </a>
+    </div>
+  </section>
+
+  <section class="entervision">
+    <div class="entervision__container">
+      <h1 class="entervision__title">EtherVision</h1>
+      <div class="entervision__left">
+        <div class="entervision__item">
+          <h3 class="entervision__subheader">For Users:</h3>
+          <p>EtherVision is our open source user interface that will allow users to interact with the protocol without having to touch the legacy banking world.  Users will be able to upload and process content into the protocol along with paying and watching content all while only using Crypto.
+          </p>
+          <img class="entervision__image" src="./images/for-users.png" alt="">
+        </div>
+      </div>
+      <div class="entervision__left">
+        <div class="entervision__item">
+          <h3 class="entervision__subheader">For Developers:</h3>
+          <p>EtherVision will be entirely open source, allowing developers to come in and work on a user interface that can interact with the protocol and will be easily integrated with other projects in the Web3 space. This will allow easy access to the base layer of the decentralized entertainment industry.
+          </p>
+          <img class="entervision__image" src="./images/for-developers.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="milestones">
+    <div class="container">
+      <h1 class="milestones__title">ROADMAP</h1>
+      <div class="milestones__timeline">
+        <div class="milestones__item milestones__item--left">
+          <img class="milestones__icon" src="./images/logo-singular.svg" width="120" alt="SingularDTV logo ">
+          <h3 class="milestones__header">
+            <span class="accent-color">2 OCT 2016</span><br>
+            SingularDTV founded
+          </h3>
+          <p>
+            In October 2016, $7.5m in ETH was raised for the original scope of the MVP and devised
+            the blue-print for the ignition of a decentralized entertainment industry.
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--right milestones__item--top-margin">
+          <img class="milestones__icon" src="./images/logo-breaker.svg" width="120" alt="Breaker logo">
+          <h3 class="milestones__header">
+            <span class="accent-color">31 JAN 2019</span><br>
+            Breaker.io Launched
+          </h3>
+          <p>
+            The launch of Breaker.io proves that rights management of entertainment IP on the blockchain
+            was possible and more efficient than the legacy system and that this IP and/or its usage
+            rights could be distributed to audiences around the world via a distribution portal.
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--left">
+          <img class="milestones__icon" src="./images/logo.svg" width="150" alt="SNGLS DAO logo">
+          <h3 class="milestones__header">
+            <span class="accent-color">3 SEP 2019</span><br>
+            <span class="lowercase">sngls</span>DAO Whitepaper Released
+          </h3>
+          <p>
+            The whitepaper elaborates the important concepts of the snglsDAO, Content Mining, an adaptive platform,
+            SNGLS Media Distribution Protocol and more.
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--right">
+          <h3 class="milestones__header">
+            <span class="accent-color">1 NOV 2019</span><br>
+            Website Launched
+          </h3>
+          <p>
+            Official snglsDAO website has been launched.
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--left">
+          <h3 class="milestones__header">
+            <span class="accent-color">2020 Q1</span><br>
+            Plan for SNGLS Token<br>
+            Swap & Upgrade
+          </h3>
+          <p>
+            It is intended for a 1:1 swap from SNGLS to SNGLS 2.0 to occur in 2020. The roll-out
+            schedule will be determined by various legal, regulatory and compliance timelines.
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--right">
+          <h3 class="milestones__header">
+            <span class="accent-color">2020 Q2</span><br>
+            DAO LAUNCH & OPEN SOURCE UI RELEASE
+          </h3>
+          <p>
+            In Q2 of 2020 we will launch the DAO with parameter controls around the protocol of
+            transaction and listing fee along with the treasury. We will also release our open
+            source UI called EtherVision that has no connection to the legacy monetary world and
+            transacts only in Crypto, with the first tokens being SNGLS, DAI, SAI, and ETH.
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--left">
+          <h3 class="milestones__header">
+            <span class="accent-color">2020 Q1 - Q4</span><br>
+            CONTENT MINING RESEARCH & DEVELOPMENT
+          </h3>
+          <p>
+            Research and development on the Content Mining mechanism will be on going
+            through the year of 2020.
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--right">
+          <h3 class="milestones__header">
+            <span class="accent-color">2021 Q1*</span><br>
+            CONTENT MINING BETA LAUNCH
+          </h3>
+          <p>
+            In Q1 of 2021 we plan on releasing the beta of the Content Mining mechanism.
+            <br>
+            *speculative time frame
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--left">
+          <h3 class="milestones__header">
+            <span class="accent-color">2021 Q3*</span><br>
+              SNGLS SHARD & ETH2.0
+              Infrastructure upgrade
+          </h3>
+          <p>
+            Deployment of the SNGLS shard and updating all the backend to migrate to ETH2.0.
+            <br>
+            *dependent on ETH2.0 progress
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--right">
+          <h3 class="milestones__header">
+            <span class="accent-color">2022 Q1*</span><br>
+            CONTENT MINING FULL DEPLOY
+          </h3>
+          <p>
+            After the beta of Content Mining has been running and we have found no fringe
+            problems, we will issue the full release.
+            <br>
+            *speculative time frame
+          <p>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="milestones__goal-wrap">
+          <div class="milestones__goal">Future Goals</div>
+        </div>
+        <div class="milestones__image-wrap">
+          <img class="milestones__image" src="./images/hero-image.png" alt="illustration">
+        </div>
+      </div>
 
     </div>
-    <!-- end: Wrapper -->
+  </section>
 
-    <!-- Go to top button -->
+  <section class="partners">
+    <div class="container">
+      <h1 class="partners__title">PARTNERS</h1>
+      <p class="partners__description">
+        The birth of a new industry is complex and includes many moving parts.
+        SingularDTV is set to achieve the goal of a decentralized entertainment
+        industry together with our collaborative partners.
+      </p>
 
-    <!--Plugins-->
-    <script src="js/jquery.js"></script>
-    <script src="js/plugins.js"></script>
+      <a class="partners__link" href="https://www.breaker.io/" target="_blank">
+        <img class="partners__logo" src="./images/partner-breaker.svg" alt="Breaker">
+      </a>
+      <a class="partners__link" href="https://consensys.net/" target="_blank">
+        <img class="partners__logo" src="./images/partner-consensys.svg" alt="Consensys">
+      </a>
+      <a class="partners__link" href="https://snglsdao.io/" target="_blank">
+        <img class="partners__logo" src="./images/partner-singular-dtv.svg" alt="Singular DTV">
+      </a>
+    </div>
+  </section>
 
-    <!--Template functions-->
-    <script src="js/functions.js"></script>
-	<script>
-        const scrollToTop = () => {
-            const c = document.documentElement.scrollTop || document.body.scrollTop;
-            if (c > 0) {
-                window.requestAnimationFrame(scrollToTop);
-                window.scrollTo(0, c - c / 12);
-            }
-        };
-        $('a#scrollTop').click(function () {
-            scrollToTop();
-        })
-	</script>
+  <section class="contacts">
+    <div class="container">
+      <form class="form" method="post" target="_blank" novalidate>
+      	<h3 class="form__header">CONNECT</h3>
+      	<div class="form__description">Enter your email address to signup our newsletter.</div>
+        <div class="form__field">
+        	<input class="form__input" placeholder="Enter your email here*" type="email" value="" name="EMAIL">
+        	<button class="form__btn" type="submit" name="subscribe">
+            <img class="form__btn-img" src="./images/icon-plane.svg" alt=">">
+            Subscribe
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
 
+<footer class="footer">
+  <div class="footer__container">
+    <div class="row">
+      <div class="footer__right">
+        <a class="footer__logo-link" id="scrollTop" href="#">
+          <img class="footer__logo" src="./images/logo.svg" alt="snglsDAO">
+        </a>
+        <div class="footer__socials">
+          <a class="footer__social-link" href="https://github.com/SingularDTV/snglsdao-pm" target="_blank">
+						<img class="footer__social-icon" src="./images/social-github.svg" alt="Github"/>
+					</a>
+					<a class="footer__social-link" href="https://weibo.com/snglsdao" target="_blank">
+						<img class="footer__social-icon" src="./images/social-weibo.svg" alt="Weibo"/>
+					</a>
+					<a class="footer__social-link" href="https://twitter.com/snglsdao" target="_blank">
+						<img class="footer__social-icon" src="./images/social-twitter.svg" alt="Twitter"/>
+					</a>
+					<a class="footer__social-link" href="https://medium.com/singulardtv/" target="_blank">
+						<img class="footer__social-icon" src="./images/social-medium.svg" alt="Medium"/>
+					</a>
+        </div>
+      </div>
+      <div class="footer__center">
+        <img class="footer__character" src="./images/image-mouse.svg" alt="Illustration"/>
+      </div>
+      <div class="footer__left">
+        <h2 class="footer__header">Disclamer</h2>
+        <p>This information is given in summary form and does not purport to be complete.
+          Before acting on any information you should consider the appropriateness of the
+          information having regard to these matters, any relevant offer document and in
+          particular, you should seek independent (e.g.legal,regulatory and tax) advice.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- Begin Mailchimp Signup Form -->
+<div class="modal">
+  <div class="modal__overlay modal__toggle"></div>
+  <div class="modal__wrapper modal__transition">
+    <div class="modal__header">
+      <button class="modal__close modal-form-toggle">&#10005;</button>
+      <h2 class="modal__heading">Join our mailing list</h2>
+    </div>
+
+    <div class="modal__body">
+      <div class="modal__content">
+        <div id="mc_embed_signup">
+          <form class="subs-form" action="https://snglsdao.us5.list-manage.com/subscribe/post?u=bb01b5ea96169c46165526ad1&amp;id=59312728a2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group">
+              	<label class="hidden" for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                </label>
+              	<input class="subs-form__input" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
+              </div>
+              <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+                <div class="content__gdpr">
+                  <label class="hidden">Marketing Permissions</label>
+                  <p>Please select all the ways you would like to hear from Singular DTV:</p>
+                  <fieldset class="subs-form__fieldset mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+                		<label class="subs-form__checkbox-wrap checkbox subfield" for="gdpr_11197">
+                      <input type="checkbox" id="gdpr_11197" name="gdpr[11197]" value="Y" class="subs-form__checkbox av-checkbox">
+                      <span>Email</span>
+                    </label>
+                    <label class="subs-form__checkbox-wrap checkbox subfield" for="gdpr_11201">
+                      <input type="checkbox" id="gdpr_11201" name="gdpr[11201]" value="Y" class="subs-form__checkbox av-checkbox ">
+                      <span>Direct Mail</span>
+                    </label>
+                    <label class="subs-form__checkbox-wrap checkbox subfield" for="gdpr_11205">
+                      <input type="checkbox" id="gdpr_11205" name="gdpr[11205]" value="Y" class="subs-form__checkbox av-checkbox ">
+                      <span>Customized Online Advertising</span>
+                    </label>
+                  </fieldset>
+                  <p>You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our website.</p>
+                </div>
+                <div class="content__gdprLegal">
+                    <p>We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/" target="_blank">Learn more about Mailchimp's privacy practices here.</a></p>
+                </div>
+              </div>
+            	<div id="mce-responses" class="clear">
+            		<div class="response" id="mce-error-response" style="display:none"></div>
+            		<div class="response" id="mce-success-response" style="display:none"></div>
+            	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bb01b5ea96169c46165526ad1_59312728a2" tabindex="-1" value="">
+              </div>
+              <div class="clear">
+                <input class="subs-form__button button" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--END mc_embed_signup-->
+
+<!-- POPUP video -->
+<div id="video-popup-overlay"></div>
+<div id="video-popup-container">
+  <div id="video-popup-close" class="fade">&#10006;</div>
+  <div id="video-popup-iframe-container">
+    <iframe id="video-popup-iframe" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+<!-- END POPUP video -->
+
+
+
+<div class="floating-box" id="floating_box">
+  <button class="floating-box__close" id="floating_box_close">&#10005;</button>
+  <h3 class="floating-box__header">Join the Community</h3>
+  <a class="floating-box__link" href="https://discord.gg/umHkgt" target="_blank">Discord</a>
+  <a class="floating-box__link" href="https://forum.snglsdao.io/" target="_blank">Discourse</a>
+  <a class="floating-box__link modal-form-toggle" href="#">Subscribe</a>
+</div>
+
+<!-- SCRIPTS -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/script.js"></script>
+<script>
+/* Videos carousel */
+$( document ).ready(function() {
+  $('.videos__carousel').owlCarousel({
+    loop:true,
+    margin:30,
+    nav:true,
+    responsive:{
+      0:{
+          items:1
+      },
+      300:{
+          items:2
+      },
+      1000:{
+          items:3
+      }
+    }
+  });
+});
+</script>
 
 </body>
-
 </html>
