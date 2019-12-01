@@ -1,7 +1,7 @@
 @import 'mixin', 'reset', 'variables', 'extend', 'typography';
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.9em;
   color: $primary-color;
@@ -9,6 +9,9 @@ body {
   @media (max-width: 767px) {
     font-size: 14px;
   }
+}
+h1, h1 ,h1 {
+  font-family: 'TransatBold';
 }
 .container-fluid {
   @extend %column__padding;
@@ -98,7 +101,7 @@ body {
       }
 
       @media (max-width: 767px) {
-        font-size: 18px;
+        font-size: 16px;
         display: inline-block;
       }
     }
@@ -432,7 +435,7 @@ body {
         padding: 13px 44px;
 
         @media (max-width: 767px) {
-          padding: 13px 30px;
+          padding: 13px 26px;
           margin: 0 4px;
           margin: 0 4px 10px;
         }
@@ -442,7 +445,7 @@ body {
         padding: 13px 44px;
 
         @media (max-width: 767px) {
-          padding: 13px 30px;
+          padding: 13px 26px;
           margin: 0 4px 10px;
         }
       }
@@ -1167,7 +1170,7 @@ body {
     letter-spacing: 0.04em;
 
     @media (max-width: 767px) {
-      font-size: 35px;
+      font-size: 28px;
       margin-bottom: 30px;
     }
   }
@@ -1355,7 +1358,7 @@ body {
   .floating-box__header {
     margin-bottom: 8px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 15px;
     }
   .floating-box__link {
     @extend %btn-white;
