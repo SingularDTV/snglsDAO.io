@@ -124,7 +124,7 @@ h1, h1, h1 {
   text-transform: lowercase; }
 
 .header {
-  padding: 10px 0;
+  padding: 2px 0;
   background-color: #16131C;
   position: relative;
   margin-bottom: 100px; }
@@ -158,6 +158,8 @@ h1, h1, h1 {
       color: #ffffff;
       text-decoration: none;
       text-align: center;
+      font-family: 'TransatBold';
+      font-size: 16px;
       cursor: pointer;
       -webkit-transition: 0.2s;
       -moz-transition: 0.2s;
@@ -323,7 +325,7 @@ h1, h1, h1 {
       margin-bottom: 39px; }
       @media (max-width: 767px) {
         .hero .hero__text .hero__title {
-          font-size: 45px;
+          font-size: 32px;
           margin-bottom: 22px; } }
     .hero .hero__text .hero__description {
       max-width: 490px;
@@ -625,16 +627,16 @@ h1, h1, h1 {
     padding: 25px;
     margin-bottom: 12px; }
     .dao .dao__item .dao__icon-wrap {
-      width: 136px;
-      height: 136px;
-      line-height: 136px;
-      margin: 0 auto 53px;
+      width: 96px;
+      height: 96px;
+      line-height: 96px;
+      margin: 0 auto 30px;
       background-color: #D40D26;
-      box-shadow: 0 0 0 13px #D40D2633, 0 0 0 26px #D40D2633;
+      box-shadow: 0 0 0 10px #D40D2633, 0 0 0 20px #D40D2633;
       border-radius: 50%;
       text-align: center; }
       .dao .dao__item .dao__icon-wrap .dao__icon {
-        height: 105px;
+        height: 70px;
         vertical-align: middle; }
         @media (max-width: 767px) {
           .dao .dao__item .dao__icon-wrap .dao__icon {
@@ -647,19 +649,19 @@ h1, h1, h1 {
           margin: 0 auto 48px;
           box-shadow: 0 0 0 8px #D40D2633, 0 0 0 16px #D40D2633; } }
     .dao .dao__item .dao__item-header {
-      margin-bottom: 49px;
+      margin-bottom: 5px;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 18px;
       letter-spacing: 0.04em; }
       @media (max-width: 767px) {
         .dao .dao__item .dao__item-header {
           margin-bottom: 20px;
           font-size: 15px; } }
     .dao .dao__item .dao__counter {
-      font-size: 45px; }
+      font-size: 32px; }
       @media (max-width: 767px) {
         .dao .dao__item .dao__counter {
-          font-size: 35px; } }
+          font-size: 28px; } }
     @media (max-width: 767px) {
       .dao .dao__item {
         width: 46%;
@@ -758,6 +760,20 @@ h1, h1, h1 {
       margin-bottom: 16px; }
     .entervision .entervision__item .entervision__image {
       margin-top: 14px; }
+    .entervision .entervision__item p {
+      min-height: 7em; }
+      @media (max-width: 1500px) {
+        .entervision .entervision__item p {
+          min-height: 9.1em; } }
+      @media (max-width: 1300px) {
+        .entervision .entervision__item p {
+          min-height: 11em; } }
+      @media (max-width: 1120px) {
+        .entervision .entervision__item p {
+          min-height: 13em; } }
+      @media (max-width: 767px) {
+        .entervision .entervision__item p {
+          min-height: 0; } }
     @media (max-width: 767px) {
       .entervision .entervision__item {
         text-align: center;
@@ -814,6 +830,7 @@ h1, h1, h1 {
         margin-bottom: 20px; }
       .milestones .milestones__timeline .milestones__item .milestones__header {
         font-size: 24px;
+        font-family: 'TransatBold';
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.04em;
