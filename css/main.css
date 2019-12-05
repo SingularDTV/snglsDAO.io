@@ -98,6 +98,12 @@ img {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'TransatLight';
+  src: url("../fonts/TransatLight.eot?#iefix") format("embedded-opentype"), url("../fonts/TransatLight.otf") format("opentype"), url("../fonts/TransatLight.woff") format("woff"), url("../fonts/TransatLight.ttf") format("truetype"), url("../fonts/TransatLight.svg#TransatLight") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -874,12 +880,15 @@ h1, h1, h1 {
         margin-bottom: 20px; }
       .milestones .milestones__timeline .milestones__item .milestones__header {
         font-size: 24px;
-        font-family: 'TransatBold';
+        font-family: 'TransatLight';
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.04em;
         margin-bottom: 18px;
         line-height: 1.3em; }
+        .milestones .milestones__timeline .milestones__item .milestones__header .accent-color {
+          font-family: 'TransatBold';
+          font-size: 18px; }
         @media (max-width: 767px) {
           .milestones .milestones__timeline .milestones__item .milestones__header {
             font-size: 22px;
