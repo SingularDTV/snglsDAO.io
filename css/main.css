@@ -101,7 +101,7 @@ img {
 @font-face {
   font-family: 'TransatLight';
   src: url("../fonts/TransatLight.eot?#iefix") format("embedded-opentype"), url("../fonts/TransatLight.otf") format("opentype"), url("../fonts/TransatLight.woff") format("woff"), url("../fonts/TransatLight.ttf") format("truetype"), url("../fonts/TransatLight.svg#TransatLight") format("svg");
-  font-weight: 200;
+  font-weight: normal;
   font-style: normal; }
 
 body {
