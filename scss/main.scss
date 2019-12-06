@@ -996,7 +996,7 @@ h1, h1 ,h1 {
       display: block;
       position: absolute;
       width: 6px;
-      top: 200px;
+      top: 215px;
       bottom: 0;
       left: 50%;
       margin-left: -3px;
@@ -1012,7 +1012,7 @@ h1, h1 ,h1 {
 
     .milestones__item {
       background-color: #2c273b;
-      padding: 50px;
+      padding: 45px 50px;
       width: 40%;
       line-height: 1.75em;
       position: relative;
@@ -1021,20 +1021,21 @@ h1, h1 ,h1 {
       box-shadow: 0 10px 40px #0000002e;
 
       .milestones__icon {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
       }
       .milestones__header {
-        font-size: 24px;
+        font-size: 30px;
         font-family: 'TransatLight';
         font-weight: 400;
         text-transform: uppercase;
-        letter-spacing: 0.04em;
+        letter-spacing: .2em;
         margin-bottom: 18px;
         line-height: 1.3em;
 
         .accent-color {
-          font-family: 'TransatBold';
-          font-size: 18px;
+          font-family: 'TransatBlack';
+          font-size: 14px;
+          line-height: .4em;
         }
         @media (max-width: 767px) {
           font-size: 22px;
