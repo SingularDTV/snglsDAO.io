@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
 <head>
+  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="snglsDAO" />
+  <meta name="description" content="了解有關SingularDTV區塊鏈去中心化娛樂市場，Breaker.io、SNGLS代幣、通証、SNGLS DAO、SNGLS媒體發行協定的更多信息。">
+  <meta name="keywords" content="SNGLS,SingularDTV,SNGLSDAO,DAO,Ethereum, Blockchain,Media Distribution Protocol,lightwallet,token,content mining,content listing,breaker,breaker.io,zach lebeau,ICO,ETH,blockchain,EnTech,entertainment technology,decentralization,以太坊,以太幣,輕錢包,SNGLS媒體發行協議,通證,內容掘礦,內容上架,區塊鏈,影視娛樂科技,去中心化">
+  <!-- FOLLOW THE WHITE RABBIT.....are you interested in DAOs?  Wanna contribute?  Stay on the look out for our bounties on Gitcoin.co in the meantime if you want to reach us contact us at info @ snglsDAO.io, let us know what you can do or are interested in.  -->
+  <!-- Document title -->
+  <title>snglsDAO - 區塊鏈去中心化影視娛樂市場</title>
+  <!-- Stylesheets & Fonts -->
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
-<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="SingularDTV SNGLS DAO" />
-    <meta name="description" content="了解有關SingularDTV區塊鏈去中心化娛樂市場，Breaker.io、SNGLS代幣、通証、SNGLS DAO、SNGLS媒體發行協定的更多信息。">
-    <meta name="keywords" content="SNGLS,SingularDTV,SNGLSDAO,DAO,Ethereum, Blockchain,Media Distribution Protocol,lightwallet,token,content mining,content listing,breaker,breaker.io,zach lebeau,ICO,ETH,blockchain,EnTech,entertainment technology,decentralization,以太坊,以太幣,輕錢包,SNGLS媒體發行協議,通證,內容掘礦,內容上架,區塊鏈,影視娛樂科技,去中心化">
-    <!-- Document title -->
-    <title>SingularDTV - 區塊鏈去中心化影視娛樂市場</title>
-    <!-- Stylesheets & Fonts -->
-   
-    <link href="css/plugins.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-
-	<!-- Matomo -->
+<!-- Matomo -->
 <script type="text/javascript">
   var _paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -36,410 +33,570 @@
 </script>
 <noscript><p><img src="https://snglsdao.matomo.cloud/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
-	</head>
-		<link href="css/timeline.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+
+</head>
 <body>
+  <section class="hero">
+    <header class="header">
+      <div class="container">
+        <a class="header__logo" href="https://snglsdao.io/">
+          <img class="header__logo-image" src="./images/logo.svg" alt="snglsDAO Logo">
+        </a>
 
+        <!-- mobile navbar toggle -->
+        <div class="menu-btn">
+           <div class="menu-btn__line menu-btn__line--1"></div>
+           <div class="menu-btn__line menu-btn__line--2"></div>
+           <div class="menu-btn__line menu-btn__line--3"></div>
+        </div>
 
-    <!-- Wrapper -->
-    <div id="wrapper" data-icon-color="#aa1b30">
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="https://snglsdao.io/">主頁</a></li>
+          <li class="menu__item"><a class="menu__link" href="https://forum.snglsdao.io/" target="_blank">>討論區</a></li>
+          <li class="menu__item menu__dropdown">
+            <span class="menu__link">社群動向</span>
+            <ul class="menu__dropdown-menu">
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="https://twitter.com/SNGLSDAO" target="_blank">Twitter</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="https://medium.com/singulardtv" target="_blank">Medium</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="https://weibo.com/snglsdao" target="_blank">微博</a>
+              </li>
 
-        <!-- Header -->
-        <header id="header" class="dark">
-            <div id="header-wrap">
-                <div class="container">
-                    <!--Logo-->
-                    <div id="logo">
-                        <a href="index.html" class="logo" data-dark-logo="images/SNGLSDAO-logo.png">
-                            <img src="images/SNGLSDAO-logo.png" alt="SNGLS DAO Logo">
-                        </a>
-                    </div>
-                    <!--End: Logo-->
+            </ul>
+          </li>
+          <li class="menu__item"><a class="menu__link modal-form-toggle" href="#">訂閱電子報</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="https://github.com/SingularDTV/snglsdao-pm" target="_blank">
+              <svg class="menu__link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5.156 12.438c0-.063-.062-.126-.156-.126s-.156.063-.156.126c0 .062.062.124.156.093.094 0 .156-.031.156-.094zm-.968-.157c0 .063.062.156.156.156a.15.15 0 00.187-.062c0-.063-.031-.125-.125-.156-.093-.031-.187 0-.218.062zm1.406-.031c-.094 0-.157.063-.157.156 0 .063.094.094.188.063s.156-.063.125-.125c0-.063-.094-.125-.156-.094zm2.031-12C3.312.25 0 3.563 0 7.875c0 3.469 2.156 6.438 5.281 7.5.407.063.532-.188.532-.375v-1.938s-2.188.47-2.657-.937c0 0-.344-.906-.844-1.125 0 0-.718-.5.032-.5 0 0 .781.063 1.219.813.687 1.218 1.812.874 2.28.656.063-.5.25-.844.5-1.063-1.75-.187-3.53-.437-3.53-3.437 0-.875.25-1.282.75-1.844-.094-.219-.344-1.031.093-2.125.625-.188 2.156.844 2.156.844.625-.188 1.282-.25 1.938-.25.688 0 1.344.062 1.969.25 0 0 1.5-1.063 2.156-.844.438 1.094.156 1.906.094 2.125.5.563.812.969.812 1.844 0 3-1.844 3.25-3.594 3.437.282.25.532.719.532 1.469 0 1.031-.031 2.344-.031 2.594 0 .219.156.469.562.375 3.125-1.031 5.25-4 5.25-7.469C15.5 3.562 11.969.25 7.625.25zM3.031 11.031c-.062.031-.031.125 0 .188.063.031.125.062.188.031.031-.031.031-.125-.031-.188-.063-.03-.126-.062-.157-.03zm-.344-.25c-.03.063 0 .094.063.125s.125.031.156-.031c0-.031-.031-.063-.094-.094-.062-.031-.093-.031-.124 0zm1 1.125c-.03.031-.03.125.063.188.063.062.156.094.188.031.03-.031.03-.125-.032-.188-.062-.062-.156-.093-.219-.03zm-.343-.469c-.063.032-.063.126 0 .188.062.063.125.094.187.063.031-.032.031-.126 0-.188-.062-.063-.125-.094-.187-.063z"/>
+              </svg>
+              Github
+            </a>
+          </li>
+          <li class="menu__item menu__dropdown menu__language">
+            <span class="menu__link">繁體</span>
+            <ul class="menu__dropdown-menu">
+    					<li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="https://snglsdao.io/index.html">ENG</a>
+              </li>
+    					<li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="https://snglsdao.io/scindex.html">简体</a>
+              </li>
+    				</ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="hero__text">
+          <h1 class="hero__title">區塊鏈去中心化影視娛樂市場</h1>
+          <p class="hero__description">
+            2020年是實現以區塊鏈技術為動力的去中心化影視娛樂產業創建目標的激動人心新階段：SNGLS 媒體發行協定和snglsDAO的誕生。
+          </p>
+          <div class="hero__buttons">
+            <a class="btn video-popup-btn" href="#" data-type="youtube" data-id="abD3T3bQmDY" data-autoplay='true'>看視頻</a>
+            <a class="btn-inverse modal-form-toggle" href="#">訂閱電子報</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img class="hero__image-img" src="./images/hero-image.png" alt="illustration">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mission">
+    <div class="container">
+      <h1 class="mission__titile">使命</h1>
+      <p class="mission__description"> snglsDAO將成為SNGLS協定的非營利性治理層。SingularDTV將成立一個獨立客觀的組織，以指導SNGLS協定的開發。宗旨是要堅持去中心化的核心價值，並將其灌輸到協定的編程中。
+      </p>
+      <img class="mission__image" src="./images/image-mission.png" alt="區塊鏈去中心化影視娛樂市場">
+    </div>
+  </section>
 
-                    <!--Navigation Resposnive Trigger-->
-                    <div id="mainMenu-trigger">
-                        <button class="lines-button x"> <span class="lines"></span> </button>
-                    </div>
-                    <!--end: Navigation Resposnive Trigger-->
+  <section class="whitepaper">
+    <div class="container">
+      <div class="row">
+        <div class="whitepaper__text">
+          <h1 class="whitepaper__title">白皮書</h1>
+          <p class="whitepaper__description">
+            閱讀我們的白皮書以了解有關SNGLS媒體發行協定、圍繞自我調節協定的通証經濟原理、內容掘礦技術層和機制、以及SNGLS DAO的更多信息。
+          </p>
+          <div class="whitepaper__buttons">
+            <a class="btn" href="https://snglsdao.io/files/SNGLSDAO-wp-eng.pdf" target="_blank">英文版</a>
+            <a class="btn-white" href="https://snglsdao.io/files/SNGLSDAO-wp-tc.pdf" target="_blank">中文版</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                    <!--Navigation-->
-                    <div id="mainMenu" class="light">
-                        <div class="container">
-                            <nav>
-                                <ul>
-                                    <li><a href="tcindex.html">主頁</a></li>
-                                    <li><a href="https://forum.snglsdao.io/">討論區</a></li>
-                                    <li><a href="https://github.com/SingularDTV/snglsdao-pm">Github</a></li>
-                                    <li class="dropdown"> <a href="#">社群動向 <i class="fa fa-angle-down"></i></a>
-                                        <ul class="dropdown-menu">
-<li> <a href="https://www.weibo.com/snglsdao">微博</a> </li>                
-<li> <a href="https://twitter.com/SNGLSDAO">Twitter</a> </li>
-                                            <li> <a href="https://medium.com/singulardtv">Medium</a> </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#footer">訂閱電子報</a></li>
-									<li id="language-switch" class="dropdown">
-										<a href="#">繁體 <i class="fa fa-chevron-down"></i></a>
-										<ul class="dropdown-menu">
-											<li> <a href="index.html">ENG</a> </li>
-											<li> <a href="scindex.html">简体中文</a> </li>
-										</ul>
-									</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <!--end: Navigation-->
-                </div>
+  <section class="distribution">
+    <div class="container">
+      <div class="row">
+        <div class="distribution__left">
+          <img class="distribution__image" src="./images/dao-info-image.png" alt="process">
+        </div>
+        <div class="distribution__right">
+          <h1 class="distribution__title">SNGLS媒體發行協定</h1>
+          <p>該協議是個點對點(P2P)多點下載的網絡層。系統獲取媒體檔案後創建種子，這些種子將通過散列函數置入內容創建者的以太坊錢包地址，讓去中心化發行協定在無需信任的第三方的情況下建立支付軌道。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="videos">
+    <div class="container">
+      <h1 class="videos__title">視頻</h1>
+      <div class="videos__carousel owl-carousel">
+        <div class="videos__item">
+          <a class="videos__image" href="#">
+            <iframe class="videos__iframe" src="https://www.youtube.com/embed/abD3T3bQmDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </a>
+          <h3 class="videos__header">第1集 snglsDAO播客：關於SingularDTV和snglsDAO</h3>
+          <p class="videos__description">
+            SingularDTV and Breaker的創始人Zach LeBeau，以及SingularDTV和snglsDAO的Troy Murray，共同探討未來方向...
+          </p>
+        </div>
+        <div class="videos__item">
+          <a class="videos__image" href="#">
+            <iframe class="videos__iframe" src="https://www.youtube.com/embed/NOXjkughSOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </a>
+          <h3 class="videos__header">第2集 snglsDAO播客：Hal Finney是中本聰、加密貨幣、SingularDTV及SNGLS DAO</h3>
+          <p class="videos__description">
+            SingularDTV和snglsDAO的Troy Murray與Proof Systems的Tyler Ward對話交流...
+          </p>
+        </div>
+        <div class="videos__item">
+          <a class="videos__image" href="#">
+            <iframe class="videos__iframe" src="https://www.youtube.com/embed/4KQ4VS_BirA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </a>
+          <h3 class="videos__header">SingularDTV輕錢包</h3>
+          <p class="videos__description">
+            教學視頻學習如何生成、使用和復原SingularDTV輕錢包。SingularDTV 輕錢包作用是儲存和管理ETH和SNGLS交易...
+          </p>
+        </div>
+        <div class="videos__item">
+          <a class="videos__image" href="#">
+            <iframe class="videos__iframe" src="https://www.youtube.com/embed/VmWGnvlBBGg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </a>
+          <h3 class="videos__header">SingularDTV亮相2018年度Ethereal峰會</h3>
+          <p class="videos__description">
+            SingularDTV首席執行官Zach LeBeau和業務發展總監G. Thomas Esmay公佈重大更新、合作夥伴、以及推出Breaker的發展路線圖...
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dao-info">
+    <div class="container">
+      <div class="dao-info__text">
+        <h1 class="dao-info__title">甚麼是snglsDAO?</h1>
+        <h2 class="dao-info__subtitle">DAO: 去中心化自治組織</h2>
+        snglsDAO是一個治理層，將協定置入於抗審查機制內，我們稱之為
+        <a href="https://github.com/SingularDTV/snglsdao-whitepaper#v-content-mining-1">
+          內容掘礦</a>。
+        snglsDAO由社群自治及管理協定下的
+        <a href="https://github.com/SingularDTV/snglsdao-whitepaper#3-original-dao-controls">
+          不同的參數</a>。
+      </div>
+    </div>
+  </section>
+
+  <section class="dao">
+    <div class="container">
+      <h1 class="dao__title">DAO 數據</h1>
+      <h2 class="dao__sub-title">儲備資金</h2>
+      <div class="dao__treasury">
+        <div class="row">
+          <div class="dao__treasury-item">
+            <div class="dao__treasury-icon-wrap">
+              <img class="dao__icon" src="./images/dao-icon-1.png" alt="Treasury: ETH icon">
             </div>
-        </header>
-        <!-- end: Header -->		
-        
-		<!-- SECTION IMAGE FULLSCREEN -->
-		<section class="page-top" data-parallax-image="images/snglsdao-bg.png">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6" style="padding-right: 30px;">
-						<div class="heading heading text-left">
-							<h3>區塊鏈去中心化<br>
-								影視娛樂市場</h3>
-							<span class="lead">SingularDTV為去中心化式影視娛樂行業制定基礎。SNGLS DAO將為SNGLS媒體發行協定提供非牟利性的管治。SNGLS DAO由SingularDTV作為一個獨立、客觀的組織而成立，以指導協議的發展，其主要方針是秉承去中心化的宗旨，構建真正開放的去中心化協議。</span>
-						</div>
-					</div>
-					<div class="col-md-6" style="overflow-x:auto">
-
-<img width="100%" src="images/SNGLSDAO_2-01.jpg">
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end: SECTION IMAGE FULLSCREEN -->
-		
-		<!-- COMPANY -->
-		<section id="white-paper">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-9 our-mission">
-						<div class="heading heading text-left">
-							<h3>使命</h3>
-							<span class="lead">SingularDTV驅動的SNGLS DAO是引領區塊鏈去中心化影視娛樂產業得以發展的重要一步。2020年是實現這一目標的激動人心的新階段：SNGLS媒體發行協定的發佈。</span>
-						</div>
-						<div class="heading heading text-left">
-							<div class="row">
-								<div class="col-sm-7">
-									<h3>白皮書</h3>
-									<p class="lead">閱讀我們的白皮書以了解有關SNGLS媒體發行協定及SNGLS DAO的更多信息。</p>
-									<a href="files/SNGLSDAO-wp-eng.pdf"
-									   class="btn btn-red btn-sm" style="margin-right: 15px;">英文版</a>
-									<a href="files/SNGLSDAO-wp-tc.pdf"
-									   class="btn btn-red btn-sm">中文版</a>
-								</div>
-								<div class="col-sm-5">
-									<img src="images/whitepaper.png" style="width: 100%; max-width: 195px;"/>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="news-feed">
-							<h5 style="color: #ffffff;">M Medium</h5>
-							<a href="https://medium.com/singulardtv/singulardtv-the-sngls-dao-sngls-2-0-and-breaker-6f23f473911c">
-								<img src="images/blog-post-img1.PNG" />
-							</a>
-							<a href="https://medium.com/singulardtv/confessions-of-an-ico-ceo-part-1-79115e237c46">
-								<img src="images/blog-post-img2.PNG" />
-							</a>
-							<p style="margin-top: 10px;margin-bottom: 16px;">工作小組會議視頻</p>
-							<a href="https://content.breaker.io/?type=series&id=2603&season=2604">
-								<img src="images/SNGLS-DAO-Call-008.PNG" />
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="red-sep"></div>
-		</section>
-		<!-- end: COMPANY -->
-
-
-
-
-		<!-- SERVICES -->
-		<section id="videos" style="padding-top: 0px;">
-			<div class="container">
-				<div class="row">
-					<p style="margin-top: 30px;margin-bottom: 15px;">
-						<i style="margin-right: 15px;" class="fa fa-ellipsis-v"></i> 項目視頻
-					</p>
-					<div class="carousel" data-items="3" data-margin="0">
-
-						<div class="video-item">
-							
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/abD3T3bQmDY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							<p>第1集 SNGLS DAO播客: SingularDTV及SNGLS DAO</p>
-						</div>
-
-						<div class="video-item">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/NOXjkughSOY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							<p>第2集 SNGLS DAO播客：Hal Finney是中本聰、加密貨幣、SingularDTV及SNGLS DAO</p>
-						</div>
-						<div class="video-item">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/4KQ4VS_BirA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							<p>SingularDTV輕錢包應用</p>
-						</div>
-						<div class="video-item">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/VmWGnvlBBGg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							<p>SingularDTV亮相2018年度Ethereal峰會</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<h3 class="stat-h3" style="margin-top: 25px;">DAO 數據</h3>
-				<div class="statistics-row">
-					<div class="stat-item">
-						<img src="images/icon1.PNG" />
-						<p>儲備資金：ETH</p>
-						<div class="counter small"> <span data-speed="3400" data-refresh-interval="50" data-to="0" data-from="6000" data-seperator="true"></span> </div>
-					</div>
-					<div class="stat-item">
-						<img src="images/icon1.PNG" />
-						<p>儲備資金：SNGLS</p>
-						<div class="counter small"> <span data-speed="3200" data-refresh-interval="50" data-to="0" data-from="6000" data-seperator="true"></span> </div>
-					</div>
-					<div class="stat-item">
-						<img src="images/icon2.PNG" />
-						<p>上架費用：SNGLS</p>
-						<div class="counter small"> <span data-speed="3500" data-refresh-interval="50" data-to="0" data-from="6000" data-seperator="true"></span> </div>
-					</div>
-					<div class="stat-item">
-						<img src="images/icon3.PNG" />
-						<p>交易費用：SNGLS</p>
-						<div class="counter small"> <span data-speed="3400" data-refresh-interval="50" data-to="0" data-from="6000" data-seperator="true"></span> </div>
-					</div>
-					<div class="stat-item">
-						<img src="images/icon4.PNG" />
-						<p>驗証費用：SNGLS</p>
-						<div class="counter small"> <span data-speed="3500" data-refresh-interval="50" data-to="0" data-from="6000" data-seperator="true"></span> </div>
-					</div>
-				</div>
-				</div>
-			</div>
-
-		</section>
-
-
-<section id="projectcall-row">
-			<div class="container">
-					<h3 class="stat-h3" style="margin-top: 25px;">工作小組會議數據</h3>
-					<p class="lead">以下資料由Breaker.io提供。<br></p>
-
-
-<div style="overflow-x:auto;">
-<iframe  width="800" height="350" src="https://app.powerbi.com/view?r=eyJrIjoiMGJlNTAzYzYtMDIxMC00MDI5LWFlMDYtOTg2Y2YyMTAzZDViIiwidCI6IjcyNGQ3ZTE4LTY4ZmUtNDlhMi1iZWMyLWYyZTNkZjViODU4OCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe></div>
-
-			</div>
-
-
-		</section>
-		<!-- end: SERVICES -->
-
-
-
-
-
-
-
-
-
-
-
-		<!-- COUNTERS -->
-		<section class="timeline-row">
-			<div class="container">
-				<h3 class="text-center">里程碑</h3>
-				<div class="row">
-					<div class="col-md-12">
-						<h5 class="timeline-start">開始</h5>
-						<div class="main-timeline4">
-							<div class="timeline">
-								<a href="#" class="timeline-content">
-									<div class="inner-content">
-										<img src="images/SingularDTV-logo.png" />
-										<h6 class="title">2016年10月2日<br>SingularDTV誕生</h6>
-										<p class="description">
-											2016年10月，以最簡可行產品為本，籌集了等值約750萬美元的ETH，並設計出激活去中心化影視娛樂生態圈的藍圖。
-										</p>
-									</div>
-								</a>
-							</div>
-							<div class="timeline">
-								<a href="https://breaker.io" class="timeline-content">
-									<div class="inner-content">
-										<img src="images/breaker-white.png" />
-										<h6 class="title">2019年1月31日<br>Breaker.io誕生</h6>
-										<p class="description">
-											Breaker.io的誕生驗証了娛樂版權(IP)在區塊鏈上的實行權益管理是可行的，該IP和/或其使用權可以通過內容發行平台與全球觀眾互相連接，與傳統系統相比效率更高。
-										</p>
-									</div>
-								</a>
-							</div>
-							<div class="timeline">
-								<a href="#white-paper" class="timeline-content">
-									<div class="inner-content">
-										<h6 class="title">2019年9月3日<br>SNGLS DAO白皮書發佈</h6>
-										<p class="description">
-											白皮書詳細闡述了SNGLS DAO、內容掘礦、SNGLS媒體發行協定等多個重要概念。
-										</p>
-									</div>
-								</a>
-							</div>
-							<div class="timeline">
-								<a href="#" class="timeline-content">
-									<div class="inner-content">
-										<h6 class="title">2019年11月1日<br>官方網站發佈</h6>
-										<p class="description">
-											SNGLS DAO官方網站正式啟動。
-										</p>
-									</div>
-								</a>
-							</div>
-							<div class="timeline">
-								<a href="#" class="timeline-content">
-									<div class="inner-content">
-										<h6 class="title">2019年12月31日<br>預計公佈SNGLS通証升級資訊</h6>
-										<p class="description">
-											預計在2020年升級SNGLS通証並與SNGLS 2.0進行1：1互換。正式實施的時間表將視乎各種法律、法規和合規情況而定，歡迎訂閱電子報以獲取最新消息。
-										</p>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div id="timeline-end">
-							繼續前進邁向目標
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end: COUNTERS -->
-
-		<section id="partners-row">
-			<div class="container">
-					<h3>合作夥伴</h3>
-					<p class="lead">推動新產業協定誕生及穩步發展是一個複雜的進程。<br>
-						SingularDTV將與我們的合作夥伴一起實現建立區塊鏈去中心化影視娛樂產業的使命。</p>
-
-				<div class="row brands-row">
-					<div class="col-md-4">
-						<a id="partner-1" href="https://consensys.net/">
-
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a id="partner-2" href="https://singulardtv.com/">
-
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a id="partner-3" href="https://breaker.io/">
-
-						</a>
-					</div>
-					
-				</div>
-
-			</div>
-		</section>
-		<!-- CLIENTS -->
-
-		<!-- Footer -->
-        <footer id="footer" class="footer-light">
-            <div class="footer-content">
-                <div class="container">
-					<div class="row email-row">
-						<!-- Begin Mailchimp Signup Form -->
-						<div id="mc_embed_signup">
-							<form action="https://breaker.us5.list-manage.com/subscribe/post?u=4a88656557f099b2d61cfd116&amp;id=7b32313894" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-								<div id="mc_embed_signup_scroll">
-									<h3 class="text-center" style="margin-bottom: 15px !important;">連繫我們</h3>
-									<div class="indicates-required">登記您的電郵地址以訂閱我們的最新資訊。</div>
-									<div id="email-wrapper">
-										<div class="mc-field-group">
-											<input placeholder="在此輸入電郵地址*"
-												   type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-										</div>
-										<div id="mce-responses" class="clear">
-											<div class="response" id="mce-error-response" style="display:none"></div>
-											<div class="response" id="mce-success-response" style="display:none"></div>
-										</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-										<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4a88656557f099b2d61cfd116_7b32313894" tabindex="-1" value=""></div>
-										<div id="subscribe-btn"><input type="submit" value="登記" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-									</div>
-								</div>
-							</form>
-						</div>
-
-						<!--End mc_embed_signup-->
-					</div>
-                    <div class="row footer-row">
-                        <div class="col-md-4 disclaimer">
-							<h5>免責聲明</h5>
-							<p>本網頁所載信息以摘要形式提供，並不構成完整信息。在對任何信息採取行動之前，您應考慮這些事項的任何相關文件、要約、及信息的適當性，並應尋求獨立意見（例如法律、法規、稅務等）的建議。</p>
-						</div>
-						<div class="col-md-8 social-col">
-							<a id="scrollTop"><img style="margin-right: -12px;margin-bottom: 12px;width: 159px;height: 36px;" src="images/SNGLSDAO-logo.png" /></a>
-							<div>
-								<a href="https://github.com/SingularDTV/snglsdao-pm">
-									<img src="images/github.png" />
-								</a>
-
-								<a href="https://weibo.com/snglsdao">
-									<img src="images/weibo.png" />
-								</a>
-
-								<a href="https://twitter.com/snglsdao">
-									<img src="images/twitter.png" />
-								</a>
-								<a style="margin-right: 0;" href="https://medium.com/singulardtv/">
-									<img src="images/medium.png" />
-								</a>
-							</div>
-						</div>
-                    </div>
-                </div>
+            <div class="dao__treasury-text">
+              <h3 class="dao__treasury-header">儲備資金：ETH</h3>
+              <div class="dao__counter" data-to="0" data-from="769"></div>
             </div>
-        </footer>
-        <!-- end: Footer -->
+          </div>
+          <div class="dao__treasury-item">
+            <div class="dao__treasury-icon-wrap">
+              <img class="dao__treasury-icon" src="./images/dao-icon-2.png" alt="Treasury: ETH icon">
+            </div>
+            <div class="dao__treasury-text">
+              <h3 class="dao__treasury-header">儲備資金：SNGLS</h3>
+              <div class="dao__counter" data-to="0" data-from="1259"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="dao__sub-title">DAO 參數</h2>
+      <div class="dao__items">
+        <div class="row">
+          <div class="dao__item">
+            <div class="dao__icon-wrap">
+              <img class="dao__icon" src="./images/dao-icon-3.png" alt="Treasury: ETH icon">
+            </div>
+            <h3 class="dao__item-header">上架費用：SNGLS</h3>
+            <div class="dao__counter" data-to="0" data-from="987"></div>
+          </div>
+          <div class="dao__item">
+            <div class="dao__icon-wrap">
+              <img class="dao__icon" src="./images/dao-icon-4.png" alt="Treasury: ETH icon">
+            </div>
+            <h3 class="dao__item-header">交易費用：SNGLS</h3>
+            <div class="dao__counter" data-to="0" data-from="1100"></div>
+          </div>
+          <div class="dao__item">
+            <div class="dao__icon-wrap">
+              <img class="dao__icon" src="./images/dao-icon-5.png" alt="Treasury: ETH icon">
+            </div>
+            <h3 class="dao__item-header">驗証費用：SNGLS</h3>
+            <div class="dao__counter" data-to="0" data-from="1000"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="calls">
+    <div class="container">
+      <h1 class="calls__title">工作小組會議數據</h1>
+      <p class="calls__description">以下數據來自
+        <a href="https://pro.breaker.io">
+        Breaker Pro</p>
+      <div class="calls__table">
+        <iframe  class="calls__table-frame" src="https://app.powerbi.com/view?r=eyJrIjoiMGJlNTAzYzYtMDIxMC00MDI5LWFlMDYtOTg2Y2YyMTAzZDViIiwidCI6IjcyNGQ3ZTE4LTY4ZmUtNDlhMi1iZWMyLWYyZTNkZjViODU4OCIsImMiOjl9" frameborder="0" allowFullScreen="true">
+        </iframe>
+      </div>
+      <a class="calls__btn" href="https://www.breaker.io/">
+        <img class="calls__btn-img" src="./images/button-breaker.svg" alt="瀏覽Breaker.io並下載DApp">
+      </a>
+    </div>
+  </section>
+
+  <section class="entervision">
+    <div class="entervision__container">
+      <h1 class="entervision__title">EtherVision</h1>
+      <div class="entervision__left">
+        <div class="entervision__item">
+          <h3 class="entervision__subheader">對用戶而言：</h3>
+          <p>EtherVision是我們的開源用戶界面，用戶能夠直接與協定進行互動，而無需接觸傳統繁複的金融領域。用戶只需使用通証(又名代幣或加密貨幣)就能將內容上載到媒體發行協定中，亦可使用通証付費及觀看媒體內容。
+          </p>
+          <img class="entervision__image" src="./images/for-users.png" alt="">
+        </div>
+      </div>
+      <div class="entervision__left">
+        <div class="entervision__item">
+          <h3 class="entervision__subheader">對開發者而言：</h3>
+          <p>EtherVision是完全開源的，並允許開發者自由進入協定共同參與開發用戶界面，並且可以輕鬆地與Web3領域的其他項目互相連接，讓存取去中心化影視娛樂產業的基礎建設層變得更簡易。
+          </p>
+          <img class="entervision__image" src="./images/for-developers.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="milestones">
+    <div class="container">
+      <h1 class="milestones__title">里程碑</h1>
+      <div class="milestones__timeline">
+        <div class="milestones__item milestones__item--left">
+          <img class="milestones__icon" src="./images/logo-singular.svg" width="120" alt="SingularDTV logo ">
+          <h3 class="milestones__header">
+            <span class="accent-color">2016年10月2日</span><br>
+            SingularDTV誕生
+          </h3>
+          <p>
+            2016年10月，以最簡可行產品(MVP)為本，籌集了等值約750萬美元的ETH，並設計出激活去中心化影視娛樂生態圈的藍圖。
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--right milestones__item--top-margin">
+          <img class="milestones__icon" src="./images/logo-breaker.svg" width="120" alt="Breaker logo">
+          <h3 class="milestones__header">
+            <span class="accent-color">2019年1月31日</span><br>
+            Breaker.io發佈
+          </h3>
+          <p>
+            Breaker.io的誕生驗証了娛樂版權(IP)在區塊鏈上的實行權益管理是可行的，該IP和/或其使用權可以通過內容發行平台與全球觀眾互相連接，與傳統系統相比效率更高。
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--left">
+          <img class="milestones__icon" src="./images/logo.svg" width="150" alt="SNGLS DAO logo">
+          <h3 class="milestones__header">
+            <span class="accent-color">2019年9月3日</span><br>
+            <span class="lowercase">sngls</span>DAO白皮書發佈
+          </h3>
+          <p>
+            白皮書詳細闡述了snglsDAO、內容掘礦、自我調節平台機制、SNGLS媒體發行協定等多個重要概念。
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--right">
+          <h3 class="milestones__header">
+            <span class="accent-color">2019年11月1日</span><br>
+            官方網站發佈
+          </h3>
+          <p>
+            snglsDAO官方網站正式啟動。
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--left">
+          <h3 class="milestones__header">
+            <span class="accent-color">2020年第1季</span><br>
+            預定SNGLS通証<br>
+            互換及升級
+          </h3>
+          <p>
+            預計在2020年升級SNGLS通証並與SNGLS 2.0進行1：1互換。正式實施的時間表將視乎各種法律、法規和合規情況而定。
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--right">
+          <h3 class="milestones__header">
+            <span class="accent-color">2020年第2季</span><br>
+            DAO及開源用戶介面發佈
+          </h3>
+          <p>
+            在2020年第2季度，我們將啟動帶有交易費用參數、上架費用參數以及儲備資金參數的DAO。我們還將發佈名為EtherVision的開源用戶介面(UI)，該介面傳統繁複的金融領域沒有任何關聯，一切交易及互動都以加密貨幣進行，首批支援的加密貨幣為SNGLS、DAI、SAI、ETH。
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--left">
+          <h3 class="milestones__header">
+            <span class="accent-color">2020年第1至第4季</span><br>
+            內容掘礦研究及開發
+          </h3>
+          <p>
+            2020年全年度投入研發內容掘礦(Content Mining)機制。
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--right">
+          <h3 class="milestones__header">
+            <span class="accent-color">2021年第1季*</span><br>
+            內容掘礦(Content Mining) 公測發佈
+          </h3>
+          <p>
+            2021年第1季預定發佈及公測內容掘礦機制。
+            <br>
+            *暫定時間
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--left">
+          <h3 class="milestones__header">
+            <span class="accent-color">2021年第3季*</span><br>
+              SNGLS 分片(SHARD) 及 以太坊2.0
+              底層技術升級
+          </h3>
+          <p>
+            落實SNGLS分片(SHARD)及升級所有後台管理遷入以太坊2.0。
+            <br>
+            *視乎以太坊2.0升級時間表
+          <p>
+        </div>
+        <div class="milestones__item milestones__item--right">
+          <h3 class="milestones__header">
+            <span class="accent-color">2022年第1季*</span><br>
+            內容掘礦機制全面投入運作
+          </h3>
+          <p>
+            在內容掘礦機制的公測版運行之後，我們發現沒有任何問題的情況下，我們將發布完整版本，內容掘礦將全面投入運作。
+            <br>
+            *暫定時間
+          <p>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="milestones__goal-wrap">
+          <div class="milestones__goal">繼續向前邁進</div>
+        </div>
+        <div class="milestones__image-wrap">
+          <img class="milestones__image" src="./images/hero-image.png" alt="illustration">
+        </div>
+      </div>
 
     </div>
-    <!-- end: Wrapper -->
+  </section>
 
-    <!-- Go to top button -->
+  <section class="partners">
+    <div class="container">
+      <h1 class="partners__title">合作夥伴</h1>
+      <p class="partners__description">
+        推動新產業協定誕生及穩步發展是一個複雜的進程，snglsDAO將與我們的合作夥伴一起實現建立區塊鏈去中心化影視娛樂產業的使命。
+      </p>
 
-    <!--Plugins-->
-    <script src="js/jquery.js"></script>
-    <script src="js/plugins.js"></script>
+      <a class="partners__link" href="https://www.breaker.io/" target="_blank">
+        <img class="partners__logo" src="./images/partner-breaker.svg" alt="Breaker">
+      </a>
+      <a class="partners__link" href="https://consensys.net/" target="_blank">
+        <img class="partners__logo" src="./images/partner-consensys.svg" alt="Consensys">
+      </a>
+      <a class="partners__link" href="https://snglsdao.io/" target="_blank">
+        <img class="partners__logo" src="./images/partner-singular-dtv.svg" alt="Singular DTV">
+      </a>
+    </div>
+  </section>
 
-    <!--Template functions-->
-    <script src="js/functions.js"></script>
-	<script>
-        const scrollToTop = () => {
-            const c = document.documentElement.scrollTop || document.body.scrollTop;
-            if (c > 0) {
-                window.requestAnimationFrame(scrollToTop);
-                window.scrollTo(0, c - c / 12);
-            }
-        };
-        $('a#scrollTop').click(function () {
-            scrollToTop();
-        })
-	</script>
+  <section class="contacts">
+    <div class="container">
+      <form class="form" method="post" target="_blank" novalidate>
+      	<h3 class="form__header">連繫我們</h3>
+      	<div class="form__description">登記您的電郵地址以訂閱我們的最新資訊。</div>
+        <div class="form__field">
+        	<input class="form__input" placeholder="在此輸入你的電郵地址*" type="email" value="" name="EMAIL">
+        	<button class="form__btn" type="submit" name="subscribe">
+            <img class="form__btn-img" src="./images/icon-plane.svg" alt=">">
+            訂閱電子報
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
 
+<footer class="footer">
+  <div class="footer__container">
+    <div class="row">
+      <div class="footer__right">
+        <a class="footer__logo-link" id="scrollTop" href="#">
+          <img class="footer__logo" src="./images/logo.svg" alt="snglsDAO">
+        </a>
+        <div class="footer__socials">
+          <a class="footer__social-link" href="https://github.com/SingularDTV/snglsdao-pm" target="_blank">
+						<img class="footer__social-icon" src="./images/social-github.svg" alt="Github"/>
+					</a>
+					<a class="footer__social-link" href="https://weibo.com/snglsdao" target="_blank">
+						<img class="footer__social-icon" src="./images/social-weibo.svg" alt="Weibo"/>
+					</a>
+					<a class="footer__social-link" href="https://twitter.com/snglsdao" target="_blank">
+						<img class="footer__social-icon" src="./images/social-twitter.svg" alt="Twitter"/>
+					</a>
+					<a class="footer__social-link" href="https://medium.com/singulardtv/" target="_blank">
+						<img class="footer__social-icon" src="./images/social-medium.svg" alt="Medium"/>
+					</a>
+        </div>
+      </div>
+      <div class="footer__center">
+        <img class="footer__character" src="./images/image-mouse.svg" alt="Illustration"/>
+      </div>
+      <div class="footer__left">
+        <h2 class="footer__header">免責聲明</h2>
+        <p>本網頁所載信息以摘要形式提供，並不構成完整信息。在對任何信息採取行動之前，您應考慮這些事項的任何相關文件、要約、及信息的適當性，並應尋求獨立意見（例如法律、法規、稅務等）的建議。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- Begin Mailchimp Signup Form -->
+<div class="modal">
+  <div class="modal__overlay modal__toggle"></div>
+  <div class="modal__wrapper modal__transition">
+    <div class="modal__header">
+      <button class="modal__close modal-form-toggle">&#10005;</button>
+      <h2 class="modal__heading">訂閱電子報</h2>
+    </div>
+
+    <div class="modal__body">
+      <div class="modal__content">
+        <div id="mc_embed_signup">
+          <form class="subs-form" action="https://snglsdao.us5.list-manage.com/subscribe/post?u=bb01b5ea96169c46165526ad1&amp;id=59312728a2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group">
+              	<label class="hidden" for="mce-EMAIL">電郵地址  <span class="asterisk">*</span>
+                </label>
+              	<input class="subs-form__input" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="你的電郵地址">
+              </div>
+              <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+                <div class="content__gdpr">
+                  <label class="hidden">推廣信息許可</label>
+                  <p>請選擇所有您想接收SingularDTV信息的方式：</p>
+                  <fieldset class="subs-form__fieldset mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+                		<label class="subs-form__checkbox-wrap checkbox subfield" for="gdpr_11197">
+                      <input type="checkbox" id="gdpr_11197" name="gdpr[11197]" value="Y" class="subs-form__checkbox av-checkbox">
+                      <span>電子郵件</span>
+                    </label>
+                    <label class="subs-form__checkbox-wrap checkbox subfield" for="gdpr_11201">
+                      <input type="checkbox" id="gdpr_11201" name="gdpr[11201]" value="Y" class="subs-form__checkbox av-checkbox ">
+                      <span>直接推廣電郵</span>
+                    </label>
+                    <label class="subs-form__checkbox-wrap checkbox subfield" for="gdpr_11205">
+                      <input type="checkbox" id="gdpr_11205" name="gdpr[11205]" value="Y" class="subs-form__checkbox av-checkbox ">
+                      <span>個人化網絡廣告</span>
+                    </label>
+                  </fieldset>
+                  <p>您可以隨時通過點擊我們發出的電子郵件頁尾的鏈接取消訂閱。有關我們的私隱政策的信息，請訪問我們的網站。</p>
+                </div>
+                <div class="content__gdprLegal">
+                    <p>我們使用Mailchimp作為我們的發佈電郵信息的工具。通過點擊訂閱按鈕，您確認您的信息將被轉移到Mailchimp進行處理。<a href="https://mailchimp.com/legal/" target="_blank">在此處了解有關Mailchimp的私隱政策的更多信息。</a></p>
+                </div>
+              </div>
+            	<div id="mce-responses" class="clear">
+            		<div class="response" id="mce-error-response" style="display:none"></div>
+            		<div class="response" id="mce-success-response" style="display:none"></div>
+            	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bb01b5ea96169c46165526ad1_59312728a2" tabindex="-1" value="">
+              </div>
+              <div class="clear">
+                <input class="subs-form__button button" type="submit" value="訂閱" name="subscribe" id="mc-embedded-subscribe">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--END mc_embed_signup-->
+
+<!-- POPUP video -->
+<div id="video-popup-overlay"></div>
+<div id="video-popup-container">
+  <div id="video-popup-close" class="fade">&#10006;</div>
+  <div id="video-popup-iframe-container">
+    <iframe id="video-popup-iframe" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+<!-- END POPUP video -->
+
+
+
+<div class="floating-box" id="floating_box">
+  <button class="floating-box__close" id="floating_box_close">&#10005;</button>
+  <h3 class="floating-box__header">加入snglsDAO社群</h3>
+  <a class="floating-box__link" href="https://discord.gg/umHkgt" target="_blank">Discord</a>
+  <a class="floating-box__link" href="https://forum.snglsdao.io/" target="_blank">Discourse</a>
+  <a class="floating-box__link modal-form-toggle" href="#">訂閱電子報</a>
+</div>
+
+<!-- SCRIPTS -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/script.js"></script>
+<script>
+/* Videos carousel */
+$( document ).ready(function() {
+  $('.videos__carousel').owlCarousel({
+    loop:true,
+    margin:30,
+    nav:true,
+    responsive:{
+      0:{
+          items:1
+      },
+      300:{
+          items:2
+      },
+      1000:{
+          items:3
+      }
+    }
+  });
+});
+</script>
 
 </body>
-
 </html>
