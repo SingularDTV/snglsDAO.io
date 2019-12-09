@@ -981,10 +981,11 @@ h1, h1 ,h1 {
 /* milestones */
 .milestones {
   background-color: #261f31;
-  background-image: url('../images/bg-milestones.svg');
-  background-size: contain;
+  background-image: url('../images/timeline-bgd.jpg');
+  background-size: cover;
   background-position: bottom right;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #fff;
   padding: 107px 0 5px;
 
@@ -1020,7 +1021,6 @@ h1, h1 ,h1 {
         margin-left: -2px;
       }
     }
-
 
     .milestones__item {
       background-color: #2c273b;
@@ -1193,8 +1193,6 @@ h1, h1 ,h1 {
 
   @media (max-width: 767px) {
     padding: 90px 0 0;
-    background-size: auto;
-    background-position: top center;
   }
 }
 
