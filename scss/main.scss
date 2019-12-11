@@ -284,7 +284,6 @@ h1, h1 ,h1 {
 
 .hero {
   background-color: #2D273B;
-  background-image: url('../images/bg-hero.svg');
   background-repeat: no-repeat;
   background-position: right top;
   background-size: auto 100%;
@@ -506,6 +505,10 @@ h1, h1 ,h1 {
     @extend %column__padding;
 
     .distribution__image {
+      -webkit-filter: drop-shadow(0px 0px 5px rgba(255,0,0,0));
+      filter: drop-shadow(0px 0px 5px rgba(255,0,0,0));
+      animation: red-glow 3s ease-in-out;
+      animation-iteration-count: infinite;
 
       @media (max-width: 767px) {
         max-width: 80%;
@@ -536,6 +539,20 @@ h1, h1 ,h1 {
   }
 }
 
+@keyframes red-glow {
+  0%   {
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(255,0,0,0.2));
+    filter: drop-shadow(0px 0px 5px rgba(255,0,0,0.2));
+  }
+  50%  {
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(255,0,0,0.8));
+    filter: drop-shadow(0px 0px 8px rgba(255,0,0,0.8));
+  }
+  100%   {
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(255,0,0,0.2));
+    filter: drop-shadow(0px 0px 5px rgba(255,0,0,0.2));
+  }
+}
 /* videos */
 .videos {
   background-image: url('../images/bg-videos.svg');
