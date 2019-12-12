@@ -284,7 +284,6 @@ h1, h1 ,h1 {
 
 .hero {
   background-color: #2D273B;
-  background-image: url('../images/bg-hero.svg');
   background-repeat: no-repeat;
   background-position: right top;
   background-size: auto 100%;
@@ -341,7 +340,7 @@ h1, h1 ,h1 {
     }
 
     @media (max-width: 767px) {
-      padding-top: 30px;
+      padding-top: 106px;
       width: 100%;
       float: none;
     }
@@ -476,6 +475,7 @@ h1, h1 ,h1 {
     background-size: 80% auto;
   }
 }
+
 /*Distribution */
 .distribution {
   background-color: #2d273b;
@@ -501,14 +501,37 @@ h1, h1 ,h1 {
 
   .distribution__left {
     width: 50%;
+    position: relative;
+    z-index: 1;
     float: left;
     text-align: center;
     @extend %column__padding;
 
     .distribution__image {
+      animation: red-glow 4s ease-in-out;
+      animation-iteration-count: infinite;
 
       @media (max-width: 767px) {
         max-width: 80%;
+      }
+
+      &--lines {
+        position: absolute;
+        max-width: calc(100% - 30px);
+        z-index: -1;
+        top: 0;
+        left: 15px;
+        right: 15px;
+        animation: red-glow2 4s ease-in-out;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+
+
+        @media (max-width: 767px) {
+          left: calc(10% + 15px);
+          right: calc(10% + 15px);
+          max-width: calc(80% - 30px);
+        }
       }
     }
 
@@ -533,6 +556,36 @@ h1, h1 ,h1 {
   @media (max-width: 767px) {
     padding: 80px 0;
     font-size: 15px;
+  }
+}
+
+@keyframes red-glow {
+  0%   {
+    -webkit-filter: drop-shadow(0px 0px 5px #fb223d22);
+    filter: drop-shadow(0px 0px 5px #fb223d22);
+  }
+  50%  {
+    -webkit-filter: drop-shadow(0px 0px 8px #fb223d);
+    filter: drop-shadow(0px 0px 8px #fb223d);
+  }
+  100%   {
+    -webkit-filter: drop-shadow(0px 0px 5px #fb223d22);
+    filter: drop-shadow(0px 0px 5px #fb223d22);
+  }
+}
+
+@keyframes red-glow2 {
+  0%   {
+    -webkit-filter: drop-shadow(0px 0px 3px #fb223d22);
+    filter: drop-shadow(0px 0px 3px #fb223d22);
+  }
+  50%  {
+    -webkit-filter: drop-shadow(0px 0px 5px #fb223d);
+    filter: drop-shadow(0px 0px 5px #fb223d);
+  }
+  100%   {
+    -webkit-filter: drop-shadow(0px 0px 3px #fb223d22);
+    filter: drop-shadow(0px 0px 3px #fb223d22);
   }
 }
 
