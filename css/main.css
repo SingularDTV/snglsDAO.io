@@ -1129,7 +1129,10 @@ h1, h1, h1 {
         font-size: 28px;
         margin-bottom: 30px; } }
   .contacts .form__description {
-    margin-bottom: 50px; }
+    margin: 25px 0 40px;
+    font-size: 15px;
+    color: #918d9e;
+    text-align: center; }
     @media (max-width: 767px) {
       .contacts .form__description {
         margin-bottom: 35px;
@@ -1169,6 +1172,8 @@ h1, h1, h1 {
           position: static;
           width: 100%;
           border-radius: 40px; } }
+  .contacts .form__link {
+    color: #D40D26; }
   @media (max-width: 767px) {
     .contacts {
       padding: 90px 0; } }

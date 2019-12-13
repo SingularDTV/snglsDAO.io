@@ -290,7 +290,7 @@ h1, h1 ,h1 {
   padding: 72px 0 64px;
   color: #fff;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 
   .hero__text {
     width: 50%;
@@ -1321,8 +1321,12 @@ h1, h1 ,h1 {
       margin-bottom: 30px;
     }
   }
+
   .form__description {
-    margin-bottom: 50px;
+    margin: 25px 0 40px;
+    font-size: 15px;
+    color: #918d9e;
+    text-align: center;
 
     @media (max-width: 767px) {
       margin-bottom: 35px;
@@ -1372,6 +1376,11 @@ h1, h1 ,h1 {
       }
     }
   }
+
+  .form__link {
+    color: #D40D26;
+  }
+
   @media (max-width: 767px) {
     padding: 90px 0;
   }

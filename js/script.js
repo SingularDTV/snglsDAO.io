@@ -54,6 +54,14 @@ function check_if_in_view() {
     }, 1000);
 });
 
+// Anchor scrolls
+$(document).on('click', 'a.anchor', function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+});
+
 /* Floating Box */
 /* Common box status - visible */
 if (!(localStorage.getItem('popupStatus'))) {
