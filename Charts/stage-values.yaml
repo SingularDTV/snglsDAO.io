@@ -1,0 +1,10 @@
+environment: stage-snglsdao
+
+app:
+  domain: stage.snglsdao.io
+
+# image:
+  # tag: Specify at install/upgrade time
+
+rbac:
+  serviceAccountName: stage-snglsdao

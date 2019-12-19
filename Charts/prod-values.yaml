@@ -1,0 +1,10 @@
+environment: prod-snglsdao
+
+app:
+  domain: snglsdao.io
+
+# image:
+  # tag: Specify at install/upgrade time
+
+rbac:
+  serviceAccountName: prod-snglsdao
