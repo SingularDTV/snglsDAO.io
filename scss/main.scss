@@ -102,6 +102,10 @@ h1, h1 ,h1 {
       height: 42px;
     }
   }
+
+  @media (max-width: 767px) {
+    background-color: $darkblue-color;
+  }
 }
 
 .menu {
@@ -178,7 +182,7 @@ h1, h1 ,h1 {
         display: none;
         position: absolute;
         top: 100%;
-        background: #22355B;
+        background-color: #19264B;
         padding: 4px 0;
         border-radius: 8px;
         left: 50%;
@@ -194,12 +198,11 @@ h1, h1 ,h1 {
             color: #fff;
             text-decoration: none;
             padding: 3px 4px;
+            font-family: 'TransatBold';
+            font-size: 16px;
 
             &:hover {
               color: #fff9;
-            }
-            @media (max-width: 991px) {
-              font-size: 16px;
             }
           }
 
@@ -210,6 +213,7 @@ h1, h1 ,h1 {
         @media (max-width: 991px) {
           position: static;
           margin: 0px 10px;
+          width: auto;
         }
       }
 
@@ -246,7 +250,7 @@ h1, h1 ,h1 {
     right: 0;
     left: 0;
     top: 100%;
-    background-color: #1F1A27;
+    background-color: $darkblue-color;
     padding: 15px;
     transform: translateX(100%);
     opacity: 0;
@@ -995,14 +999,9 @@ h1, h1 ,h1 {
   }
 }
 
-
 /* entervision */
 .entervision {
   padding: 70px 0 35px;
-  background-image: url('../images/bg-entervision.svg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100% auto;
 
   .entervision__container {
     max-width: 1790px;
@@ -1583,11 +1582,9 @@ h1, h1 ,h1 {
     }
   }
 
-
   /**
    * Modal FORM
    */
-
   /* 1. Ensure this sits above everything when visible */
   .modal {
     position: absolute;
@@ -1737,10 +1734,6 @@ h1, h1 ,h1 {
     margin-left: -45%;
   }
 }
-
-
-
-
 
 /* SUBS FORM */
 .subs-form {
