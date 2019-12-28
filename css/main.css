@@ -187,6 +187,9 @@ h1, h1, h1 {
       display: block;
       width: 163px;
       height: 42px; }
+  @media (max-width: 767px) {
+    .header {
+      background-color: #010B2B; } }
 
 .menu {
   float: right;
@@ -250,7 +253,7 @@ h1, h1, h1 {
         display: none;
         position: absolute;
         top: 100%;
-        background: #22355B;
+        background-color: #19264B;
         padding: 4px 0;
         border-radius: 8px;
         left: 50%;
@@ -262,18 +265,18 @@ h1, h1, h1 {
           text-align: center;
           color: #fff;
           text-decoration: none;
-          padding: 3px 4px; }
+          padding: 3px 4px;
+          font-family: 'TransatBold';
+          font-size: 16px; }
           .menu .menu__item.menu__dropdown .menu__dropdown-menu .menu__dropdown-item .menu__dropdown-link:hover {
             color: #fff9; }
-          @media (max-width: 991px) {
-            .menu .menu__item.menu__dropdown .menu__dropdown-menu .menu__dropdown-item .menu__dropdown-link {
-              font-size: 16px; } }
         .menu .menu__item.menu__dropdown .menu__dropdown-menu .menu__dropdown-item + .menu__dropdown-item {
           border-top: 1px solid #ffffff1a; }
         @media (max-width: 991px) {
           .menu .menu__item.menu__dropdown .menu__dropdown-menu {
             position: static;
-            margin: 0px 10px; } }
+            margin: 0px 10px;
+            width: auto; } }
       .menu .menu__item.menu__dropdown:hover .menu__dropdown-menu {
         display: block; }
     .menu .menu__item.menu__language .menu__link {
@@ -296,7 +299,7 @@ h1, h1, h1 {
       right: 0;
       left: 0;
       top: 100%;
-      background-color: #1F1A27;
+      background-color: #010B2B;
       padding: 15px;
       transform: translateX(100%);
       opacity: 0; } }
@@ -876,11 +879,7 @@ h1, h1, h1 {
 
 /* entervision */
 .entervision {
-  padding: 70px 0 35px;
-  background-image: url("../images/bg-entervision.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100% auto; }
+  padding: 70px 0 35px; }
   .entervision .entervision__container {
     max-width: 1790px;
     margin: 0 auto; }
