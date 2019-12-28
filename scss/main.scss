@@ -5,11 +5,13 @@ body {
   font-size: 16px;
   line-height: 1.9em;
   color: $primary-color;
+  position: relative;
 
   @media (max-width: 767px) {
     font-size: 14px;
   }
 }
+
 h1, h1 ,h1 {
   font-family: 'TransatBold';
 }
@@ -32,14 +34,57 @@ h1, h1 ,h1 {
 }
 .hidden {
   display: none;
+
+  &-mobile {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &-desktop {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 }
 .lowercase {
   text-transform: lowercase;
 }
 
+.grain::after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.2;
+  animation: grain 3s steps(10, end) infinite;
+  background-image: url("../images/noise.png"), url("../images/noise.png");
+  background-size: 360px 370px;
+  background-position: 0 0, 0 0;
+}
+@keyframes grain {
+  0% { background-position: 0 0, -10px -230px; }
+  10% { background-position: -10px -230px, 30px 190px; }
+  20% { background-position: 30px 190px, -50px -170px; }
+  30% { background-position: -50px -170px, 70px 130px; }
+  40% { background-position: 70px 130px, -90px -110px; }
+  50% { background-position: -90px -110px, 110px 90px; }
+  60% { background-position: 110px 90px, -130px -70px; }
+  70% { background-position: -130px -70px, 170px 50px; }
+  80% { background-position: 170px 50px, -190px -30px; }
+  90% { background-position: -190px -30px, 230px 10px; }
+  100% { background-position: 230px 10px, 0 0; }
+}
+
 .header {
   padding: 2px 0;
-  background-color: #16131C;
+  background-color: #010B2B90;
   position: fixed;
   top: 0;
   left: 0;
@@ -56,6 +101,10 @@ h1, h1 ,h1 {
       width: 163px;
       height: 42px;
     }
+  }
+
+  @media (max-width: 767px) {
+    background-color: $darkblue-color;
   }
 }
 
@@ -133,7 +182,7 @@ h1, h1 ,h1 {
         display: none;
         position: absolute;
         top: 100%;
-        background: #363046;
+        background-color: #19264B;
         padding: 4px 0;
         border-radius: 8px;
         left: 50%;
@@ -149,12 +198,11 @@ h1, h1 ,h1 {
             color: #fff;
             text-decoration: none;
             padding: 3px 4px;
+            font-family: 'TransatBold';
+            font-size: 16px;
 
             &:hover {
-              color: $accent-color;
-            }
-            @media (max-width: 991px) {
-              font-size: 16px;
+              color: #fff9;
             }
           }
 
@@ -165,6 +213,7 @@ h1, h1 ,h1 {
         @media (max-width: 991px) {
           position: static;
           margin: 0px 10px;
+          width: auto;
         }
       }
 
@@ -201,7 +250,7 @@ h1, h1 ,h1 {
     right: 0;
     left: 0;
     top: 100%;
-    background-color: #1F1A27;
+    background-color: $darkblue-color;
     padding: 15px;
     transform: translateX(100%);
     opacity: 0;
@@ -270,27 +319,12 @@ h1, h1 ,h1 {
   }
 }
 
-#particles-js {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-}
-
 .hero {
-  background-color: #2D273B;
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size: auto 100%;
   padding: 72px 0 64px;
   color: #fff;
   position: relative;
   z-index: 3;
+  background-color: $darkblue-color;
 
   .hero__text {
     width: 50%;
@@ -346,22 +380,28 @@ h1, h1 ,h1 {
     }
   }
   .hero__image {
-    width: 50%;
-    float: left;
-    text-align: center;
-    @extend %column__padding;
-
-    .hero__image-img {
-      max-width: 100%;
-    }
+    display: block;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 40%;
+    background-image: url('../images/hero-image.png'), radial-gradient(circle, rgba(8,29,94,1) 10%, rgba(1,11,43,1) 70%);
+    background-size: contain;
+    background-repeat: no-repeat;
 
     @media (max-width: 767px) {
-      display: none;
+      position: static;
+      width: 100%;
+      height: 103vw;
+      background-size: 120%;
+      background-position: 64% top;
     }
   }
 
   @media (max-width: 767px) {
-    padding: 0 0 80px;
+    padding: 0;
     overflow: hidden;
   }
 }
@@ -371,6 +411,7 @@ h1, h1 ,h1 {
   text-align: center;
   padding: 90px 0 67px;
   font-size: 18px;
+  background-color: $white-color;
 
   .mission__titile {
     font-size: 50px;
@@ -390,6 +431,8 @@ h1, h1 ,h1 {
 
     @media (max-width: 767px) {
       margin: 0 auto 44px;
+      line-height: 1.7em;
+      font-size: 14px;
     }
   }
 
@@ -406,16 +449,19 @@ h1, h1 ,h1 {
 
 /* whitepaper */
 .whitepaper {
-  background-color: #251F31;
+  background-color: $darkblue-color;
   color: #fff;
-  padding: 80px 0 89px;
+  padding: 120px 0;
   font-size: 18px;
   font-weight: 300;
-  background-image: url(../images/hero-image.png);
-  background-position: right center;
-  background-size: 30% auto;
+  background-image: url('../images/bg-whitepaper.png');
+  background-position: center bottom;
+  background-size: contain;
   background-repeat: no-repeat;
   text-align: center;
+  z-index: 1;
+  position: relative;
+  box-shadow: inset 0 -15px 15px -15px #7581FC;
 
   .whitepaper__text {
     @extend %column__padding;
@@ -472,18 +518,25 @@ h1, h1 ,h1 {
     padding: 78px 0;
     font-size: 14px;
     text-align: center;
-    background-size: 80% auto;
+    background-size: auto;
   }
 }
 
 /*Distribution */
 .distribution {
-  background-color: #2d273b;
+  background-color: $darkblue-color;
+  background-image: url('../images/bg-grid.png');
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
   color: #fff;
   padding: 51px 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.8em;
+  box-shadow: inset 0 7px 5px -5px #7581FC;
 
   .distribution__title {
     font-size: 50px;
@@ -512,7 +565,7 @@ h1, h1 ,h1 {
       animation-iteration-count: infinite;
 
       @media (max-width: 767px) {
-        max-width: 80%;
+        max-width: 100%;
       }
 
       &--lines {
@@ -556,6 +609,8 @@ h1, h1 ,h1 {
   @media (max-width: 767px) {
     padding: 80px 0;
     font-size: 15px;
+    background-size: auto;
+    line-height: 1.6em;
   }
 }
 
@@ -591,10 +646,6 @@ h1, h1 ,h1 {
 
 /* videos */
 .videos {
-  background-image: url('../images/bg-videos.svg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100% auto;
   padding: 109px 0 86px;
 
   .videos__title {
@@ -697,14 +748,17 @@ h1, h1 ,h1 {
 
 /* dao info */
 .dao-info {
-  background-color: #251F31;
-  padding: 115px 0 0;
+  padding: 100px 0;
+  position: relative;
+  z-index: 1;
   text-align: center;
   color: #fff;
   font-weight: 300;
-  background-image: url('../images/bg-dao-info.svg');
-  background-position: right top;
+  background-position: center;
   background-repeat: no-repeat;
+  background-color: $darkblue-color;
+  background-image: linear-gradient(0deg, rgba(8,29,94,1) 0%, rgba(1,11,43,1) 100%);
+  box-shadow: inset 0 -15px 15px -15px #7581FC;
 
   a {
     color: #f5243d;
@@ -730,9 +784,13 @@ h1, h1 ,h1 {
   }
 
   .dao-info__text {
-    max-width: 970px;
+    max-width: 990px;
     margin: 0 auto;
     font-size: 18px;
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
   }
   @media (max-width: 767px) {
     padding-top: 80px;
@@ -742,10 +800,16 @@ h1, h1 ,h1 {
 
 /* dao statistics*/
 .dao {
-  background-color: #251F31;
-  padding: 68px 0 92px;
+  padding: 92px 0;
   text-align: center;
   color: #fff;
+  position: relative;
+  z-index: 1;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: $darkblue-color;
+  background-image: url('../images/bg-dao.png');
+  box-shadow: inset 0 5px 3px -3px #7581FC;
 
   .dao__title {
     font-size: 50px;
@@ -782,9 +846,8 @@ h1, h1 ,h1 {
       .dao__treasury-icon-wrap {
         display: inline-block;
         vertical-align: middle;
-        width: 110px;
-        height: 110px;
-        padding: 7px;
+        width: 124px;
+        height: 124px;
         line-height: 96px;
         margin: 0 auto 30px;
         box-shadow: 2px 2px 10px $accent-color;
@@ -826,9 +889,8 @@ h1, h1 ,h1 {
     margin-bottom: 12px;
 
     .dao__icon-wrap {
-      width: 110px;
-      height: 110px;
-      padding: 7px;
+      width: 124px;
+      height: 124px;
       line-height: 96px;
       margin: 0 auto 30px;
       box-shadow: 2px 2px 10px $accent-color;
@@ -836,7 +898,7 @@ h1, h1 ,h1 {
       text-align: center;
 
       .dao__icon {
-        height: 70px;
+        max-width: 100%;
         vertical-align: middle;
 
         @media (max-width: 767px) {
@@ -907,6 +969,9 @@ h1, h1 ,h1 {
     margin: 0 auto 60px;
     line-height: 1.8em;
   }
+  a {
+    color: #0084FF;
+  }
   .calls__table {
     box-shadow: 0 8px 15px #0002;
     margin-bottom: 57px;
@@ -930,18 +995,13 @@ h1, h1 ,h1 {
   }
 
   @media (max-width: 767px) {
-    padding: 83px 0 80px;
+    padding: 83px 0 50px;
   }
 }
-
 
 /* entervision */
 .entervision {
   padding: 70px 0 35px;
-  background-image: url('../images/bg-entervision.svg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100% auto;
 
   .entervision__container {
     max-width: 1790px;
@@ -984,14 +1044,15 @@ h1, h1 ,h1 {
   }
 
   .entervision__item {
-    background-color: #2c273b;
-    padding: 45px 60px 17px;
+    padding: 45px 60px 30px;
     line-height: 1.85em;
     box-shadow: 0 10px 40px #0000002e;
     color: #fff;
     font-weight: 300;
     text-align: center;
     margin-bottom: 30px;
+    background-color: $darkblue-color;
+    background: radial-gradient(circle, #031347 0%, #010B2B 100%);
 
     .entervision__subheader {
       color: #f5243d;
@@ -999,10 +1060,14 @@ h1, h1 ,h1 {
       text-transform: uppercase;
       font-size: 24px;
       margin-bottom: 16px;
+
+      @media (max-width: 767px) {
+        font-size: 20px;
+      }
     }
 
     .entervision__image {
-      margin-top: 14px;
+      margin-top: 30px;
     }
 
     p {
@@ -1033,14 +1098,15 @@ h1, h1 ,h1 {
 
 /* milestones */
 .milestones {
-  background-color: #261f31;
-  background-image: url('../images/timeline-bgd.jpg');
-  background-size: cover;
-  background-position: bottom right;
+  background-color: $darkblue-color;
+  background-image: url('../images/bg-timeline.png'), radial-gradient(circle, rgba(8,29,94,1) 0%, rgba(1,11,43,1) 100%);
+  background-position: top right;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
-  padding: 107px 0 5px;
+  padding: 107px 0 80px;
+  position: relative;
+  z-index: 1;
 
   .milestones__title {
     font-size: 50px;
@@ -1076,29 +1142,50 @@ h1, h1 ,h1 {
     }
 
     .milestones__item {
-      background-color: #2c273b;
+      position: relative;
+      z-index: 1;
       padding: 45px 50px;
       width: 40%;
       line-height: 1.75em;
       position: relative;
       margin-bottom: 80px;
       float: left;
-      box-shadow: 0 10px 40px #0000002e;
+      box-shadow: 0 10px 40px #0000002e, inset 0 0 2px #fff6;
 
       .milestones__icon {
         margin-bottom: 5px;
       }
       .milestones__header {
-        font-size: 30px;
-        font-family: 'TransatLight';
+        font-size: 32px;
         font-weight: 400;
         text-transform: uppercase;
-        letter-spacing: .2em;
+        letter-spacing: 0em;
         margin-bottom: 18px;
-        line-height: 1.3em;
+        line-height: 1.2em;
+        font-family: 'TransatBold';
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          filter: blur(8px);
+          -webkit-filter: blur(8px);
+          background-color: #fff4;
+          opacity: 1;
+          background-image: url('../images/bg-timeline.png'), radial-gradient(circle, rgba(8,29,94,1) 0%, rgba(1,11,43,1) 100%);
+          background-position: top right;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+        }
 
         .accent-color {
-          font-family: 'TransatBlack';
           font-size: 14px;
           line-height: .4em;
         }
@@ -1222,30 +1309,9 @@ h1, h1 ,h1 {
       margin: 0 0 30px;
     }
   }
-  .milestones__image-wrap {
-    width: 35%;
-    float: left;
-    margin-top: -127px;
-    margin-bottom: -163px;
-
-    .milestones__image {
-      max-width: 100%;
-
-      @media (max-width: 767px) {
-        width: 80%;
-      }
-    }
-
-    @media (max-width: 767px) {
-      width: 100%;
-      float: none;
-      margin: 0 0 -100px;
-      text-align: center;
-    }
-  }
 
   @media (max-width: 767px) {
-    padding: 90px 0 0;
+    padding: 90px 0 70px;
   }
 }
 
@@ -1306,9 +1372,11 @@ h1, h1 ,h1 {
 .contacts {
   text-align: center;
   color: #fff;
-  background-color: #2D273B;
-  padding: 89px 0;
+  padding: 110px 0 60px;
   font-size: 18px;
+  background-color: #010B2B;
+  background-image: linear-gradient(0deg, #010b2b 0%, #081d5e 100%);
+  box-shadow: inset 0 -15px 15px -15px #7581FC;
 
   .form__header {
     font-size: 50px;
@@ -1388,11 +1456,13 @@ h1, h1 ,h1 {
 
 .footer {
   color: #b3b0bb;
-  background-color: #251F31;
   padding: 75px 0 50px;
-  border-top: 1px solid #979797;
   line-height: 2em;
   font-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: rgb(1,11,43);
+  background-image: url('../images/footer-image.png'), linear-gradient(49deg, rgba(1,11,43,1) 0%, rgba(8,29,94,1) 54%, rgba(8,29,94,1) 64%, rgba(1,11,43,1) 100%);
 
   .footer__container {
     max-width: 1800px;
@@ -1420,21 +1490,7 @@ h1, h1 ,h1 {
       margin-bottom: 30px;
     }
   }
-  .footer__center {
-    width: 10%;
-    float: right;
-    text-align: center;
 
-    .footer__character {
-      max-width: 180px;
-    }
-
-    @media (max-width: 767px) {
-      width: 70%;
-      float: none;
-      margin: 0 auto 30px;
-    }
-  }
   .footer__right {
     @extend %column__padding;
     width: 45%;
@@ -1466,7 +1522,7 @@ h1, h1 ,h1 {
       }
 
       @media (max-width: 767px) {
-        margin: 0 8x 4px;
+        margin: 0 3px 4px;
       }
     }
 
@@ -1480,6 +1536,7 @@ h1, h1 ,h1 {
 
   @media (max-width: 767px) {
     padding: 72px 0;
+    background-image: linear-gradient(49deg, rgba(1,11,43,1) 0%, rgba(8,29,94,1) 54%, rgba(8,29,94,1) 64%, rgba(1,11,43,1) 100%);
   }
 }
 
@@ -1525,11 +1582,9 @@ h1, h1 ,h1 {
     }
   }
 
-
   /**
    * Modal FORM
    */
-
   /* 1. Ensure this sits above everything when visible */
   .modal {
     position: absolute;
@@ -1679,10 +1734,6 @@ h1, h1 ,h1 {
     margin-left: -45%;
   }
 }
-
-
-
-
 
 /* SUBS FORM */
 .subs-form {
