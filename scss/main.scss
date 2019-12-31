@@ -50,7 +50,10 @@ h1, h1 ,h1 {
 .lowercase {
   text-transform: lowercase;
 }
-
+.grain {
+  position: relative;
+  z-index: 1;
+}
 .grain::after {
   content: '';
   display: block;
@@ -522,12 +525,17 @@ h1, h1 ,h1 {
   }
 }
 
+@keyframes lines {
+  0% {transform: translateY(0) scaleY(0.5); opacity: 1;}
+  100% {transform: translateY(210px) scaleY(1); opacity: 0;}
+}
+
 /*Distribution */
 .distribution {
   background-color: $darkblue-color;
-  background-image: url('../images/bg-grid.png');
+  background-image: url('../images/bg-grid-lines.png');
   background-position: center top;
-  background-size: contain;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
@@ -538,6 +546,58 @@ h1, h1 ,h1 {
   line-height: 1.8em;
   box-shadow: inset 0 7px 5px -5px #7581FC;
 
+  .lines {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 210px;
+      .line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        opacity: 1;
+        background-color: #5b5a98;
+        animation: lines 12s ease-in;
+        animation-iteration-count: infinite;
+      }
+      .line2 {
+        animation-delay: 1s;
+      }
+      .line3 {
+        animation-delay: 2s;
+      }
+      .line4 {
+        animation-delay: 3s;
+      }
+      .line5 {
+        animation-delay: 4s;
+      }
+      .line6 {
+        animation-delay: 5s;
+      }
+      .line7 {
+        animation-delay: 6s;
+      }
+      .line8 {
+        animation-delay: 7s;
+      }
+      .line9 {
+        animation-delay: 8s;
+      }
+      .line10 {
+        animation-delay: 9s;
+      }
+      .line11 {
+        animation-delay: 10s;
+      }
+      .line12 {
+        animation-delay: 11s;
+      }
+    }
   .distribution__title {
     font-size: 50px;
     font-weight: bold;
@@ -605,12 +665,14 @@ h1, h1 ,h1 {
       text-align: center;
     }
   }
-
+  @media (max-width: 1920px) {
+    background-size: auto 210px;
+  }
   @media (max-width: 767px) {
     padding: 80px 0;
     font-size: 15px;
-    background-size: auto;
     line-height: 1.6em;
+
   }
 }
 
