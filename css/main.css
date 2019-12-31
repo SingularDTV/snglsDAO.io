@@ -130,6 +130,10 @@ h1, h1, h1 {
 .lowercase {
   text-transform: lowercase; }
 
+.grain {
+  position: relative;
+  z-index: 1; }
+
 .grain::after {
   content: '';
   display: block;
@@ -510,12 +514,20 @@ h1, h1, h1 {
       text-align: center;
       background-size: auto; } }
 
+@keyframes lines {
+  0% {
+    transform: translateY(0) scaleY(0.5);
+    opacity: 1; }
+  100% {
+    transform: translateY(210px) scaleY(1);
+    opacity: 0; } }
+
 /*Distribution */
 .distribution {
   background-color: #010B2B;
-  background-image: url("../images/bg-grid.png");
+  background-image: url("../images/bg-grid-lines.png");
   background-position: center top;
-  background-size: contain;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
@@ -525,6 +537,45 @@ h1, h1, h1 {
   font-weight: 300;
   line-height: 1.8em;
   box-shadow: inset 0 7px 5px -5px #7581FC; }
+  .distribution .lines {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 210px; }
+    .distribution .lines .line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      opacity: 1;
+      background-color: #5b5a98;
+      animation: lines 12s ease-in;
+      animation-iteration-count: infinite; }
+    .distribution .lines .line2 {
+      animation-delay: 1s; }
+    .distribution .lines .line3 {
+      animation-delay: 2s; }
+    .distribution .lines .line4 {
+      animation-delay: 3s; }
+    .distribution .lines .line5 {
+      animation-delay: 4s; }
+    .distribution .lines .line6 {
+      animation-delay: 5s; }
+    .distribution .lines .line7 {
+      animation-delay: 6s; }
+    .distribution .lines .line8 {
+      animation-delay: 7s; }
+    .distribution .lines .line9 {
+      animation-delay: 8s; }
+    .distribution .lines .line10 {
+      animation-delay: 9s; }
+    .distribution .lines .line11 {
+      animation-delay: 10s; }
+    .distribution .lines .line12 {
+      animation-delay: 11s; }
   .distribution .distribution__title {
     font-size: 50px;
     font-weight: bold;
@@ -575,11 +626,13 @@ h1, h1, h1 {
         width: 100%;
         float: none;
         text-align: center; } }
+  @media (max-width: 1920px) {
+    .distribution {
+      background-size: auto 210px; } }
   @media (max-width: 767px) {
     .distribution {
       padding: 80px 0;
       font-size: 15px;
-      background-size: auto;
       line-height: 1.6em; } }
 
 @keyframes red-glow {
