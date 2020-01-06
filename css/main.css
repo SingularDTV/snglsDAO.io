@@ -175,6 +175,12 @@ h1, h1, h1 {
   100% {
     background-position: 230px 10px, 0 0; } }
 
+.marquee {
+  background: #d40e26;
+  margin: 4px 0;
+  font-size: 12px;
+  line-height: 1.7em; }
+
 .header {
   padding: 2px 0;
   background-color: #010B2B90;
@@ -399,7 +405,7 @@ h1, h1, h1 {
         width: 100%; } }
     @media (max-width: 767px) {
       .hero .hero__text {
-        padding-top: 106px;
+        padding-top: 50px;
         width: 100%;
         float: none; } }
   .hero .hero__image {
@@ -422,7 +428,7 @@ h1, h1, h1 {
         background-position: 64% top; } }
   @media (max-width: 767px) {
     .hero {
-      padding: 0;
+      padding-bottom: 0;
       overflow: hidden; } }
 
 /* mission */
