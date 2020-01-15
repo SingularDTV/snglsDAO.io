@@ -1584,7 +1584,10 @@ h1, h1 ,h1 {
   background-image: url('../images/footer-image.png'), linear-gradient(49deg, rgba(1,11,43,1) 0%, rgba(8,29,94,1) 54%, rgba(8,29,94,1) 64%, rgba(1,11,43,1) 100%);
 
   a {
-    @extend %link;
+    color: #b3b0bb;
+    :visited {
+      color: #b3b0bb;
+    }
   }
 
   .footer__container {
