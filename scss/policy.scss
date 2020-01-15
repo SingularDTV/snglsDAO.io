@@ -1,0 +1,133 @@
+@import 'mixin', 'reset', 'variables', 'extend', 'typography';
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.9em;
+  color: $primary-color;
+  position: relative;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+h1 {
+  font-family: 'TransatBold';
+  font-size: 42px;
+  line-height: 1em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+h2 {
+  font-family: 'TransatBold';
+  font-size: 24px;
+  line-height: 1.2em;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+ol, ul {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+li {
+  margin: 15px 0;
+}
+p {
+  margin-bottom: 20px;
+}
+a {
+  color: #5dbcff;
+}
+.btn {
+  @extend %btn;
+}
+.text-center {
+  text-align: center;
+}
+.container {
+  @extend %column__padding;
+  @extend %clearfix;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.privacy-policy {
+  background-color: $darkblue-color;
+  background-image: url('../images/bg-dao.png'), linear-gradient(0deg, #081d5e 0%, #010b2b 100%);;
+  background-position: center bottom;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 45px 45px -45px #7581FC;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 51px 0;
+  font-weight: 300;
+  line-height: 1.8em;
+
+  &__logo-image {
+    max-width: 180px;
+  }
+
+  &__back {
+    padding: 10px 30px 10px 55px;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 21px;
+      left: 27px;
+      height: 1px;
+      width: 15px;
+      background-color: #fff;
+      margin: 0 10px 2px 0;
+      vertical-align: middle;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 17px;
+      left: 27px;
+      height: 8px;
+      width: 8px;
+      border-left: 1px solid #fff;
+      border-top: 1px solid #fff;
+      transform: rotate(-45deg);
+    }
+  }
+}
+.grain {
+  position: relative;
+  z-index: 1;
+}
+.grain::after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.2;
+  animation: grain 3s steps(10, end) infinite;
+  background-image: url("../images/noise.png"), url("../images/noise.png");
+  background-size: 360px 370px;
+  background-position: 0 0, 0 0;
+}
+@keyframes grain {
+  0% { background-position: 0 0, -10px -230px; }
+  10% { background-position: -10px -230px, 30px 190px; }
+  20% { background-position: 30px 190px, -50px -170px; }
+  30% { background-position: -50px -170px, 70px 130px; }
+  40% { background-position: 70px 130px, -90px -110px; }
+  50% { background-position: -90px -110px, 110px 90px; }
+  60% { background-position: 110px 90px, -130px -70px; }
+  70% { background-position: -130px -70px, 170px 50px; }
+  80% { background-position: 170px 50px, -190px -30px; }
+  90% { background-position: -190px -30px, 230px 10px; }
+  100% { background-position: 230px 10px, 0 0; }
+}
