@@ -12,9 +12,9 @@ img {
 
 /* variables */
 /* extend */
-.dao-info a, .contacts .form__link, .footer a, .subs-form a {
+.dao-info a, .contacts .form__link, .subs-form a {
   color: #D40D26; }
-  .dao-info a:visited, .contacts .form__link:visited, .footer a:visited, .subs-form a:visited {
+  .dao-info a:visited, .contacts .form__link:visited, .subs-form a:visited {
     color: #636fdc; }
 
 .container-fluid::after, .container::after, .row::after, .entervision .entervision__container::after, .milestones .milestones__timeline::after, .footer .footer__container::after {
@@ -1356,6 +1356,10 @@ h1, h1, h1 {
   background-position: center bottom;
   background-color: #010b2b;
   background-image: url("../images/footer-image.png"), linear-gradient(49deg, #010b2b 0%, #081d5e 54%, #081d5e 64%, #010b2b 100%); }
+  .footer a {
+    color: #b3b0bb; }
+    .footer a :visited {
+      color: #b3b0bb; }
   .footer .footer__container {
     max-width: 1800px;
     margin: 0 auto; }
