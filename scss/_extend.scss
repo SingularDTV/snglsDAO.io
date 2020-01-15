@@ -1,4 +1,10 @@
 /* extend */
+%link {
+  color: $accent-color;
+  &:visited {
+    color: $visited-link-color;
+  }
+}
 %clearfix {
   &::after {
     content: '';

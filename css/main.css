@@ -12,6 +12,11 @@ img {
 
 /* variables */
 /* extend */
+.dao-info a, .contacts .form__link, .footer a, .subs-form a {
+  color: #D40D26; }
+  .dao-info a:visited, .contacts .form__link:visited, .footer a:visited, .subs-form a:visited {
+    color: #636fdc; }
+
 .container-fluid::after, .container::after, .row::after, .entervision .entervision__container::after, .milestones .milestones__timeline::after, .footer .footer__container::after {
   content: '';
   display: table;
@@ -800,8 +805,6 @@ h1, h1, h1 {
   background-color: #010B2B;
   background-image: linear-gradient(0deg, #081d5e 0%, #010b2b 100%);
   box-shadow: inset 0 -15px 15px -15px #7581FC; }
-  .dao-info a {
-    color: #f5243d; }
   .dao-info .dao-info__title {
     font-size: 50px;
     font-weight: bold;
@@ -1340,8 +1343,6 @@ h1, h1, h1 {
           position: static;
           width: 100%;
           border-radius: 40px; } }
-  .contacts .form__link {
-    color: #D40D26; }
   @media (max-width: 767px) {
     .contacts {
       padding: 90px 0; } }
@@ -1580,8 +1581,6 @@ h1, h1, h1 {
   color: #7f7f7f; }
   .subs-form p {
     margin-bottom: 10px; }
-  .subs-form a {
-    color: #D40D26; }
   .subs-form .subs-form__fieldset {
     border: none; }
   .subs-form .subs-form__input {

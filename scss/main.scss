@@ -880,7 +880,7 @@ h1, h1 ,h1 {
   box-shadow: inset 0 -15px 15px -15px #7581FC;
 
   a {
-    color: #f5243d;
+    @extend %link;
   }
 
   .dao-info__title {
@@ -1565,7 +1565,7 @@ h1, h1 ,h1 {
   }
 
   .form__link {
-    color: #D40D26;
+    @extend %link;
   }
 
   @media (max-width: 767px) {
@@ -1582,6 +1582,10 @@ h1, h1 ,h1 {
   background-position: center bottom;
   background-color: rgb(1,11,43);
   background-image: url('../images/footer-image.png'), linear-gradient(49deg, rgba(1,11,43,1) 0%, rgba(8,29,94,1) 54%, rgba(8,29,94,1) 64%, rgba(1,11,43,1) 100%);
+
+  a {
+    @extend %link;
+  }
 
   .footer__container {
     max-width: 1800px;
@@ -1864,7 +1868,7 @@ h1, h1 ,h1 {
     margin-bottom: 10px;
   }
   a {
-    color: $accent-color;
+    @extend %link;
   }
   .subs-form__fieldset {
     border: none;
