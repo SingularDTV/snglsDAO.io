@@ -12,8 +12,9 @@ body {
   }
 }
 
-h1, h1 ,h1 {
+h1 {
   font-family: 'TransatBold';
+  line-height: 1.1em;
 }
 .container-fluid {
   @extend %column__padding;
