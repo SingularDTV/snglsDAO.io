@@ -113,8 +113,9 @@ body {
     body {
       font-size: 14px; } }
 
-h1, h1, h1 {
-  font-family: 'TransatBold'; }
+h1 {
+  font-family: 'TransatBold';
+  line-height: 1.1em; }
 
 .container {
   max-width: 1140px;
