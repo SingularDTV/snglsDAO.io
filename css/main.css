@@ -113,8 +113,9 @@ body {
     body {
       font-size: 14px; } }
 
-h1, h1, h1 {
-  font-family: 'TransatBold'; }
+h1, h2 {
+  font-family: 'TransatBold';
+  line-height: 1.1em; }
 
 .container {
   max-width: 1140px;
@@ -995,11 +996,20 @@ h1, h1, h1 {
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 0.04em;
-    margin-bottom: 65px;
+    margin-bottom: 5px;
     text-align: center; }
     @media (max-width: 767px) {
       .entervision .entervision__title {
         font-size: 35px; } }
+  .entervision .entervision__subtitle {
+    color: #d40e26;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-bottom: 65px; }
+    @media (max-width: 767px) {
+      .entervision .entervision__subtitle {
+        font-size: 24px; } }
   .entervision .entervision__left {
     width: 50%;
     float: left; }
