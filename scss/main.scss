@@ -246,9 +246,7 @@ h1, h2 {
         background-color: #19264B;
         padding: 4px 0;
         border-radius: 8px;
-        left: 50%;
-        width: 94px;
-        margin-left: -47px;
+        left: 0;
         list-style: none;
 
         .menu__dropdown-item {
@@ -258,9 +256,10 @@ h1, h2 {
             text-align: center;
             color: #fff;
             text-decoration: none;
-            padding: 3px 4px;
+            padding: 1px 14px;
             font-family: 'TransatBold';
             font-size: 16px;
+            white-space: nowrap;
 
             &:hover {
               color: #fff9;
