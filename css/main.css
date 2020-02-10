@@ -318,18 +318,17 @@ h1, h2 {
         background-color: #19264B;
         padding: 4px 0;
         border-radius: 8px;
-        left: 50%;
-        width: 94px;
-        margin-left: -47px;
+        left: 0;
         list-style: none; }
         .menu .menu__item.menu__dropdown .menu__dropdown-menu .menu__dropdown-item .menu__dropdown-link {
           display: block;
           text-align: center;
           color: #fff;
           text-decoration: none;
-          padding: 3px 4px;
+          padding: 1px 14px;
           font-family: 'TransatBold';
-          font-size: 16px; }
+          font-size: 16px;
+          white-space: nowrap; }
           .menu .menu__item.menu__dropdown .menu__dropdown-menu .menu__dropdown-item .menu__dropdown-link:hover {
             color: #fff9; }
         .menu .menu__item.menu__dropdown .menu__dropdown-menu .menu__dropdown-item + .menu__dropdown-item {
