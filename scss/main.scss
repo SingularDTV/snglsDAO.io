@@ -934,7 +934,7 @@ h1, h2 {
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 0.04em;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 
     @media (max-width: 767px) {
       font-size: 35px;
@@ -945,7 +945,7 @@ h1, h2 {
     font-size: 32px;
     font-weight: bold;
     letter-spacing: 0.04em;
-    margin: 30px 0;
+    margin: 50px 0 30px;
 
     @media (max-width: 767px) {
       font-size: 28px;
@@ -968,7 +968,7 @@ h1, h2 {
         width: 124px;
         height: 124px;
         line-height: 96px;
-        margin: 0 auto 30px;
+        margin: 0 auto;
         box-shadow: 2px 2px 10px $accent-color;
         border-radius: 50%;
         text-align: center;
@@ -977,12 +977,15 @@ h1, h2 {
         display: inline-block;
         width: 200px;
         max-width: 100%;
+        vertical-align: middle;
 
         .dao__treasury-header {
           margin-bottom: 5px;
           font-weight: 400;
           font-size: 18px;
           letter-spacing: 0.04em;
+
+
 
           @media (max-width: 767px) {
             margin-bottom: 20px;
@@ -1064,6 +1067,65 @@ h1, h2 {
     padding: 99px 0 18px;
     text-align: center;
   }
+
+  .dao__info {
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    left: -4px;
+    width: 20px;
+    height: 20px;
+    background-color: #3a326e;
+    color: #0fd8d5;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: serif;
+    cursor: pointer;
+
+    .dao__info-box {
+      position: absolute;
+      display: none;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-9px);
+      background-color: #3a326e;
+      color: #b5acec;
+      padding: 7px;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-family: monospace;
+      min-width: 175px;
+      max-width: 220px;
+      border-radius: 3px;
+
+      &::after {
+        content:'';
+        display: block;
+        position: absolute;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-top: 5px solid #3a326e;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+      }
+    }
+
+    &:hover {
+      .dao__info-box {
+        display: block;
+      }
+    }
+
+    @media (max-width: 767px) {
+      display: block;
+      margin: 0 auto;
+      top: 0;
+      left: 0;
+    }
+  }
+
 }
 
 .calls {
