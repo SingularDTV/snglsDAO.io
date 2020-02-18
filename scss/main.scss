@@ -1071,17 +1071,18 @@ h1, h2 {
   .dao__info {
     display: inline-block;
     position: relative;
-    top: -7px;
+    top: -12px;
     left: -4px;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: #3a326e;
     color: #0fd8d5;
     border-radius: 12px;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 13px;
+    line-height: 16px;
     font-family: serif;
     cursor: pointer;
+    text-align: center;
 
     .dao__info-box {
       position: absolute;
