@@ -1157,6 +1157,7 @@ h1, h2 {
       z-index: 1;
       padding: 45px 50px;
       width: 40%;
+      min-height: 270px;
       line-height: 1.75em;
       position: relative;
       margin-bottom: 80px;
