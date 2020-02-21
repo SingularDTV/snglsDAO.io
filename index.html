@@ -101,6 +101,26 @@ body {font-family: Arial, Helvetica, sans-serif;}
           <li class="menu__item"><a class="menu__link" href="https://snglsdao.io/">Home</a></li>
           <li class="menu__item"><a class="menu__link" href="https://forum.snglsdao.io/" target="_blank">Forum</a></li>
           <li class="menu__item menu__dropdown">
+            <span class="menu__link">Consumer Protections</span>
+            <ul class="menu__dropdown-menu">
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="#" target="_blank">Source Code</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="#" target="_blank">Transaction History</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="https://github.com/SingularDTV/snglsdao-whitepaper" target="_blank">Token Economics</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link anchor" href="#roadmap" target="_blank">Roadmap</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="#" target="_blank">History of Past Token Sales</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item menu__dropdown">
             <span class="menu__link">News</span>
             <ul class="menu__dropdown-menu">
               <li class="menu__dropdown-item">
@@ -138,7 +158,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
       </div>
     </header>
     <marquee direction="left" speed="normal" behavior="loop" class="marquee">
-      DAO Statistics: Treasury: ETH 0, Treasury: SNGLS 0, Listing Rate: SNGLS 0, Transaction Rate: SNGLS 0, Validation Rate: SNGLS 0
+      |||| DAO Statistics |||| Memebership Fee: SNGLS 0 |||| Treasury: ETH 0 SNGLS 0 |||| Listing Fee: SNGLS 0 |||| Transaction Fee: SNGLS 0 |||| Validation Fee: SNGLS 0 ||||
     </marquee>
     <div class="container">
       <div class="row">
@@ -237,7 +257,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
           <a class="videos__image" href="#">
             <iframe class="videos__iframe" src="https://www.youtube.com/embed/NOXjkughSOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </a>
-          <h3 class="videos__header">02 snglsDAO Podcast: Hal Finney is Satoshi Nakamoto, Crypto the Antichrist, SingularDTV & SNGLS DAO</h3>
+          <h3 class="videos__header">02 snglsDAO Podcast: Hal Finney is Satoshi Nakamoto, Crypto the Antichrist, SingularDTV &amp; SNGLS DAO</h3>
           <p class="videos__description">
             Troy Murray of SingularDTV and the snglsDAO sits down with Tyler Ward of Proof
             Systems...
@@ -287,6 +307,25 @@ body {font-family: Arial, Helvetica, sans-serif;}
   <section class="dao grain">
     <div class="container">
       <h1 class="dao__title">DAO Statistics</h1>
+      <div class="dao__treasury">
+        <div class="row">
+          <div class="dao__treasury-item">
+            <div class="dao__treasury-icon-wrap">
+              <img class="dao__icon" src="./images/dao-icon-0.png" alt="Membership Fee: SNGLS">
+            </div>
+            <div class="dao__treasury-text">
+              <h3 class="dao__treasury-header">Membership Fee: SNGLS
+                <div class="dao__info">i
+                  <div class="dao__info-box">
+                    The ammount of SNGLS needed to stake in the DAO so you don't have to pay the transaction fee.
+                  </div>
+                </div>
+              </h3>
+              <div class="dao__counter" data-to="0" data-from="769"></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <h2 class="dao__sub-title">TREASURY</h2>
       <div class="dao__treasury">
         <div class="row">
@@ -295,7 +334,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
               <img class="dao__icon" src="./images/dao-icon-1.png" alt="Treasury: ETH icon">
             </div>
             <div class="dao__treasury-text">
-              <h3 class="dao__treasury-header">Treasury: ETH</h3>
+              <h3 class="dao__treasury-header">
+                Treasury: ETH
+                <div class="dao__info">i
+                  <div class="dao__info-box">
+                    The ammount of ETH that is located in the DAO's treasury.
+                  </div>
+                </div>
+              </h3>
               <div class="dao__counter" data-to="0" data-from="769"></div>
             </div>
           </div>
@@ -304,7 +350,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
               <img class="dao__treasury-icon" src="./images/dao-icon-2.png" alt="Treasury: ETH icon">
             </div>
             <div class="dao__treasury-text">
-              <h3 class="dao__treasury-header">Treasury: SNGLS</h3>
+              <h3 class="dao__treasury-header">
+                Treasury: SNGLS
+                <div class="dao__info">i
+                  <div class="dao__info-box">
+                    The ammount of SNGLS that is located in the DAO's treasury.
+                  </div>
+                </div>
+              </h3>
               <div class="dao__counter" data-to="0" data-from="1259"></div>
             </div>
           </div>
@@ -318,21 +371,42 @@ body {font-family: Arial, Helvetica, sans-serif;}
             <div class="dao__icon-wrap">
               <img class="dao__icon" src="./images/dao-icon-3.png" alt="Treasury: ETH icon">
             </div>
-            <h3 class="dao__item-header">Listing Rate: SNGLS</h3>
+            <h3 class="dao__item-header">
+              Listing Fee: SNGLS
+              <div class="dao__info">i
+                <div class="dao__info-box">
+                  The minimum amount of SNGLS needed to be staked to have content mined onto the protocol.
+                </div>
+              </div>
+            </h3>
             <div class="dao__counter" data-to="0" data-from="987"></div>
           </div>
           <div class="dao__item">
             <div class="dao__icon-wrap">
               <img class="dao__icon" src="./images/dao-icon-4.png" alt="Treasury: ETH icon">
             </div>
-            <h3 class="dao__item-header">Transaction Rate: SNGLS</h3>
+            <h3 class="dao__item-header">
+              Transaction Fee: %
+              <div class="dao__info">i
+                <div class="dao__info-box">
+                  The percentage taken on every transaction of a rented or purchased piece of content
+                </div>
+              </div>
+            </h3>
             <div class="dao__counter" data-to="0" data-from="1100"></div>
           </div>
           <div class="dao__item">
             <div class="dao__icon-wrap">
               <img class="dao__icon" src="./images/dao-icon-5.png" alt="Treasury: ETH icon">
             </div>
-            <h3 class="dao__item-header">Validation Rate: SNGLS</h3>
+            <h3 class="dao__item-header">
+              Validation Fee: SNGLS
+              <div class="dao__info">i
+                <div class="dao__info-box">
+                  Minimum amount paid to validators.
+                </div>
+              </div>
+            </h3>
             <div class="dao__counter" data-to="0" data-from="1000"></div>
           </div>
         </div>
@@ -380,7 +454,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   </section>
 
 
-  <section class="milestones grain">
+  <section class="milestones grain" id="roadmap">
     <div class="container">
       <h1 class="milestones__title">ROADMAP</h1>
       <div class="milestones__timeline">
@@ -429,23 +503,23 @@ body {font-family: Arial, Helvetica, sans-serif;}
         </div>
         <div class="milestones__item milestones__item--left">
           <h3 class="milestones__header">
-            <span class="accent-color">2020 Q1</span><br>
-            Plan for SNGLS Token<br>
-            Swap & Upgrade
+            <span class="accent-color">2020 Q2</span><br>
+            Plan for SNGLS Token Fork &amp; DAO Launch
           </h3>
           <p>
-            It is intended for a 1:1 swap from SNGLS to SNGLS 2.0 to occur in 2020. The roll-out
-            schedule will be determined by various legal, regulatory and compliance timelines.
+            We will be forking the SNGLS token and giving everyone who has SNGLS in their wallet the new DAO token.
+            The DAO and the fork will be released near the end of the Q2 2020.
+            <!--The DAO will launch with parameter controls around the protocol of
+            transaction and listing fee along with the treasury.-->
           <p>
         </div>
         <div class="milestones__item milestones__item--right">
           <h3 class="milestones__header">
-            <span class="accent-color">2020 Q2</span><br>
-            DAO LAUNCH & OPEN SOURCE UI RELEASE
+            <span class="accent-color">Late 2020 / Early 2021</span><br>
+           OPEN SOURCE UI RELEASE
           </h3>
           <p>
-            In Q2 of 2020 we will launch the DAO with parameter controls around the protocol of
-            transaction and listing fee along with the treasury. We will also release our open
+            We will release our open
             source UI called EtherVision that has no connection to the legacy monetary world and
             transacts only in Crypto, with the first tokens being SNGLS, DAI, SAI, and ETH.
           <p>
@@ -453,7 +527,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
         <div class="milestones__item milestones__item--left">
           <h3 class="milestones__header">
             <span class="accent-color">2020 Q1 - Q4</span><br>
-            CONTENT MINING RESEARCH & DEVELOPMENT
+            CONTENT MINING RESEARCH &amp; DEVELOPMENT
           </h3>
           <p>
             Research and development on the Content Mining mechanism will be on going
@@ -462,7 +536,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
         </div>
         <div class="milestones__item milestones__item--right">
           <h3 class="milestones__header">
-            <span class="accent-color">2021 Q1*</span><br>
+            <span class="accent-color">2021 Q2*</span><br>
             CONTENT MINING BETA LAUNCH
           </h3>
           <p>
@@ -474,7 +548,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
         <div class="milestones__item milestones__item--left">
           <h3 class="milestones__header">
             <span class="accent-color">2021 Q3*</span><br>
-              SNGLS SHARD & ETH2.0
+              SNGLS SHARD &amp; ETH2.0
               Infrastructure upgrade
           </h3>
           <p>
