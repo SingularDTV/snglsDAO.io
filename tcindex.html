@@ -47,7 +47,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
-
 /* The Modal (background) */
 .modala {
   display: none; /* Hidden by default */
@@ -62,7 +61,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 /* Modal Content */
 .modala-content {
   background-color: #fefefe;
@@ -71,7 +69,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   border: 1px solid #888;
   width: 35%;
 }
-
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -79,7 +76,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: #000;
@@ -104,6 +100,26 @@ body {font-family: Arial, Helvetica, sans-serif;}
         <ul class="menu">
           <li class="menu__item"><a class="menu__link" href="https://snglsdao.io/">主頁</a></li>
           <li class="menu__item"><a class="menu__link" href="https://forum.snglsdao.io/" target="_blank">討論區</a></li>
+<li class="menu__item menu__dropdown">
+            <span class="menu__link">消費者保障</span>
+            <ul class="menu__dropdown-menu">
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="#" target="_blank">源代碼</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="#" target="_blank">過往交易記錄</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="https://github.com/SingularDTV/snglsdao-whitepaper" target="_blank">代幣經濟</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link anchor" href="#roadmap" target="_blank">里程碑</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a class="menu__dropdown-link" href="#" target="_blank">過往代幣銷售</a>
+              </li>
+            </ul>
+          </li>
           <li class="menu__item menu__dropdown">
             <span class="menu__link">社群動向</span>
             <ul class="menu__dropdown-menu">
@@ -141,11 +157,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
         </ul>
       </div>
     </header>
-	  
 	      <marquee direction="left" speed="normal" behavior="loop" class="marquee">
-      DAO 數據 // 儲備資金: 0 ETH  | 0 SNGLS   //  參數: 上架費用 - 0 SNGLS  | 交易費用 - 0% | 驗証費用 - 0 SNGLS 
+      |||| DAO 數據 |||| 會員費用: SNGLS 0 |||| 儲備資金: ETH 0 SNGLS 0 |||| 上架費用: SNGLS 0 |||| 交易費用: SNGLS 0 |||| 驗証費用: SNGLS 0 ||||
     </marquee>
-	  
     <div class="container">
       <div class="row">
         <div class="hero__text">
@@ -281,6 +295,25 @@ body {font-family: Arial, Helvetica, sans-serif;}
   <section class="dao grain">
     <div class="container">
       <h1 class="dao__title">DAO 數據</h1>
+<div class="dao__treasury">
+        <div class="row">
+          <div class="dao__treasury-item">
+            <div class="dao__treasury-icon-wrap">
+              <img class="dao__icon" src="./images/dao-icon-0.png" alt="會員費用: SNGLS">
+            </div>
+            <div class="dao__treasury-text">
+              <h3 class="dao__treasury-header">會員費用: SNGLS
+                <div class="dao__info">i
+                  <div class="dao__info-box">
+                    所需的SNGLS數量抵押在DAO中，用以豁免交易費用。
+                  </div>
+                </div>
+              </h3>
+              <div class="dao__counter" data-to="0" data-from="769"></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <h2 class="dao__sub-title">儲備資金</h2>
       <div class="dao__treasury">
         <div class="row">
@@ -289,7 +322,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
               <img class="dao__icon" src="./images/dao-icon-1.png" alt="Treasury: ETH icon">
             </div>
             <div class="dao__treasury-text">
-              <h3 class="dao__treasury-header">ETH</h3>
+              <h3 class="dao__treasury-header">
+                儲備資金: ETH
+                <div class="dao__info">i
+                  <div class="dao__info-box">
+                    在DAO儲備資金內的ETH數量。
+                  </div>
+                </div>
+              </h3>
               <div class="dao__counter" data-to="0" data-from="769"></div>
             </div>
           </div>
@@ -298,7 +338,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
               <img class="dao__treasury-icon" src="./images/dao-icon-2.png" alt="Treasury: ETH icon">
             </div>
             <div class="dao__treasury-text">
-              <h3 class="dao__treasury-header">SNGLS</h3>
+              <h3 class="dao__treasury-header">
+                儲備資金: SNGLS
+                <div class="dao__info">i
+                  <div class="dao__info-box">
+                    在DAO儲備資金內的SNGLS數量。
+                  </div>
+                </div>
+              </h3>
               <div class="dao__counter" data-to="0" data-from="1259"></div>
             </div>
           </div>
@@ -312,21 +359,42 @@ body {font-family: Arial, Helvetica, sans-serif;}
             <div class="dao__icon-wrap">
               <img class="dao__icon" src="./images/dao-icon-3.png" alt="Treasury: ETH icon">
             </div>
-            <h3 class="dao__item-header">上架費用：SNGLS</h3>
+            <h3 class="dao__item-header">
+              上架費用: SNGLS
+              <div class="dao__info">i
+                <div class="dao__info-box">
+                  最少需要抵押的SNGLS數量，用以在協定內進行內容掘礦。
+                </div>
+              </div>
+            </h3>
             <div class="dao__counter" data-to="0" data-from="987"></div>
           </div>
           <div class="dao__item">
             <div class="dao__icon-wrap">
               <img class="dao__icon" src="./images/dao-icon-4.png" alt="Treasury: ETH icon">
             </div>
-            <h3 class="dao__item-header">交易費用 %</h3>
+            <h3 class="dao__item-header">
+              交易費用: %
+              <div class="dao__info">i
+                <div class="dao__info-box">
+                  在用戶每次租借點播或購買內容時所徵收的百份比費用。
+                </div>
+              </div>
+            </h3>
             <div class="dao__counter" data-to="0" data-from="1100"></div>
           </div>
           <div class="dao__item">
             <div class="dao__icon-wrap">
               <img class="dao__icon" src="./images/dao-icon-5.png" alt="Treasury: ETH icon">
             </div>
-            <h3 class="dao__item-header">驗証費用：SNGLS</h3>
+            <h3 class="dao__item-header">
+              驗証費用: SNGLS
+              <div class="dao__info">i
+                <div class="dao__info-box">
+                  給付驗証者的最低收費。
+                </div>
+              </div>
+            </h3>
             <div class="dao__counter" data-to="0" data-from="1000"></div>
           </div>
         </div>
@@ -353,6 +421,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   <section class="entervision">
     <div class="entervision__container">
       <h1 class="entervision__title">EtherVision</h1>
+	<h2 class="entervision__subtitle">一站式影視網絡</h2>
       <div class="entervision__left">
         <div class="entervision__item">
           <h3 class="entervision__subheader">對用戶而言：</h3>
@@ -373,7 +442,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   </section>
 
 
-  <section class="milestones grain">
+  <section class="milestones grain" id="roadmap">
     <div class="container">
       <h1 class="milestones__title">里程碑</h1>
       <div class="milestones__timeline">
@@ -418,21 +487,22 @@ body {font-family: Arial, Helvetica, sans-serif;}
         </div>
         <div class="milestones__item milestones__item--left">
           <h3 class="milestones__header">
-            <span class="accent-color">2020年第1季</span><br>
-            預定SNGLS通証<br>
-            互換及升級
+             <span class="accent-color">2020年第2季</span><br>
+            計劃SNGLS代幣分叉及DAO發佈
           </h3>
           <p>
-            預計在2020年升級SNGLS通証並與SNGLS 2.0進行1：1互換。正式實施的時間表將視乎各種法律、法規和合規情況而定。
+	   進行SNGLS代幣分叉，並將新的DAO代幣發放到SNGLS持有者的錢包之中。
+           DAO及代幣分叉會於2020年第二季發佈。
+            <!--DAO會發佈管治協定內交易費用及上架費用等的參數及儲備資金。-->
           <p>
         </div>
         <div class="milestones__item milestones__item--right">
           <h3 class="milestones__header">
-            <span class="accent-color">2020年第2季</span><br>
-            DAO及開源用戶介面發佈
+            <span class="accent-color">2020年底或2021年初</span><br>
+           開源用戶介面發佈
           </h3>
           <p>
-            在2020年第2季度，我們將啟動帶有交易費用參數、上架費用參數以及儲備資金參數的DAO。我們還將發佈名為EtherVision的開源用戶介面(UI)，該介面傳統繁複的金融領域沒有任何關聯，一切交易及互動都以加密貨幣進行，首批支援的加密貨幣為SNGLS、DAI、SAI、ETH。
+            我們將發佈名為EtherVision的開源用戶介面(UI)，該介面傳統繁複的金融領域沒有任何關聯，一切交易及互動都以加密貨幣進行，首批支援的加密貨幣為SNGLS、DAI、SAI、ETH。
           <p>
         </div>
         <div class="milestones__item milestones__item--left">
@@ -446,11 +516,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
         </div>
         <div class="milestones__item milestones__item--right">
           <h3 class="milestones__header">
-            <span class="accent-color">2021年第1季*</span><br>
+            <span class="accent-color">2021年第2季*</span><br>
             內容掘礦(Content Mining) 公測發佈
           </h3>
           <p>
-           2021年第1季預定發佈及公測內容掘礦機制。
+           預定發佈及公測內容掘礦機制。
             <br>
             *暫定時間
           <p>
@@ -615,26 +685,25 @@ body {font-family: Arial, Helvetica, sans-serif;}
           <img class="footer__logo" src="./images/logo.svg" alt="snglsDAO">
         </a>
         <div class="footer__socials">
-          
- <a class="footer__social-link" href="https://discord.gg/GHmcVVR" target="_blank">
-	    <img class="footer__social-icon" src="./images/social-discord.svg" alt="Discord"/>
-	  </a>
+          <a class="footer__social-link" href="https://discord.gg/GHmcVVR" target="_blank">
+						<img class="footer__social-icon" src="./images/social-discord.svg" alt="Discord"/>
+					</a>
 
 <a class="footer__social-link" href="https://github.com/SingularDTV/snglsdao-pm" target="_blank">
-						<img class="footer__social-icon" src="./images/social-github.svg" alt="Github"/>
-	  </a>
-	  <a class="footer__social-link" href="https://weibo.com/snglsdao" target="_blank">
-	    <img class="footer__social-icon" src="./images/social-weibo.svg" alt="Weibo"/>
-	  </a>
-	  <a class="footer__social-link" href="https://twitter.com/snglsdao" target="_blank">
-	    <img class="footer__social-icon" src="./images/social-twitter.svg" alt="Twitter"/>
-	  </a>
-	  <a class="footer__social-link" href="https://facebook.com/snglsdao/" target="_blank">
-	    <img class="footer__social-icon" src="./images/social-facebook.svg" alt="Facebook"/>
-	  </a>
-	  <a class="footer__social-link" href="https://medium.com/singulardtv/" target="_blank">
-	    <img class="footer__social-icon" src="./images/social-medium.svg" alt="Medium"/>
-	  </a>
+												<img class="footer__social-icon" src="./images/social-github.svg" alt="Github"/>
+					</a>
+					<a class="footer__social-link" href="https://weibo.com/snglsdao" target="_blank">
+						<img class="footer__social-icon" src="./images/social-weibo.svg" alt="Weibo"/>
+					</a>
+					<a class="footer__social-link" href="https://twitter.com/snglsdao" target="_blank">
+						<img class="footer__social-icon" src="./images/social-twitter.svg" alt="Twitter"/>
+					</a>
+					<a class="footer__social-link" href="https://facebook.com/snglsdao/" target="_blank">
+						<img class="footer__social-icon" src="./images/social-facebook.svg" alt="Facebook"/>
+					</a>
+					<a class="footer__social-link" href="https://medium.com/singulardtv/" target="_blank">
+						<img class="footer__social-icon" src="./images/social-medium.svg" alt="Medium"/>
+					</a>
 	  <!-- Trigger/Open The Modal -->
 
 <button id="myBtn" class="footer__social-link" style="background-color:transparent;border:0px;"><img class="footer__social-icon" src="./images/social-wechat.svg"></button>
@@ -653,23 +722,18 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <script>
 // Get the modal
 var modala = document.getElementById("myModala");
-
 // Get the button that opens the modal
 var btna = document.getElementById("myBtn");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
 // When the user clicks the button, open the modal 
 btna.onclick = function() {
   modala.style.display = "block";
 }
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modala.style.display = "none";
 }
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modala) {
@@ -677,7 +741,6 @@ window.onclick = function(event) {
   }
 }
 </script>
-		
         </div>
       </div>
       <div class="hidden-desktop">
