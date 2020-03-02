@@ -113,8 +113,9 @@ body {
     body {
       font-size: 14px; } }
 
-h1, h1, h1 {
-  font-family: 'TransatBold'; }
+h1, h2 {
+  font-family: 'TransatBold';
+  line-height: 1.1em; }
 
 .container {
   max-width: 1140px;
@@ -317,18 +318,17 @@ h1, h1, h1 {
         background-color: #19264B;
         padding: 4px 0;
         border-radius: 8px;
-        left: 50%;
-        width: 94px;
-        margin-left: -47px;
+        left: 0;
         list-style: none; }
         .menu .menu__item.menu__dropdown .menu__dropdown-menu .menu__dropdown-item .menu__dropdown-link {
           display: block;
           text-align: center;
           color: #fff;
           text-decoration: none;
-          padding: 3px 4px;
+          padding: 1px 14px;
           font-family: 'TransatBold';
-          font-size: 16px; }
+          font-size: 16px;
+          white-space: nowrap; }
           .menu .menu__item.menu__dropdown .menu__dropdown-menu .menu__dropdown-item .menu__dropdown-link:hover {
             color: #fff9; }
         .menu .menu__item.menu__dropdown .menu__dropdown-menu .menu__dropdown-item + .menu__dropdown-item {
@@ -846,7 +846,7 @@ h1, h1, h1 {
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 0.04em;
-    margin-bottom: 80px; }
+    margin-bottom: 50px; }
     @media (max-width: 767px) {
       .dao .dao__title {
         font-size: 35px;
@@ -855,7 +855,7 @@ h1, h1, h1 {
     font-size: 32px;
     font-weight: bold;
     letter-spacing: 0.04em;
-    margin: 30px 0; }
+    margin: 50px 0 30px; }
     @media (max-width: 767px) {
       .dao .dao__sub-title {
         font-size: 28px;
@@ -872,14 +872,15 @@ h1, h1, h1 {
       width: 124px;
       height: 124px;
       line-height: 96px;
-      margin: 0 auto 30px;
+      margin: 0 auto;
       box-shadow: 2px 2px 10px #D40D26;
       border-radius: 50%;
       text-align: center; }
     .dao .dao__treasury .dao__treasury-item .dao__treasury-text {
       display: inline-block;
       width: 200px;
-      max-width: 100%; }
+      max-width: 100%;
+      vertical-align: middle; }
       .dao .dao__treasury .dao__treasury-item .dao__treasury-text .dao__treasury-header {
         margin-bottom: 5px;
         font-weight: 400;
@@ -945,6 +946,54 @@ h1, h1, h1 {
     .dao {
       padding: 99px 0 18px;
       text-align: center; } }
+  .dao .dao__info {
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    left: -4px;
+    width: 15px;
+    height: 15px;
+    background-color: #3a326e;
+    color: #0fd8d5;
+    border-radius: 12px;
+    font-size: 13px;
+    line-height: 16px;
+    font-family: serif;
+    cursor: pointer;
+    text-align: center; }
+    .dao .dao__info .dao__info-box {
+      position: absolute;
+      display: none;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-9px);
+      background-color: #3a326e;
+      color: #b5acec;
+      padding: 7px;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-family: monospace;
+      min-width: 175px;
+      max-width: 220px;
+      border-radius: 3px; }
+      .dao .dao__info .dao__info-box::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-top: 5px solid #3a326e;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px; }
+    .dao .dao__info:hover .dao__info-box {
+      display: block; }
+    @media (max-width: 767px) {
+      .dao .dao__info {
+        display: block;
+        margin: 0 auto;
+        top: 0;
+        left: 0; } }
 
 .calls {
   padding: 107px 0 65px;
@@ -995,11 +1044,20 @@ h1, h1, h1 {
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 0.04em;
-    margin-bottom: 65px;
+    margin-bottom: 5px;
     text-align: center; }
     @media (max-width: 767px) {
       .entervision .entervision__title {
         font-size: 35px; } }
+  .entervision .entervision__subtitle {
+    color: #d40e26;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-bottom: 65px; }
+    @media (max-width: 767px) {
+      .entervision .entervision__subtitle {
+        font-size: 24px; } }
   .entervision .entervision__left {
     width: 50%;
     float: left; }
@@ -1099,6 +1157,7 @@ h1, h1, h1 {
       z-index: 1;
       padding: 45px 50px;
       width: 40%;
+      min-height: 270px;
       line-height: 1.75em;
       position: relative;
       margin-bottom: 80px;
