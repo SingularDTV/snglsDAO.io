@@ -57,6 +57,8 @@ function check_if_in_view() {
 // Anchor scrolls
 $(document).on('click', 'a.anchor', function (event) {
     event.preventDefault();
+    $('body').removeClass('opened-menu');
+    $('.menu').removeClass('opened');
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 1000);
