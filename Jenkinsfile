@@ -14,7 +14,7 @@ pipeline {
         branch 'master'
       }
       steps {
-        archiveArtifacts(artifacts: '/', onlyIfSuccessful: true)
+        archiveArtifacts(artifacts: './', onlyIfSuccessful: true)
       }
     }
     stage('archive production branch') {
@@ -22,7 +22,7 @@ pipeline {
         branch 'production'
       }
       steps {
-        archiveArtifacts(artifacts: '/', onlyIfSuccessful: true)
+        archiveArtifacts(artifacts: './', onlyIfSuccessful: true)
       }
     }
   }
