@@ -16,6 +16,15 @@ pipeline {
       steps {
         sshagent(['snglsdao-www']) {
           sh 'rsync -a --cvs-exclude --verbose --delete -e "ssh -o StrictHostKeyChecking=no" ./ snglsdao-www@test.blaize.tech:/var/www/sngls/'
+        }
+      }
+    }
+    stage('master -> https://stage.snglsdao.io') {
+      when {
+        branch 'master'
+      }
+      steps {
+        sshagent(['snglsdao-www']) {
           sh 'rsync -a --cvs-exclude --verbose --delete -e "ssh -o StrictHostKeyChecking=no" ./ snglsdao-www@stage.snglsdao.io:/var/www/stage/'
         }
       }
