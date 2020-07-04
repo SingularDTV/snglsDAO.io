@@ -9,12 +9,14 @@ pipeline {
     }
   }
   stages {
-    stage('archive master branch') {
+    stage('master -> https://sngls.blaize.tech') {
       when {
         branch 'master'
       }
       steps {
-        archiveArtifacts(artifacts: '**', onlyIfSuccessful: true)
+        sshagent(['snglsdao-www']) {
+          sh 'rsync -a --verbose --delete -e "ssh -o StrictHostKeyChecking=no" ./ snglsdao-www@test.blaize.tech:/var/www/sngls/'
+        }
       }
     }
     stage('archive production branch') {
