@@ -15,7 +15,7 @@ pipeline {
       }
       steps {
         sshagent(['snglsdao-www']) {
-          sh 'rsync -a --cvs-exclude --verbose --delete -e "ssh -o StrictHostKeyChecking=no" ./ snglsdao-www@test.blaize.tech:/var/www/sngls/'
+          sh 'rsync -a --cvs-exclude --verbose --delete -e "ssh -o StrictHostKeyChecking=no" ./ snglsdao-www@test.blaize.tech:/var/www/sngls.blaize.tech/'
         }
       }
     }
@@ -25,7 +25,7 @@ pipeline {
       }
       steps {
         sshagent(['snglsdao-www']) {
-          sh 'rsync -a --cvs-exclude --verbose --delete -e "ssh -o StrictHostKeyChecking=no" ./ snglsdao-www@stage.snglsdao.io:/var/www/stage/'
+          sh 'rsync -a --cvs-exclude --verbose --delete -e "ssh -o StrictHostKeyChecking=no" ./ snglsdao-www@stage.snglsdao.io:/var/www/stage.snglsdao.io/'
         }
       }
     }
