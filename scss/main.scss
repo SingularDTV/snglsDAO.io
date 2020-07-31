@@ -324,15 +324,17 @@ h1, h2 {
     }
     &.menu__language {
 
-      .menu__link {
-        background: #D40D26;
-        box-shadow: 0 0 20px #e4112a;
-        border-radius: 30px;
-        min-width: 84px;
+    }
 
-        &:hover {
-          color: #fff;
-        }
+    &--red a {
+      background: #D40D26;
+      box-shadow: 0 0 20px #e4112a88;
+      border-radius: 30px;
+      min-width: 84px;
+
+      &:hover {
+        color: #fff !important;
+        box-shadow: 0 0 20px #e4112aff;
       }
     }
     @media (max-width: 991px) {
@@ -343,6 +345,8 @@ h1, h2 {
       margin: 0;
     }
   }
+
+
 
   @media (max-width: 767px) {
     position: absolute;
