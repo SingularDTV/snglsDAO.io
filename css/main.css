@@ -373,13 +373,14 @@ h1, h2 {
             padding: 4px 0 4px; } }
       .menu .menu__item.menu__dropdown .menu__dropdown-item:hover > .menu__dropdown-menu {
         display: block; }
-    .menu .menu__item.menu__language .menu__link {
+    .menu .menu__item--red a {
       background: #D40D26;
-      box-shadow: 0 0 20px #e4112a;
+      box-shadow: 0 0 20px #e4112a88;
       border-radius: 30px;
       min-width: 84px; }
-      .menu .menu__item.menu__language .menu__link:hover {
-        color: #fff; }
+      .menu .menu__item--red a:hover {
+        color: #fff !important;
+        box-shadow: 0 0 20px #e4112aff; }
     @media (max-width: 991px) {
       .menu .menu__item {
         margin-left: 8px; } }
