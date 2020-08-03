@@ -12,9 +12,9 @@ img {
 
 /* variables */
 /* extend */
-.dao-info a, .contacts .form__link, .subs-form a {
+.dao-info__link, .contacts .form__link, .subs-form a {
   color: #D40D26; }
-  .dao-info a:visited, .contacts .form__link:visited, .subs-form a:visited {
+  .dao-info__link:visited, .contacts .form__link:visited, .subs-form a:visited {
     color: #636fdc; }
 
 .container-fluid::after, .container::after, .row::after, .entervision .entervision__container::after, .milestones .milestones__timeline::after, .footer .footer__container::after {
@@ -23,7 +23,7 @@ img {
   width: 100%;
   clear: both; }
 
-.hero .hero__text .hero__buttons .btn, .whitepaper .whitepaper__text .whitepaper__buttons .btn, .contacts .form__field .form__btn, .subs-form .subs-form__button {
+.hero .hero__text .hero__buttons .btn, .whitepaper .whitepaper__text .whitepaper__buttons .btn, .dao-info__btn, .contacts .form__field .form__btn, .subs-form .subs-form__button {
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -41,7 +41,7 @@ img {
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   transition: 0.2s; }
-  .hero .hero__text .hero__buttons .btn:hover, .whitepaper .whitepaper__text .whitepaper__buttons .btn:hover, .contacts .form__field .form__btn:hover, .subs-form .subs-form__button:hover {
+  .hero .hero__text .hero__buttons .btn:hover, .whitepaper .whitepaper__text .whitepaper__buttons .btn:hover, .dao-info__btn:hover, .contacts .form__field .form__btn:hover, .subs-form .subs-form__button:hover {
     box-shadow: 0 0 20px #e4112aff; }
 
 .hero .hero__text .hero__buttons .btn-inverse {
@@ -373,13 +373,14 @@ h1, h2 {
             padding: 4px 0 4px; } }
       .menu .menu__item.menu__dropdown .menu__dropdown-item:hover > .menu__dropdown-menu {
         display: block; }
-    .menu .menu__item.menu__language .menu__link {
+    .menu .menu__item--red a {
       background: #D40D26;
-      box-shadow: 0 0 20px #e4112a;
+      box-shadow: 0 0 20px #e4112a88;
       border-radius: 30px;
       min-width: 84px; }
-      .menu .menu__item.menu__language .menu__link:hover {
-        color: #fff; }
+      .menu .menu__item--red a:hover {
+        color: #fff !important;
+        box-shadow: 0 0 20px #e4112aff; }
     @media (max-width: 991px) {
       .menu .menu__item {
         margin-left: 8px; } }
@@ -452,7 +453,7 @@ h1, h2 {
   top: 12px; }
 
 .hero {
-  padding: 72px 0 64px;
+  padding: 72px 0 120px;
   color: #fff;
   position: relative;
   z-index: 3;
@@ -500,7 +501,7 @@ h1, h2 {
     bottom: 0;
     right: 0;
     left: 40%;
-    background-image: url("../images/hero-image.png"), radial-gradient(circle, #081d5e 10%, #010b2b 70%);
+    background-image: url("../images/hero-image3.png"), radial-gradient(circle, #081d5e 10%, #010b2b 70%);
     background-size: contain;
     background-repeat: no-repeat; }
     @media (max-width: 767px) {
@@ -827,25 +828,27 @@ h1, h2 {
 
 /* dao info */
 .dao-info {
-  padding: 100px 0;
+  padding: 140px 0;
   position: relative;
   z-index: 1;
   text-align: center;
   color: #fff;
   font-weight: 300;
-  background-position: center;
+  background-position: center bottom, center;
   background-repeat: no-repeat;
   background-color: #010B2B;
-  background-image: linear-gradient(0deg, #081d5e 0%, #010b2b 100%);
+  background-image: url("../images/bg-dao.png"), linear-gradient(0deg, #081d5e 0%, #010b2b 100%);
   box-shadow: inset 0 -15px 15px -15px #7581FC; }
-  .dao-info .dao-info__title {
+  .dao-info__btn {
+    margin-top: 42px; }
+  .dao-info__title {
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 0.04em;
     margin-bottom: 33px;
     line-height: 1em; }
     @media (max-width: 767px) {
-      .dao-info .dao-info__title {
+      .dao-info__title {
         font-size: 35px; } }
   .dao-info .dao-info__subtitle {
     font-size: 22px;
@@ -863,171 +866,7 @@ h1, h2 {
     .dao-info {
       padding-top: 80px; } }
 
-/* dao statistics*/
-.dao {
-  padding: 92px 0;
-  text-align: center;
-  color: #fff;
-  position: relative;
-  z-index: 1;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-color: #010B2B;
-  background-image: url("../images/bg-dao.png");
-  box-shadow: inset 0 5px 3px -3px #7581FC; }
-  .dao .dao__title {
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 0.04em;
-    margin-bottom: 50px; }
-    @media (max-width: 767px) {
-      .dao .dao__title {
-        font-size: 35px;
-        margin-bottom: 50px; } }
-  .dao .dao__sub-title {
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: 0.04em;
-    margin: 50px 0 30px; }
-    @media (max-width: 767px) {
-      .dao .dao__sub-title {
-        font-size: 28px;
-        margin-bottom: 25px; } }
-  .dao .dao__treasury .dao__treasury-item {
-    width: 500px;
-    max-width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 25px; }
-    .dao .dao__treasury .dao__treasury-item .dao__treasury-icon-wrap {
-      display: inline-block;
-      vertical-align: middle;
-      width: 124px;
-      height: 124px;
-      line-height: 96px;
-      margin: 0 auto;
-      box-shadow: 2px 2px 10px #D40D26;
-      border-radius: 50%;
-      text-align: center; }
-    .dao .dao__treasury .dao__treasury-item .dao__treasury-text {
-      display: inline-block;
-      width: 200px;
-      max-width: 100%;
-      vertical-align: middle; }
-      .dao .dao__treasury .dao__treasury-item .dao__treasury-text .dao__treasury-header {
-        margin-bottom: 5px;
-        font-weight: 400;
-        font-size: 18px;
-        letter-spacing: 0.04em; }
-        @media (max-width: 767px) {
-          .dao .dao__treasury .dao__treasury-item .dao__treasury-text .dao__treasury-header {
-            margin-bottom: 20px;
-            font-size: 15px; } }
-      .dao .dao__treasury .dao__treasury-item .dao__treasury-text .dao__counter {
-        font-size: 32px; }
-        @media (max-width: 767px) {
-          .dao .dao__treasury .dao__treasury-item .dao__treasury-text .dao__counter {
-            font-size: 28px; } }
-  .dao .dao__item {
-    width: 370px;
-    display: inline-block;
-    vertical-align: top;
-    padding: 25px;
-    margin-bottom: 12px; }
-    .dao .dao__item .dao__icon-wrap {
-      width: 124px;
-      height: 124px;
-      line-height: 96px;
-      margin: 0 auto 30px;
-      box-shadow: 2px 2px 10px #D40D26;
-      border-radius: 50%;
-      text-align: center; }
-      .dao .dao__item .dao__icon-wrap .dao__icon {
-        max-width: 100%;
-        vertical-align: middle; }
-        @media (max-width: 767px) {
-          .dao .dao__item .dao__icon-wrap .dao__icon {
-            height: 76px; } }
-      @media (max-width: 767px) {
-        .dao .dao__item .dao__icon-wrap {
-          width: 100px;
-          height: 100px;
-          line-height: 100px;
-          margin: 0 auto 48px;
-          box-shadow: 0 0 0 8px #D40D2633, 0 0 0 16px #D40D2633; } }
-    .dao .dao__item .dao__item-header {
-      margin-bottom: 5px;
-      font-weight: 400;
-      font-size: 18px;
-      letter-spacing: 0.04em; }
-      @media (max-width: 767px) {
-        .dao .dao__item .dao__item-header {
-          margin-bottom: 20px;
-          font-size: 15px; } }
-    .dao .dao__item .dao__counter {
-      font-size: 32px; }
-      @media (max-width: 767px) {
-        .dao .dao__item .dao__counter {
-          font-size: 28px; } }
-    @media (max-width: 767px) {
-      .dao .dao__item {
-        width: 46%;
-        min-width: 150px;
-        padding: 10px;
-        margin-bottom: 77px; } }
-  @media (max-width: 767px) {
-    .dao {
-      padding: 99px 0 18px;
-      text-align: center; } }
-  .dao .dao__info {
-    display: inline-block;
-    position: relative;
-    top: -12px;
-    left: -4px;
-    width: 15px;
-    height: 15px;
-    background-color: #3a326e;
-    color: #0fd8d5;
-    border-radius: 12px;
-    font-size: 13px;
-    line-height: 16px;
-    font-family: serif;
-    cursor: pointer;
-    text-align: center; }
-    .dao .dao__info .dao__info-box {
-      position: absolute;
-      display: none;
-      bottom: 100%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-9px);
-      background-color: #3a326e;
-      color: #b5acec;
-      padding: 7px;
-      font-size: 14px;
-      line-height: 1.2em;
-      font-family: monospace;
-      min-width: 175px;
-      max-width: 220px;
-      border-radius: 3px; }
-      .dao .dao__info .dao__info-box::after {
-        content: '';
-        display: block;
-        position: absolute;
-        border-right: 5px solid transparent;
-        border-left: 5px solid transparent;
-        border-top: 5px solid #3a326e;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px; }
-    .dao .dao__info:hover .dao__info-box {
-      display: block; }
-    @media (max-width: 767px) {
-      .dao .dao__info {
-        display: block;
-        margin: 0 auto;
-        top: 0;
-        left: 0; } }
-
+/* CALLS */
 .calls {
   padding: 107px 0 65px;
   text-align: center; }
@@ -1083,11 +922,12 @@ h1, h2 {
       .entervision .entervision__title {
         font-size: 35px; } }
   .entervision .entervision__subtitle {
-    color: #d40e26;
-    font-size: 30px;
+    color: #251F31;
+    font-size: 40px;
     text-align: center;
     letter-spacing: 0.04em;
-    margin-bottom: 65px; }
+    margin-bottom: 65px;
+    margin-top: 24px; }
     @media (max-width: 767px) {
       .entervision .entervision__subtitle {
         font-size: 24px; } }
