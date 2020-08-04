@@ -9,12 +9,24 @@ pipeline {
     }
   }
   stages {
-    stage('archive master branch') {
+    stage('master -> https://sngls.blaize.tech') {
       when {
         branch 'master'
       }
       steps {
-        archiveArtifacts(artifacts: '**', onlyIfSuccessful: true)
+        sshagent(['snglsdao-www']) {
+          sh 'rsync -a --cvs-exclude --verbose --delete -e "ssh -o StrictHostKeyChecking=no" ./ snglsdao-www@test.blaize.tech:/var/www/sngls.blaize.tech/'
+        }
+      }
+    }
+    stage('master -> https://stage.snglsdao.io') {
+      when {
+        branch 'master'
+      }
+      steps {
+        sshagent(['snglsdao-www']) {
+          sh 'rsync -a --cvs-exclude --verbose --delete -e "ssh -o StrictHostKeyChecking=no" ./ snglsdao-www@stage.snglsdao.io:/var/www/stage.snglsdao.io/'
+        }
       }
     }
     stage('archive production branch') {
